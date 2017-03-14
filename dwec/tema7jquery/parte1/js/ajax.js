@@ -1,0 +1,8 @@
+{
+    $(document).ready(function() {
+        $("#enlaceajax").click(function(evento) {
+            evento.preventDefault();
+            $("#destino").load("ajax2.html");
+        });
+    });
+}

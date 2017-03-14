@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/butto7"
+                android:id="@+id/butto7"
+                style="@style/EstiloBotonApaisado"
+                />
+
+            <Button
+                android:text="@string/butto8"
+                style="@style/EstiloBotonApaisado"
+                android:id="@+id/butto8" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto9"
+                android:id="@+id/butto9"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="/"
+                android:id="@+id/buttodivi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto4"
+                android:id="@+id/butto4"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto5"
+                android:id="@+id/butto5"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto6"
+                android:id="@+id/butto6" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="X"
+                android:id="@+id/buttomulti"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto1"
+                android:id="@+id/butto1" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto2"
+                android:id="@+id/butto2"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto3"
+                android:id="@+id/butto3" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="-"
+                android:id="@+id/buttorest" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text=","
+                android:id="@+id/buttocoma"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="@string/butto0"
+                android:id="@+id/butto0"/>
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="%"
+                android:id="@+id/buttoporc" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="+"
+                android:id="@+id/buttosuma" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="="
+                android:id="@+id/buttoigual" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="AC"
+                android:id="@+id/buttoac"
+                android:background="#dff53f3f" />
+
+            <Button
+                style="@style/EstiloBotonApaisado"
+                android:text="C"
+                android:id="@+id/buttoC"
+                android:background="#dff53f3f" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:background="#cdc9c9"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:enabled="false"
+        android:editable="false"
+        android:layout_alignParentEnd="false"
+        android:textAlignment="textEnd"
+        android:text="0" />
+
+</RelativeLayout>

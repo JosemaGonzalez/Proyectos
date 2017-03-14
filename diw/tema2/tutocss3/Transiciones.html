@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Transiciones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+     <h2>TRANSICIONES</h2>
+
+    <h3>Para hacer cambios de un estado a otro de manera progresiva en distintas propiedades CSS durante un tiempo
+        determinado</h3>
+
+    <section>
+        <article>
+
+            <h3>Transition-duration</h3>
+
+            <p>Es la duración de la progresión de la transición. Se especifica en segundos 's' o milisegundos 'ms'.</p>
+
+            <p>transition-delay: time|initial|inherit;</p>
+
+            <p>Se especifica en el hover.</p>
+
+            <p>Se puede poner en la regla CSS sin hover para que cuando vuelva a su estado original lo haga
+                progresivamente también.</p>
+        </article>
+        <article>
+            <h3>Transition-delay</h3>
+
+            <p>El tiempo que tarda en empezar la transición, se especifica en segundos 's' o milisegundos 'ms'.</p>
+
+            <p>transition-delay: time|initial|inherit;</p>
+            <ul class="transition">
+                <li><b>Sin delay</b>: empieza inmediatamente.</li>
+                <div class="contenedorTransicion" id="sinDelay">Pon el ratón encima</div>
+                <li><b>Con delay</b>: empieza 1 segundo después ya que le puse transition-delay:1s.</li>
+                <div class="contenedorTransicion" id="conDelay">Pon el ratón encima</div>
+            </ul>
+            <p>En ambos uso un <em>
+                <ins>transition-duration de 3s</ins>
+            </em> para que vaya creciendo progresivamente en 3 segundos.
+            </p>
+        </article>
+        <article>
+            <h3>Transition-timing-function</h3>
+
+            <p>Para definir la velocidad en las distintas etapas de la transición</p>
+            <p>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;</p>
+            <ul class="transition">
+                <li><b>linear</b>: misma velocidad desde principio a fin.</li>
+                <div class="contenedorTransicion" id="linear">Pon el ratón encima</div>
+                <li><b>ease-in</b>: el principo va lento.</li>
+                <div class="contenedorTransicion" id="ease-in">Pon el ratón encima</div>
+                <li><b>ease-out</b>: el final va lento.</li>
+                <div class="contenedorTransicion" id="ease-out">Pon el ratón encima</div>
+                <li><b>ease-in-out</b>: va lento tanto al principio como al final.</li>
+                <div class="contenedorTransicion" id="ease-in-out">Pon el ratón encima</div>
+                <li><b>steps(int, start|end)</b>: en el primer parámetro se especifica el número de intervalos y en el
+                    segundo parámetro si queremos que el cambio de valores ocurra al principio o al final de cada
+                    intervalo.
+                    <br/>En este caso uso steps(5,end) y transition-duration:3s
+                </li>
+                <div class="contenedorTransicion" id="steps">Pon el ratón encima</div>
+                <li><b>step-start</b>: equivale a steps(1,start), al ocurrir el cambio al principio del intervalo no
+                    tarda 3s.
+                </li>
+                <div class="contenedorTransicion" id="step-start">Pon el ratón encima</div>
+                <li><b>step-end</b>: equivale a steps(1,end), al ocurrir el cambio al final del intervalo tarda 3s en
+                    ocurrir.
+                </li>
+                <div class="contenedorTransicion" id="step-end">Pon el ratón encima</div>
+                <li><b>cubic-bezier(n,n,n,n)</b>: para definir tus propios valores, solo se pueden introducir valores
+                    del 0 al 1 (0,0,1,1 sería el valor lineal), en este caso yo use: cubic-bezier(.98,0,1,.28).
+                </li>
+                <div class="contenedorTransicion" id="cubic-bezier">Pon el ratón encima</div>
+            </ul>
+        </article>
+        <article>
+            <h3>Transition (abreviación)</h3>
+
+            <p>Una forma abreviada de hacerlo, se pone la duración acompañada de la propiedad.</p>
+
+            <p>transition: property duration timing-function delay|initial|inherit;</p>
+
+            <p>Se pueden poner varias propiedades seguidas, por ejemplo: transition:1s width, 3s
+                height, cubic-bezier 2s;</p>
+
+            <p>También se le pueden añadir transformarciones dentro: Ejemplo</p>
+
+            <div class="contenedorTransicion" id="cuadrado"></div>
+            <p>Usando transition: width 1s, height 3s, transform 2s, cubic-bezier 2s;</p>
+
+            <p>Y en el hover: width: 300px; height: 300px; transform: rotate(180deg);
+                cubic-bezier(0,0.45,0.60,0.40);</p>
+        </article>
+        <article>
+            <h3>Transition-property</h3>
+
+            <p>transition-property: none|all|property|initial|inherit;</p>
+
+            <p>property: Aquí se especifica a que propiedad va dirigida la transición, ahora se verá una lista de ejemplos con las
+                propiedades a las que se le usa la transición.</p>
+
+            <p>Sino se le especifica ninguna propiedad su valor por defecto es all, por lo que hará la transición de
+                cualquier cosa que esté en el hover.</p>
+        </article>
+
+        <article>
+            <h3>Ejemplos propiedades del Transition-property </h3>
+
+            <h3>background-color</h3>
+
+            <p>Para cambiar el color de fondo</p>
+
+            <p>background-color: #075f96; transition-duration: 0.8s; transition-property: background-color; //hover</p>
+
+            <p>En transition-property uso el valor background-color</p>
+
+            <p>En transition-duration 0,8s y en el hover uso un color de fondo más oscuro.</p>
+
+            <div class="contenedorTransicion" id="backgroundColor">Ejemplo de un background-color</div>
+        </article>
+
+        <article>
+            <h3>border-*position*-color</h3>
+
+            <p>Para cambiar el color de una parte del borde</p>
+
+            <p>transition-duration: 0.8s; transition-property: border-color; border-color: #ff5e0e; //hover</p>
+
+            <p>En transition-property uso el valor border-color</p>
+
+            <p>En transition-duration 0,8s y en el hover uso un color de borde naranja.</p>
+
+            <div class="contenedorTransicion" id="borderColor">Ejemplo de un border-*position*-color</div>
+        </article>
+
+        <article>
+            <h3>color</h3>
+
+            <p>Para cambiar el color</p>
+
+            <p>color: #8300af;
+                transition-duration: 1s;
+                transition-property: color; //hover</p>
+
+            <p>En transition-property uso el valor color</p>
+
+            <p>En transition-duration 1s y en el hover uso un color morado.</p>
+
+            <div class="contenedorTransicion" id="color">Ejemplo de color</div>
+        </article>
+
+        <article>
+            <h3>font-size</h3>
+
+            <p>Para cambiar el tamaño de la letra</p>
+
+            <p>font-size: 2em;
+                transition-duration: 1s;
+                transition-property: font-size; //hover</p>
+
+            <p>En transition-property uso el valor font-size</p>
+
+            <p>En transition-duration 1s y en el hover uso un font-size de 2em.</p>
+
+            <div class="contenedorTransicion" id="fontSize">Ejemplo de font-size</div>
+        </article>
+
+        <article>
+            <h3>font-weight</h3>
+
+            <p>Para cambiar el grosor de la letra</p>
+
+            <p>font-weight: 900;
+                transition-duration: 1s;
+                transition-property: font-weight; //hover</p>
+
+            <p>En transition-property uso el valor font-weight</p>
+
+            <p>En transition-duration 1s y en el hover uso un font-weight de 900 mientras que normal es de 100.</p>
+
+            <div class="contenedorTransicion" id="fontWeight">Ejemplo de font-weight</div>
+        </article>
+
+        <article>
+            <h3>height</h3>
+
+            <p>Para cambiar la altura de la caja</p>
+
+            <p>height: 70px;
+                transition-duration: 1s;
+                transition-property: height; //hover</p>
+
+            <p>En transition-property uso el valor height</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el height 20px.</p>
+
+            <div class="contenedorTransicion" id="height">Ejemplo de height</div>
+        </article>
+
+        <article>
+            <h3>letter-spacing</h3>
+
+            <p>Para cambiar el espacio entre las letras</p>
+
+            <p>letter-spacing: 10px;
+                transition-duration: 1s;
+                transition-property: letter-spacing; //hover</p>
+
+            <p>En transition-property uso el valor letter-spacing</p>
+
+            <p>En transition-duration 1s y en el hover le aumento 10px el letter-spacing</p>
+
+            <div class="contenedorTransicion" id="letter">Ejemplo de letter-spacing</div>
+        </article>
+
+        <article>
+            <h3>line-height</h3>
+
+            <p>Para cambiar la altura del espacio entre cada linea</p>
+
+            <p>line-height: 40px;
+                transition-duration: 1s;
+                transition-property: line-height; //hover</p>
+
+            <p>En transition-property uso el valor line-height</p>
+
+            <p>En transition-duration 1s y en el hover le aumento 20px el line-height.</p>
+
+            <div class="contenedorTransicion" id="line"><p>Ejemplo de line-height</p>
+
+                <p>Ejemplo de line-height</p></div>
+        </article>
+
+        <article>
+            <h3>margin</h3>
+
+            <p>Para cambiar los márgenes</p>
+
+            <p>margin: 60px;
+                transition-duration: 1s;
+                transition-property: margin; //hover</p>
+
+            <p>En transition-property uso el valor margin</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el margin 60px.</p>
+
+            <div class="contenedorTransicion" id="margin">Ejemplo de margin</div>
+        </article>
+
+        <article>
+            <h3>opacity</h3>
+
+            <p>Para cambiar la opacidad</p>
+
+            <p>opacity: 0;
+                transition-duration: 1s;
+                transition-property: opacity; //hover</p>
+
+            <p>En transition-property uso el valor opacity</p>
+
+            <p>En transition-duration 1s y en el hover le pongo el opacity a 0 mientras que de normal es a 1.</p>
+
+            <div class="contenedorTransicion" id="opacity">Ejemplo de opacity</div>
+        </article>
+
+        <article>
+            <h3>padding</h3>
+
+            <p>Para cambiar el relleno</p>
+
+            <p>padding: 30px;
+                transition-duration: 1s;
+                transition-property: padding; //hover</p>
+
+            <p>En transition-property uso el valor padding</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el padding 30px.</p>
+
+            <div class="contenedorTransicion" id="padding">Ejemplo de padding</div>
+        </article>
+
+        <article>
+            <h3>text-indent</h3>
+
+            <p>Para cambiar la indentación</p>
+
+            <p>text-indent: 30px;
+            transition-duration: 1s;
+            transition-property: text-indent; //hover</p>
+
+            <p>En transition-property uso el valor text-indent</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el text-indent 30px.</p>
+
+            <div class="contenedorTransicion" id="text">Ejemplo de text-indent</div>
+        </article>
+
+        <article>
+            <h3>text-shadow</h3>
+
+            <p>Para cambiar la sombra de la letra</p>
+
+            <p>text-shadow: 10px 10px 5px black;
+                transition-duration: 1s;
+                transition-property: text-shadow; //hover</p>
+
+            <p>En transition-property uso el valor text-shadow</p>
+
+            <p>En transition-duration 1s y en el hover le pongo un shadow de 10px 10px 5px black.</p>
+
+            <div class="contenedorTransicion" id="shadow">Ejemplo de text-shadow</div>
+        </article>
+
+        <article>
+            <h3>width</h3>
+
+            <p>Para cambiar la longitud de la caja</p>
+
+            <p>width: 300px;
+                transition-duration: 1s;
+                transition-property: width; //hover</p>
+
+            <p>En transition-property uso el valor width</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el width 200px.</p>
+
+            <div class="contenedorTransicion" id="width">Ejemplo de width</div>
+        </article>
+
+        <article>
+            <h3>word-spacing</h3>
+
+            <p>Para cambiar el espacio entre palabras</p>
+
+            <p> word-spacing: 70px;
+                transition-duration: 1s;
+                transition-property: word-spacing; //hover</p>
+
+            <p>En transition-property uso el valor word-spacing</p>
+
+            <p>En transition-duration 1s y en el hover le aumento el word-spacing 70px.</p>
+
+            <div class="contenedorTransicion" id="word-spacing">Ejemplo de word-spacing</div>
+        </article>
+    </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

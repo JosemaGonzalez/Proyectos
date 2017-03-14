@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas Josema González</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript">
+    function cargaContextoCanvas(idCanvas) {
+        var elemento = document.getElementById(idCanvas);
+        if (elemento && elemento.getContext) {
+            var contexto = elemento.getContext('2d');
+            if (contexto) {
+                return contexto;
+            }
+        }
+        return FALSE;
+    }
+
+    function borrar() {
+        contexto.fillStyle = '#FFFFFF';
+        contexto.beginPath();
+        contexto.fillRect(170, 0, 200, 100);
+        contexto.fill();
+        contexto.arc(170, 58, 13, Math.PI * 0.5, Math.PI * 0, false);
+        contexto.fill();
+    }
+
+    function globo() {
+        //globos
+        contexto.fillStyle = '#FFFFFF';
+        contexto.beginPath();
+        contexto.arc(170, 60, 10, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(200, 50, 12, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        //globo cuadrado
+        contexto.moveTo(220, 10);
+        contexto.lineTo(220, 10);
+        contexto.lineTo(320, 10);
+        contexto.lineTo(320, 90);
+        contexto.lineTo(220, 90);
+        contexto.lineTo(220, 10);
+        contexto.stroke();
+        // sombra
+        contexto.beginPath();
+        contexto.arc(272, 52, 25, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        contexto.fillStyle = "rgba(0, 0, 0, 0.7)";
+        contexto.arc(270, 50, 25, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.beginPath();
+        contexto.arc(270, 50, 12, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        contexto.fillStyle = '#FFFFFF';
+        contexto.beginPath();
+        contexto.arc(270, 50, 12, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        //rosquilla
+        contexto.beginPath();
+        contexto.arc(270, 50, 25, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        contexto.fillStyle = '#F624E0';
+        contexto.arc(270, 50, 25, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.beginPath();
+        contexto.arc(270, 50, 12, 0, Math.PI * 2, false);
+        contexto.stroke();
+        contexto.closePath();
+        contexto.fillStyle = '#FFFFFF';
+        contexto.beginPath();
+        contexto.arc(270, 50, 12, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        // trozos rosquilla
+        contexto.fillStyle = '#985838';
+        contexto.beginPath();
+        contexto.arc(252, 50, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(290, 50, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(270, 32, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(270, 67, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(258, 63, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(258, 35, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(285, 38, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+        contexto.beginPath();
+        contexto.arc(285, 62, 3, 0, Math.PI * 2, false);
+        contexto.fill();
+        contexto.closePath();
+
+
+    }
+    var contexto;
+    window.onload = function() {
+
+        contexto = cargaContextoCanvas('canvas1');
+        if (contexto) {
+
+            //cuadrado
+            contexto.fillStyle = '#FFEA00';
+            contexto.beginPath();
+            contexto.fillRect(20, 85, 140, 90);
+            contexto.fill();
+            //frente
+            contexto.arc(90, 85, 70, Math.PI, Math.PI * 0, false);
+            contexto.fill();
+            //perfil bajo
+            contexto.arc(90, 165, 70, Math.PI, Math.PI * 0, true);
+            contexto.fill();
+            //nariz
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(90, 115, 15, 0, Math.PI * 2, false);
+            contexto.stroke();
+            //ojos blanco
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(60, 85, 25, 0, Math.PI * 2, false);
+            contexto.arc(120, 85, 25, 0, Math.PI * 2, false);
+            contexto.fill();
+            //ojos negro
+            contexto.fillStyle = '#000000';
+            contexto.beginPath();
+            contexto.arc(60, 80, 6, 0, Math.PI * 2, false);
+            contexto.fill();
+            contexto.arc(120, 80, 6, 0, Math.PI * 2, false);
+            contexto.fill();
+            //boca marron
+            contexto.fillStyle = '#AB8C56';
+            contexto.beginPath();
+            contexto.arc(90, 175, 40, 0, Math.PI * 2, false);
+            contexto.fill();
+            //boca negro
+            contexto.fillStyle = '#000000';
+            contexto.beginPath();
+            contexto.arc(90, 170, 12, 0, Math.PI * 2, false);
+            contexto.fill();
+            //orejas izquierda
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(22, 110, 15, Math.PI * 0.5, Math.PI * 1.5, false);
+            contexto.stroke();
+            contexto.arc(22, 110, 11, Math.PI * 0.5, Math.PI * 1.5, false);
+            contexto.stroke();
+            //orejas derecha
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(157, 110, 15, Math.PI * 0.5, Math.PI * 1.5, true);
+            contexto.stroke();
+            contexto.arc(157, 110, 11, Math.PI * 0.5, Math.PI * 1.5, true);
+            contexto.stroke();
+            //pelo
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(90, 35, 30, Math.PI * 1, Math.PI * 2, false);
+            contexto.stroke();
+            contexto.fillStyle = '#FFFFFF';
+            contexto.beginPath();
+            contexto.arc(90, 35, 25, Math.PI * 1, Math.PI * 2, false);
+            contexto.stroke();
+            setInterval("globo(contexto)", 1000);
+            setInterval("borrar(contexto)", 1500);
+
+        }
+
+    }
+    </script>
+    <style type="text/css" media="screen">
+    body {
+        background-image: url("78.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Josema González</h1>
+    <canvas id="canvas1" height="250" width="500">
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>

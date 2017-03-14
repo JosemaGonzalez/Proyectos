@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="butto0">0</string>
+    <string name="butto1">1</string>
+    <string name="butto2">2</string>
+    <string name="butto3">3</string>
+    <string name="butto4">4</string>
+    <string name="butto5">5</string>
+    <string name="butto6">6</string>
+    <string name="butto7">7</string>
+    <string name="butto8">8</string>
+    <string name="butto9">9</string>
+
+
+</resources>

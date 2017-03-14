@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+    <script>
+    var elementos = document.getElementsByTagName("p");
+    var cadena = "";
+    for (i = 0; i < elementos.length; i++) {
+        cadena += elementos[i].innerHTML + ","
+    }
+    alert(cadena)
+    </script>
+</head>
+
+<body>
+    <p name="algo">parrafo 1
+    <ul>
+        <li>fds</li>
+        <li>dfs</li>
+        <li>dsfsd</li>
+    </ul>
+    </p>
+    <p>parrafo 2</p>
+    <p>parrafo 3</p>
+</body>
+
+</html>

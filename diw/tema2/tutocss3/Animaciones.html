@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Animaciones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+    <h2>Animaciones</h2>
+    <h3>Una animación es un efecto dinámico que cambia las propiedades de un elemento en el tiempo y que puede 
+        tener varios estados intermedios especificados</h3>
+
+    <section>
+        <article>
+            <h3>Concepto previo: fotograma clave</h3>
+            <p>Los fotogramas claves son valores iniciales y finales que debe tener la animación CSS.</p>
+            <div>
+                <pre>
+                    @keyframes anim1 {
+                        0% {
+                              ...
+                        }
+                        50% {
+                              ...
+                        }
+                        100% {
+                              ...
+                        }
+                    }
+                </pre>
+            </div>
+        </article>
+        <article>
+            <h3>animation-name</h3>
+            <p>Nombre del fotograma clave.</p>
+            <div>
+                <pre>
+                    #animacion1 {
+                        animation-name: anim1;
+                        ...
+                    }
+                </pre>
+
+                <pre>
+                    @keyframes anim1 {
+                        from {
+                            left: 0px;
+                        }
+                        to {
+                            left: 100px;
+                        }
+                    }
+                </pre>
+            </div>
+            <div id="animacion1">Nombre de la animación: anim1</div>     
+        </article>
+        <article>
+            <h3>animation-duration</h3>
+            <p>Duración de la animación</p>
+            <div>
+                <pre>
+                    #caja_animada{
+                        animation-name: anim2;
+                        animation-duration:2s;
+                        ...
+                    }
+                </pre>
+            </div>
+            <br>
+            <div id="caja_animada">Animación de 2 segundos de duración</div>
+        </article>
+        <article>
+            <h3>animation-iteration-count</h3>
+            <p>Veces que se repite la animación. Se puede poner:</p>
+            <p>- número: número de veces que se va a repetir la animación</p>
+            <p>- infinite: la animación se repetirá infinitas veces</p>
+            <p>- initial: establece esta propiedad a su valor predeterminado</p>
+            <p>- inherit: hereda esta propiedad del padre</p>
+
+            <div>
+                <pre>
+                    #caja_animada2{
+                        animation-name: anim2;
+                        animation-duration:2s;
+                        animation-iteration-count: infinite;
+                        ...
+                    }
+                </pre>
+            </div>
+            <div id="caja_animada2_2">Animación que se repite 5 veces</div>
+            <div id="caja_animada2">Animación que se repite infinitas veces</div>
+        </article>
+        <article>
+            <h3>animation-timing-function</h3>
+            <p>Especifica la velocidad en que se desarrollará la animación. Puede ser:<p>
+            <p>- ease: este es el valor por defecto. Tiene un comienzo lento, luego rápido y termina de nuevo lentamente.</p>
+            <p>- linear: la misma velocidad durante toda la duración de la transición.</p>
+            <p>- ease-in: efecto de transición con comienzo lento.</p>
+            <p>- ease-out: efecto de transición con comienzo rápido y final lento.</p>
+            <p>- ease-in-out: efecto de transición con comienzo y final lento; más rápido en medio.</p>
+            <p>- cubic-bezier(n,n,n,n): define tus propios valores para la curva de Bezier. Cada valor es entre 0 y 1.</p>
+            <p>- initial: establece esta propiedad a su valor por defecto.</p>
+            <p>- inherit: hereda esta propiedad del elemento padre.</p>
+            <div>
+                <pre>
+                    #caja_animada3{
+                        animation-name: anim3;
+                        animation-duration:5s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        ...
+                    }
+                </pre>
+
+            </div>
+            <div id="caja_animada3_1">ease</div>
+            <div id="caja_animada3_2">linear</div>
+            <div id="caja_animada3_3">ease-in</div>
+            <div id="caja_animada3_4">ease-in-out</div>
+            <div id="caja_animada3_5">cubic-bezier</div>
+            
+        </article>
+        <article>
+            <h3>animation-direction</h3>
+            <p>Esta propiedad define el sentido de la animación. Puede ser:</p>
+            <p>- normal: cada vez que termina un ciclo, la animación se reinicia al estado inicial y comienza desde el principio. Este es el comportamiento por defecto.</p>
+            <p>- alternate: la animación, al terminar un ciclo, invierte su dirección. Es decir, los pasos de la animación se ejecutan al revés.</p>
+            <p>- reverse: cada ciclo de la animación se reproduce al revés . Cada vez que comienza un ciclo de animación, ésta se posiciona en el estado final y comienza desde ahí.</p>
+            <p>- alternate-reverse: es similar a alternate pero la animación se reproduce al revés. Es decir la animación se posiciona en el estado final, comienza a reproducirse al reves y, cuando llega al inicio vuelve a reproducirse de forma normal hasta llegar al final de la secuencia. Y vuelve otra vez a repetirse.</p>
+            <div>
+                <pre>
+                    #caja_animada4{
+                        animation-name: anim4;
+                        animation-duration:5s;
+                        animation-iteration-count: infinite;
+                        animation-direction: normal;
+                        ...
+                    }
+                </pre>
+            </div>
+            <div id="caja_animada4">direction: normal</div>
+            <div id="caja_animada4_1">direction: reverse</div>
+            <div id="caja_animada4_2">direction: alternate</div>
+            <div id="caja_animada4_3">direction: alternate-reverse</div>
+        </article>
+        <article>
+            <h3>animation-delay</h3>
+            <p>Propiedad que nos indica el momento en el que comenzará la animación. Si el valor es 0 se ejecuta en cuanto se carga la página.</p>
+            <div>
+                <pre>
+                    #caja_animada5{
+                        animation-name: anim5;
+                        animation-duration:5s;
+                        animation-delay:2s;
+                        ...
+                    }
+                </pre>
+            </div>
+            <div id="caja_animada5">Retraso de 2 segundos antes de empezar</div>
+            <br><br>
+        </article>
+    </section>  
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

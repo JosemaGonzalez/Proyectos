@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Josema González</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Calendario en PHP</h1>
+    <form method="post" accept-charset="utf-8" action="calendario2.php">
+        <p>
+            Seleccione Mes
+            <select name="mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+        </p>
+        <p>Seleccione Año
+            <input type="range" name="anno" id="ageInputId" value="2016" min="1930" max="2030" oninput="ageOutputId.value = ageInputId.value">
+            <output name="ageOutputName" id="ageOutputId">2016</output>
+        </p>
+        <input type="submit" value="IR" name="ir">
+    </form>
+</body>
+
+</html>

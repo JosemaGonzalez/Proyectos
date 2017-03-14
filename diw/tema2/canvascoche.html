@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas Josema González</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript">
+    function cargaContextoCanvas(idCanvas) {
+        var elemento = document.getElementById(idCanvas);
+        if (elemento && elemento.getContext) {
+            var contexto = elemento.getContext('2d');
+            if (contexto) {
+                return contexto;
+            }
+        }
+        return FALSE;
+    }
+
+    var contexto;
+    window.onload = function() {
+
+        contexto = cargaContextoCanvas('canvas1');
+        if (contexto) {
+            //parte arriba
+            contexto.moveTo(120, 80);
+            contexto.lineTo(250, 80);
+            contexto.stroke();
+            //barra sillin
+            contexto.moveTo(258, 60);
+            contexto.lineTo(220, 150);
+            contexto.stroke();
+            //barra manillar
+            contexto.moveTo(130, 60);
+            contexto.lineTo(100, 150);
+            contexto.stroke();
+            //barra botellin
+            contexto.moveTo(120, 90);
+            contexto.lineTo(220, 150);
+            contexto.stroke();
+            //barra a rueda trasera
+            contexto.moveTo(220, 150);
+            contexto.lineTo(270, 150);
+            contexto.stroke();
+            contexto.moveTo(250, 80);
+            contexto.lineTo(270, 150);
+            contexto.stroke();
+            //ruedas
+            contexto.beginPath();
+            contexto.arc(100, 150, 40, 0, Math.PI * 2, false);
+            contexto.stroke();
+            contexto.closePath();
+            contexto.beginPath();
+            contexto.arc(270, 150, 40, 0, Math.PI * 2, false);
+            contexto.stroke();
+            contexto.closePath();
+            //circulo negro
+            contexto.beginPath();
+            contexto.arc(270, 150, 5, 0, Math.PI * 2, false);
+            contexto.fill();
+            contexto.closePath();
+            contexto.beginPath();
+            contexto.arc(220, 150, 9, 0, Math.PI * 2, false);
+            contexto.fill();
+            contexto.closePath();
+            //pedales
+            contexto.moveTo(210, 130);
+            contexto.lineTo(230, 170);
+            contexto.stroke();
+            contexto.moveTo(201, 130);
+            contexto.lineTo(220, 130);
+            contexto.stroke();
+            contexto.moveTo(220, 170);
+            contexto.lineTo(235, 170);
+            contexto.stroke();
+            //sillin
+            var lineGrad = contexto.createLinearGradient(240, 55, 270, 55);
+            lineGrad.addColorStop(0, '#000000');
+            lineGrad.addColorStop(0.10, '#030F4D');
+            lineGrad.addColorStop(0.5, '#0024FF');
+            lineGrad.addColorStop(1, 'rgba(102, 148, 255, 0.8)');
+            contexto.fillStyle = lineGrad;
+            contexto.moveTo(240, 60);
+            contexto.lineTo(270, 60);
+            contexto.stroke();
+            contexto.moveTo(240, 60);
+            contexto.quadraticCurveTo(255, 80, 270, 60);
+            contexto.fill();
+            //manillar
+            contexto.moveTo(128, 65);
+            contexto.quadraticCurveTo(105, 55, 155, 60);
+            contexto.fill();
+            //rueda delantera
+            contexto.moveTo(100, 150);
+            contexto.quadraticCurveTo(73, 160, 100, 153);
+            contexto.fill();
+            
+            
+        }
+
+    }
+    </script>
+    <style type="text/css" media="screen">
+    body {
+        background-image: url("889.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas1" height="400" width="400">
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>

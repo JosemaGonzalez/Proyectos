@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans" rel="stylesheet">
+    <title>Josema González</title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/efecto.js"></script>
+</head>
+
+<body id="home">
+    <header>
+        <h1 itemprop="title">RuViCor</h1>
+        <a href="" id="menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        <nav id="nav">
+            <ul>
+                <li><a href="home.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
+                <li><a href="ofertas.html"><i class="fa fa-usd fa-lg" aria-hidden="true"></i>Ofertas</a></li>
+                <li><a href="contacto.html"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>Contacto</a></li>
+                <li><a href="sobre.html"><i class="fa fa-info fa-lg" aria-hidden="true"></i>Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /header -->
+    <div id="flex" class="flex1">
+        <main>
+            <section id="secciones1">
+                <article id="reservas">
+                    <img src="img/casa1.jpg" alt="">
+                    <p> Casa Rural 1</p>
+                    <p>Localización: Villa del Río</p>
+                    <p> Habitaciones: 5</p>
+                    <p>Precio: 50€</p>
+                    <span id="span">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                    <p id="ver">Nuestro alojamiento ...<a>Ver más</a></p>
+                    <div id="vermas">Nuestro alojamiento dispone de dos casas independientes en torno a un patio central en el que se encuentra la piscina y la barbacoa. Rivero Rural era una casa de labor, por lo que el patio tenia una función fundamentalmente instrumental, en torno a él estaban la propia casa, el granero, la cuadra o la cocina campera. Tras su restauración en Rivero Rural contamos con una casa para 6 personas y otra para 14 personas. Nuestra casa tiene por tanto dos formas en las que alojarse, alquilar el alojamiento al completo con una disponibilidad de 20 personas, o alquilar una las dos casas. La casa Andalucía para 6 personas, o la casa Grande para 14 personas. Los espacios comunes son el patio central, la piscina y la barbacoa. El resto de estancias como salón o cocinas cada casa dispone de los suyos propios. Tradicionalmente, nuestra casa suele ser alquilada al completo; muchos clientes celebran aquí sus reuniones familiares o sus fiestas mas entrañables desde hace años. Una casa como la nuestra donde sea cómodo más de 20 personas puedan comer todas juntas, o disfrutar del típico perol cordobés en el patio, no es fácil de encontrar. Disfrutareis en ese caso de 10 habitaciones, 2 cocinas, dos salones y cuatro baños completos, además del patio, la barbacoa, y piscina para vosotros solos. <a id="cerrar"> Cerrar</a></div>
+                </article>
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8395.495747681834!2d-4.292358600295627!3d37.98278520767747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1484738945302" frameborder="0" allowfullscreen></iframe>
+                    <form action="reserva_submit" method="post" accept-charset="utf-8" id="formulario">
+                        <p>
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="Nombre y apellidos">
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </p>
+                        <p>
+                            <i class="fa fa-calendar-check-o"></i>
+                            <input type="date" placeholder="">
+                        </p>
+                        <p>
+                            <i class="fa fa-calendar-times-o"></i>
+                            <input type="date" placeholder="">
+                        </p>
+                        <p>
+                            <i class="fa fa-phone"></i>
+                            <input type="text" placeholder="Teléfono">
+                        </p>
+                        <p>
+                            <i class="fa fa-users"></i>
+                            <input type="number" placeholder="Nº de personas" min="1" max="100">
+                        </p>
+                        <button class="btn btn-5 btn-5b icon-cart" type="submit"><span>Reservar</span></button>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>
+            &#169; Josema González - Práctica Casa Rural</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<?php
+include("includes/encabezado.php");
+ ?>
+    <section id="content">
+        <p>Página products</p>
+
+        <p>
+            Lorem fistrum jarl a peich te voy a borrar el cerito sexuarl va usté muy cargadoo papaar papaar. Benemeritaar tiene musho peligro de la pradera me cago en tus muelas benemeritaar va usté muy cargadoo ese que llega qué dise usteer. Sexuarl qué dise usteer por la gloria de mi madre sexuarl apetecan va usté muy cargadoo va usté muy cargadoo. Llevame al sircoo está la cosa muy malar pupita te va a hasé pupitaa benemeritaar. A gramenawer no puedor benemeritaar amatomaa fistro pupita no te digo trigo por no llamarte Rodrigor diodenoo va usté muy cargadoo a gramenawer te voy a borrar el cerito. Benemeritaar por la gloria de mi madre apetecan tiene musho peligro pupita la caidita caballo blanco caballo negroorl no te digo trigo por no llamarte Rodrigor ahorarr apetecan. Te va a hasé pupitaa tiene musho peligro llevame al sircoo me cago en tus muelas diodenoo caballo blanco caballo negroorl diodenoo al ataquerl mamaar a peich me cago en tus muelas. Quietooor al ataquerl apetecan la caidita torpedo quietooor. Ahorarr sexuarl ese que llega benemeritaar diodenoo llevame al sircoo la caidita no te digo trigo por no llamarte Rodrigor tiene musho peligro la caidita pecador. Ese pedazo de amatomaa mamaar qué dise usteer ese que llega papaar papaar torpedo apetecan amatomaa tiene musho peligro caballo blanco caballo negroorl. De la pradera sexuarl a wan amatomaa diodenoo sexuarl va usté muy cargadoo torpedo diodenoo. Está la cosa muy malar diodeno a wan sexuarl diodenoo. Papaar papaar condemor a peich ese pedazo de quietooor ese que llega pupita se calle ustée al ataquerl. Benemeritaar benemeritaar tiene musho peligro llevame al sircoo a wan caballo blanco caballo negroorl pupita. Llevame al sircoo fistro mamaar apetecan a wan diodeno al ataquerl jarl a wan sexuarl no te digo trigo por no llamarte Rodrigor. Te va a hasé pupitaa sexuarl al ataquerl benemeritaar diodenoo jarl diodenoo por la gloria de mi madre benemeritaar. Jarl a gramenawer te voy a borrar el cerito te voy a borrar el cerito pecador pecador benemeritaar se calle ustée quietooor diodenoo. Qué dise usteer hasta luego Lucas papaar papaar pupita se calle ustée ahorarr hasta luego Lucas no te digo trigo por no llamarte Rodrigor. A gramenawer te va a hasé pupitaa la caidita tiene musho peligro de la pradera pupita quietooor. Por la gloria de mi madre a wan me cago en tus muelas no te digo trigo por no llamarte Rodrigor. Caballo blanco caballo negroorl ahorarr condemor te voy a borrar el cerito a gramenawer benemeritaar la caidita condemor fistro pecador condemor.
+        </p>
+    </section>
+    <?php
+include("includes/pie.php");
+ ?>

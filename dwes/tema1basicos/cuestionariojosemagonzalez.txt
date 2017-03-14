@@ -1,0 +1,70 @@
+// question: 0  name: Switch category to $course$/Cuestionario1JMGP
+$CATEGORY: $course$/Cuestionario1JMGP
+
+
+// question: 1  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Protocolo de transferencia de datos\:{
+	~[moodle]FTP.
+	=[moodle]HTTP.
+	~[moodle]TCP.
+	~[moodle]Ninguno de los anteriores.
+}
+
+
+// question: 2  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]¿Cuál no es lenguaje de entorno servidor?\:{
+	~[moodle]PHP.
+	~[moodle]ASP.
+	~[moodle]ColdFusion.
+	=[moodle]DHTML.
+}
+
+
+// question: 3  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Elige la respuesta incorrecta sobre php\:{
+	~[moodle]Está orientado a objetos.
+	~[moodle]Tiene tipado débil.
+	=[moodle]Está desarrollado en C#.
+	~[moodle]Es multiplataforma.
+}
+
+
+// question: 4  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]¿Cuál es el fichero de configuración de php?\:{
+	~[moodle]phpconfi.ini.
+	~[moodle]php.conf.
+	~[moodle]phpini.php.
+	=[moodle]php.ini.
+}
+
+// question: 5  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Indica si es verdadero o falso. Es necesario usar HTML para mostrar PHP.{FALSE}
+//No
+
+// question: 6  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Indica si es verdadero o falso. php.ini-development se usa para entornos de producción.{FALSE}
+//Se usa para desarrollo
+
+// question: 7  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Indica si es verdadero o falso. php.ini-production se usa para entornos de producción.{TRUE}
+
+// question: 8  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]PHP tiene licencia:\:{
+	~[moodle]Propietaria.
+	~[moodle]DonationWare.
+	~[moodle]Free Software.
+	=[moodle]GPL.
+}
+
+// question: 9  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]El estándar que sigue PHP es:\:{
+	~[moodle]PhpFrame.
+	~[moodle]W3C.
+	=[moodle]Zend.
+	~[moodle]Ninguno de los anteriores.
+}
+
+
+// question: 10  name: Cuestionario1JMGP
+::Cuestionario1JMGP::[html]Indica si es verdadero o falso. PHP está pensado para realizar aplicaciones de escritorio.{FALSE}
+//No, para aplicaciones web

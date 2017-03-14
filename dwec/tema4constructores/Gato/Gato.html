@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+    </style>
+    <!--Aqui se pone el enlace al javascript-->
+    <script src="js/Gato.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio del Gato: Josema González
+</h1>
+        <noscript>Este navegador no es compatible</noscript>
+    </header>
+    <!-- /header -->
+    <div> <img src="normal.jpg" id="imagen" width="200px" height="200px">
+        <form id="contenido">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="date" id="fecha" required>
+            <br>
+            <input type="text" id="raza" placeholder="Raza" required>
+            <input type="number" min="2" max="14" id="peso" placeholder="Peso" required>
+            <br>
+            <input type="submit" id="crear" value="Crear">
+        </form>
+        <div id="oculto" style="display: none;">
+            <input type="submit" id="come" value="Comer">
+            <input type="submit" id="juega" value="Jugar">
+            <input type="submit" id="duerme" value="Dormir">
+        </div>
+    </div>
+</body>
+
+</html>

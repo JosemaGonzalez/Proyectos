@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Degradados</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+    <h2>DEGRADADOS</h2>
+
+    <h3>Los degradados implementan un gradiente de color, que pasa de un estado a otro a lo largo del fondo de los elementos HTML, ya sea capas, elementos de listas, botones, etc. El navegador es el encargado de renderizar el degradado en función de las características escritas para definirlo.</h3>
+    <section>
+        <article>
+           
+            <h3>Tipos de degradados</h3>
+
+            <div><a href="#linear">linear-gradient</a>: En los que se crea un gradiente que va de un color a otro de
+                manera lineal. Puede ser de arriba a abajo, de izquierda a derecha y viceversa. Incluso se puede
+                conseguir un degradado en un gradiente de una línea con cualquier ángulo.
+                <br><a href="#linear_gradient_inicio">Inicios de los linear-gradient</a>
+                <br><a href="#linear_gradient_colorStop">ColorStop de los linear-gradient</a>
+            </div>
+            <div><a href="#radial">radial-gradient</a>: En ellos se implementa un gradiente que se distribuye
+                radialmente, desde un punto del elemento hacia fuera de manera circular.
+                <br><a href="#radial_inicio">Inicios de los radial-gradient</a>
+                <br><a href="#radial_colorStop">ColorStop de los radial-gradient</a>
+            </div>
+            <div><a href="#repeatinglinear">repeating-linear-gradient</a>: Se pueden hacer para conseguir un
+                degradado entre dos o más colores que se repite varias veces a lo largo de todo el fondo del
+                elemento al que se le coloque.
+            </div>
+            <div><a href="#repeatingradial">repeating-radial-gradient</a>: Los degradados radiales con repetición
+                son casi idénticos a los degradados radiales normales, los parámetros, tales como centro del
+                degradado radial, forma y tamaño del motivo y los colores son exactamente los mismos.
+            </div>
+            </div>
+        </article>
+        <article>
+            <h3>Compatibilidad</h3>
+
+            <p><img src="img/compdeg.jpg" alt=""></p>
+        </article>
+        <article id="linear">
+            <h3>linear-gradient</h3>
+
+            <p>Sintaxis:
+                <br>background: linear-gradient(parámetros);
+                <br>O bien:
+                <br>background-image: linear-gradient(parámetros);
+
+            <div>Todos los elementos que soportan imágenes de fondo permiten también colocar degradados de fondo. Los
+                parámetros que usamos son:
+                <br> A) Origen-y/o-angulo del degradado: El primer parámetro sería el origen desde donde comenzará el
+                degradado y/o el ángulo de disposición del gradiente de color. Podemos decir que el degradado comience
+                desde arriba, abajo o desde una esquina cualquiera. Por defecto los degradados serán distribuidos en un
+                gradiente en línea recta.
+                <br> B) lista-de-colores y opcionalmente, el lugar hasta donde se debe mostrar cada uno:
+                Luego colocaremos los colores, todos los que queramos, que deben utilizarse en el degradado, separados
+                por comas. Además, si lo deseamos, podemos definir las paradas de color "color stops", que consiste en
+                declarar el lugar desde donde debe empezar el gradiente del color.
+            </div>
+            </p>
+        </article>
+
+        <article id="linear_gradient_inicio">
+            <h3>Inicio de los linear-gradient</h3>
+
+            <div>Degradado por defecto:
+                <br>Sólo tenemos que poner los dos colores que queramos. Al no poner desde dónde empieza el
+                degradado, por defecto irá de arriba hacia abajo.
+                <pre>background:linear-gradient(#7800FF, #48FF00);</pre>
+                <div class="cuadros" id="ejemlinear1"></div>
+            </div>
+            <hr>
+            <div>Con el parámetro 'top left', le indicamos que el degradado empiece en la esquina superior
+                izquierda.
+                <pre> background: linear-gradient(top left, #fff, #f66);</pre>
+                <div class="cuadros" id="ejemlinear2"></div>
+            </div>
+            <hr>
+            <div>También podemos indicarle el inicio del degradado mediante ángulos por medio de grados.
+                <pre>background: -webkit-linear-gradient(180deg, #f0f, #f66);</pre>
+                <div class="cuadros" id="ejemlinear3"></div>
+            </div>
+            <hr>
+            <div>Este degradado tiene una disposición en diagonal, por los 45 grados que se han definido.
+                <pre>background: linear-gradient(45deg, #66f, #f80, #ffc);</pre>
+                <div class="cuadros" id="ejemlinear5"></div>
+            </div>
+            <hr>
+            <div>Este degradado, que empieza en la izquierda y con un gradiente recto hacia la derecha, tiene varios
+                colores, los del arcoiris.
+                <pre>background: -webkit-linear-gradient(left, #f00, #f80, #ff0, #0f0, #00f, #60f, #c0f);</pre>
+                <div class="cuadros" id="ejemlinear8"></div>
+            </div>
+        </article>
+        <article id="linear_gradient_colorStop">
+            <h3>Paradas de color en los linear-gradient</h3>
+
+            <div>Este degradado tiene lo que se llama un "color stop" es decir, una parada de color, que está asignada
+                con el 50% en el primer color.
+                <pre>background: linear-gradient(#00f 50%, #000);</pre>
+                <div class="cuadros" id="ejemlinear4"></div>
+            </div>
+            <hr>
+            <div>Este degradado se hace también en diagonal, desde la esquina inferior izquierda, igual que el anterior,
+                pero hemos definido una serie de paradas de color (color stops), con lo cual la distribución del
+                gradiente no es homogénea.
+                <pre>background: linear-gradient(45deg, #66f 10%, #f80 30%, #ffc 60%);</pre>
+                <div class="cuadros" id="ejemlinear6"></div>
+            </div>
+            <hr>
+            <div>Este es el mismo degradado que el anterior, pero con paradas de color distintas. Además, estamos
+                definiendo esos "color stops" con medidas en píxeles en lugar de porcentajes.
+                <pre>background: linear-gradient(45deg, #66f 160px, #f80 180px, #ffc);</pre>
+                <div class="cuadros" id="ejemlinear7"></div>
+            </div>
+        </article>
+        <article id="radial">
+            <h3>radial-gradient</h3>
+
+            <p>Sintaxis:
+                <br>background: radial-gradient(parámetros);
+                <br>O bien:
+                <br>background-image: radial-gradient(parámetros);
+
+            <div> Los parámetros que podemos indicar en la declaración radial-gradient() es donde realmente radica la
+                dificultad y a la vez la potencia de este tipo de degradados. No obstante, la mayoría de los parámetros
+                son opcionales. El listado de parámetros que podremos indicar es el siguiente:
+                <br>A) Posición inicial del gradiente circular: Los degradados radiales comienzan en un punto cualquiera
+                del fondo de un elemento y se extienden hacia fuera de ese punto con formas circulares o de elipse.
+                <br>B) Forma y/o dimensión: La forma puede ser circular o elipse, para lo cual especificamos las
+                palabras "circle" o "ellipse". El tamaño lo expresamos con otra serie de palabras clave, que indican
+                hasta donde debe crecer el círculo o elipse: closest-side | closest-corner | farthest-side |
+                farthest-corner | contain | cover.
+                <br>Alternativa a B) Tamaño: De manera alternativa a especificar la forma y dimensión del degradado
+                -punto B) anterior-, podemos indicar un par de medidas en cualquier unidad CSS o porcentajes. Esas
+                medidas se utilizarían para generar un círculo o una elipse del tamaño deseado para nuestro gradiente.
+                La primera medida sería para la anchura de la elipse y la segunda sería para la altura.
+                <br>C) Colores del degradado: Para acabar, se deben indicar cuantos colores se deseen, separados por
+                comas, con la posibilidad de indicar las paradas de color que se deseen.
+            </div>
+        </article>
+
+        <article id="radial_inicio">
+            <h3>Inicio de los radial-gradient</h3>
+            <div>Al no especificar desde dónde empieza el degradado, por defecto va desde el centro hasta el final del contenedor.
+                <pre>background: radial-gradient(#0f0, #06f);</pre>
+                <div class="cuadros" id="ejemradial1"></div>
+                <hr>
+            </div>
+            <div>En este caso hemos definido el punto de inicio del gradiente con "top left".
+                <pre>background: radial-gradient(top left, #fff, #f66);</pre>
+                <div class="cuadros" id="ejemradial2"></div>
+                <hr>
+            </div>
+            <div>Este degradado también declara la posición inicial del gradiente, pero lo hace mediante las
+                coordenadas definidas con medidas en píxeles
+                <pre>background: radial-gradient(200px 30px, #f0f, #000);</pre>
+                <div class="cuadros" id="ejemradial3"></div>
+            </div>
+        </article>
+        <article id="radial_colorStop">
+            <h3>Paradas de color en los radial-gradient</h3>
+            <div>En este declaramos la posición inicial con center, el comportamiento predeterminado, que coloca el
+                inicio del degradado en centro, tanto vertical como horizontal, le hemos puesto una parada de color
+                ("color stop") de 50% en el último color.
+                <pre>background: radial-gradient(center, #00f, #000 50%);</pre>
+                <div class="cuadros" id="ejemradial4"></div>
+            </div>
+            </article>
+        <article id="radial_formas">
+            <h3>Formas de los radial-gradient</h3>
+            <div>Definimos la forma del degradado, aunque solo indicamos "circle". Por tanto, el degradado comenzará
+                en el centro y ocupará el 100% del espacio disponible.
+                <pre>background: radial-gradient(circle, #66f, #f80, #ffc);</pre>
+                <div class="cuadros" id="ejemradial5"></div>
+                <hr>
+            </div>
+            <div>Este degradado es exactamente igual que el anterior, pero en vez de circular es de elipse,
+                cubriendo el 100% del espacio disponible.
+                <pre>background: radial-gradient(ellipse cover, #66f, #f80, #ffc);</pre>
+                <div class="cuadros" id="ejemradial6"></div>
+                <hr>
+            </div>
+            <div>Este ejemplo tiene definida la posición del degradado y la forma. Es el primero que especifica esos
+                dos valores al mismo tiempo.
+                <pre>background: radial-gradient(10%, ellipse closest-side, #66f 60%, #f80 85%, #ffc);</pre>
+                <div class="cuadros" id="ejemradial7"></div>
+                <hr>
+            </div>
+            <div>El tamaño se ha definido con farthest-corner, con lo que el degradado será mayor, expandiéndose
+                hasta la esquina más lejana.
+                <pre>background: radial-gradient(10%, ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);</pre>
+                <div class="cuadros" id="ejemradial8"></div>
+                <hr>
+            </div>
+            <div>En este caso hemos definido la posición inicial con las coordenadas en píxeles y hemos definido
+                tanto la forma como el tamaño del degradado en porcentaje
+                <pre>background: radial-gradient(20px 100px, 30% 80%, #fff, #666, #66f);</pre>
+                <div class="cuadros" id="ejemradial9"></div>
+                <hr>
+            </div>
+            <div>En este hemos definido el tamaño de la anchura y altura con dos valores en píxeles, pero como son
+                iguales, en lugar de una elipse veríamos una forma circular, cuyo radio es siempre igual.
+                <pre>background: radial-gradient(left, 200px 200px, #f00 20%, #f80, #ff0, #0f0, #00f, #60f, #c0f);</pre>
+                <div class="cuadros" id="ejemradial12"></div>
+            </div>
+        </article>
+        </article>
+        <article id="repeatinglinear">
+            <h3>repeating-linear-gradient</h3>
+
+            <p>
+                Los degradados de repetición se realizan de manera similar a los degradados lineares. La diferencia es
+                que utilizaremos el nombre de atributo repeating-linear-gradient y que, para que se produzcan las
+                repeticiones tendremos que utilizar paradas de color.
+                <br>Sintaxis:
+                <br/> repeating-linear-gradient(origen, colores)
+            <hr>
+            Ejemplos:
+            <div>
+                Este degradado comienza en blanco y termina en azul. Como no se indicó nada, irá de arriba a abajo, en
+                un gradiente vertical en línea recta. Pero lo importante en este caso es que el segundo color tiene una
+                parada al 25%. Eso quiere decir que se llegará al gris en el primer 25% del espacio del elemento y que a
+                partir de ese punto comenzará de nuevo el degradado.
+                <pre>repeating-linear-gradient(#fff, #00f 25%);</pre>
+                <div class="cuadros" id="repeating_linear_gradient1"></div>
+            </div>
+            <hr>
+            <div>
+                En este segundo ejemplo tenemos otro degradado, esta vez con 4 colores. Como se puede ver, se le han
+                asignado varias paradas de color, en lugar de solo una al último elemento. Como el último color stop
+                está al 51% del elemento, el degradado se verá solo dos veces.
+                <br/> Sintaxis:
+                <pre>background: repeating-linear-gradient(left, #ffc, #f96 30%, #963 40%, #630 51%);</pre>
+                <div class="cuadros" id="repeating_linear_gradient2"></div>
+            </div>
+            <hr>
+            <div>
+                Esta es otra declaración de estilos, con un degradado en un gradiente oblicuo. Además, tiene la
+                particularidad que se va de rojo a azul y luego de nuevo a rojo. Con ello conseguimos que las
+                repeticiones del degradado siempre estén suavizadas y no se note cuando comienza y acaba una repetición,
+                como nos ocurría en los dos ejemplos anteriores. Además, como se puede ver, la parada de color la hemos
+                colocado en 50px, lo que quiere decir que el degradado se repetirá cada 50 píxeles, de modo que, el
+                número de repeticiones variará dependiendo del tamaño del contenedor donde se asigne este fondo.
+                <br/> Sintaxis:
+                <br/>
+                <pre>background: repeating-linear-gradient(45deg, red, blue, red 50px);</pre>
+                <div class="cuadros" id="repeating_linear_gradient3"></div>
+            </div>
+            </div>
+        </article>
+        <article id="repeatingradial">
+            <h3>repeating-radial-gradient</h3>
+
+            <p>Los degradados radiales con repetición son casi idénticos a los degradados radiales normales.
+                <br>Sintaxis:
+                <br> repeating-radial-gradient(parámetros)
+            <hr>
+            Ejemplos:
+            <div>
+                Este ejemplo hace un degradado entre dos colores, cuyo segundo elemento tiene una parada de color en el
+                25%.
+                <br/>
+                <pre>background: repeating-radial-gradient(circle, #fff, #666 25%);</pre>
+                <div class="cuadros" id="repeating_radial_gradient1"></div>
+            </div>
+            <hr>
+            <div>
+                Este degradado hace un gradiente entre varios colores y el último de ellos tiene una parada en el 51%.
+                <br/>
+                <pre>background: repeating-radial-gradient(left, circle, #ffc, #f96 30%, #963 40%, #630 51%);</pre>
+                <div class="cuadros" id="repeating_radial_gradient2"></div>
+            </div>
+            <hr>
+            <div>En este ejemplo hacemos un degradado con forma de elipse y va desde rojo a azul y luego de nuevo a
+                rojo. Al comenzar y acabar en rojo, se consigue que las repeticiones del degradado no tengan saltos
+                bruscos de un color al otro. Como se puede ver, el último color tiene una parada de color en 50 píxeles,
+                con lo que el degradado se repetirá de nuevo cada 50 puntos en la pantalla. El número de repeticiones
+                dependerá del tamaño del elemento donde se coloque este degradado.
+                <br/>
+                <pre>background: repeating-radial-gradient(20% 80%, ellipse closest-side, red, blue, red 50px);</pre>
+                <div class="cuadros" id="repeating_radial_gradient3"></div>
+            </div>
+            </p>
+        </article>
+    </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

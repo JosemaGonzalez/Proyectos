@@ -1,0 +1,163 @@
+body{
+    background: #263238;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+footer{
+    text-align: center;
+}
+
+footer div{
+    font-size: 1.5em;
+    color: #ECEFF1;
+    *color: white;
+    margin: 5% 0 1% 0;
+}
+
+h1{
+    text-align: center;
+    color: #ECEFF1;
+}
+
+h2{
+    text-align: center;
+    color: #ECEFF1;
+
+}
+
+h2 > img{
+    width: 2em;
+    height: 2em;
+}
+
+h3{
+    color: #ECEFF1;
+    text-align: center;
+}
+
+
+nav{
+    *background-color: #ECEFF1;
+    padding: 5px;
+}
+
+nav>ul>li{
+    background: #37474F;
+    border:2px solid #90A4AE;
+    border-radius: 5px;
+    *box-shadow: 5px 5px 5px #ECEFF1;
+    line-height: 50px;
+    width: 8%;
+    display: inline-block;
+    margin: 2px 0px;
+    box-shadow:4px 4px 5px #B0BEC5 inset;
+    transition:all 0.2s;
+}
+
+nav>ul>li:hover{
+    box-shadow: 1px 1px 3px #ECEFF1;
+    *background-color: white;
+    transform: scale(1.01,1.01);
+
+    background: #CFD8DC;
+    *box-shadow:4px 4px 5px #37474F inset;
+
+
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: #ECEFF1;
+    width: 100%;
+    font-size: 1em;
+    *transition:all 0.1s;
+}
+
+nav>ul>li:hover>a{
+    color: #263238;
+    font-weight: bold;
+}
+
+
+main{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section > article:nth-child(odd){
+    background-color: #CFD8DC;
+    padding: 10px;
+    *box-shadow: 1px 1px 1px #ECEFF1;
+}
+
+section > article:nth-child(even){
+    background-color: #ECEFF1;
+    *box-shadow: 3px 3px 3px #263238;
+
+    padding: 10px;
+}
+
+section>article>h3{
+    color:black;
+}
+
+section>article div{
+    text-align: justify;
+    padding: 0.6rem;
+}
+
+section>article p{
+    font-weight: bold;
+    font-size: 0.96rem;
+    text-align: justify;
+}
+
+
+span{
+    font-family: Sosa;
+    font-size: 2em;
+    color: #ECEFF1;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+
+.social{
+    width: 30px;
+    height: 30px;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+    transition:all 0.5s;
+}
+
+.social:hover{
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:1300px){
+    nav>ul>li{
+        width: 9%;
+    }
+}
+
+@media only screen and (max-width:1130px){
+    nav>ul>li{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    nav>ul>li{
+        width: 90%;
+    }
+}
+

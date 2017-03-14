@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+    <style type="text/css" media="screen">
+    .error {
+        color: red;
+    }
+    </style>
+    <!--Aqui se pone el enlace al javascript-->
+    <script src="js/validaciones.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/formulario.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio de formulario: Josema González
+</h1>
+        <noscript>Este navegador no es compatible</noscript>
+    </header>
+    <!-- /header -->
+    <main>
+        <form>
+            <p>Nombre:
+                <input type="text" id="nombre" placeholder="Nombre" autofocus>
+                <span class="error" id="errorNombre"></span>
+            </p>
+            <p>Apellidos:
+                <input type="text" id="apellidos" placeholder="Apellidos">
+                <span class="error" id="errorApellidos"></span>
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="hombre" value="hombre" checked>Hombre
+                <input type="radio" name="sexo" id="mujer" value="mujer">Mujer
+            </p>
+            <p>Nivel de Estudios:
+                <select name="nivel">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="eso">Eso</option>
+                    <option value="bachiller">Bachiller</option>
+                    <option value="fp1">Formación Profesional I</option>
+                    <option value="fp2">Formación Profesional II</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="master">Master</option>
+                </select>
+            </p>
+            <p>Idiomas:
+                <input type="checkbox" class="idiomas" id="castellano" value="castellano">Castellano
+                <input type="checkbox" class="idiomas" id="ingles" value="ingles">Inglés
+                <input type="checkbox" class="idiomas" id="frances" value="frances">Francés
+                <input type="checkbox" class="idiomas" id="aleman" value="aleman">Alemán
+                <input type="checkbox" class="idiomas" id="otro" value="otro">Otro
+                <span class="error" id="errorIdiomas"></span>
+            </p>
+            <p>Peso:
+                <input type="number" id="peso" min='1' max='200'>
+                <span class="error" id="errorPeso"></span>
+            </p>
+            <p>Email:
+                <input type="email" id="email" placeholder="email@email.com">
+                <span class="error" id="errorEmail"></span>
+            </p>
+            <p>DNI:
+                <input type="text" id="dni" maxlength="9" placeholder="12345678A">
+                <span class="error" id="errorDni"></span>
+            </p>
+            <p>Fecha Nacimiento:
+                <input type="text" id="fecha" placeholder="Escribe tu fecha de nacimiento dd/mm/aaaa">
+                <span class="error" id="errorFecha"></span>
+            </p>
+            <p>Teléfono:
+                <input type="text" id="telefono" min='0' max='999999999' placeholder="+34666555444">
+                <span class="error" id="errorTelefono"></span>
+            </p>
+            <p>CC:
+                <input type="text" id="cuenta" placeholder="ES91 2100 0418 4502 0005 1332" maxlength="29">
+                <span class="error" id="errorCuenta"></span>
+            </p>
+            <p>URL:
+                <input type="text" id="url" placeholder="www.algo.com">
+                <span class="error" id="errorUrl"></span>
+            </p>
+            <input type="button" id="submit" value="Enviar">
+                <span id="completo"></span>
+
+        </form>
+    </main>
+</body>
+
+</html>

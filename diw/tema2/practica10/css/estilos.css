@@ -1,0 +1,262 @@
+/**
+ * Cajas
+ */
+
+body {
+    background-color: #1EA617;
+    background: url(../images/football.jpg) repeat-y;
+    background-size: cover;
+    background-position: center top;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto!important;
+}
+
+main {
+    width: 75%;
+    float: left;
+}
+
+aside {
+    float: right;
+    width: 22%;
+}
+
+
+/**
+ * Cabecera
+ */
+
+h1 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 45px!important;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: #fff;
+}
+
+
+/**
+ *menú navegación
+ */
+
+#nav ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+}
+
+#nav ul li {
+    background: -webkit-linear-gradient(top left, #0B5D1E, rgba(13, 171, 118, 0.5));
+    background: -o-linear-gradient(top left, #0B5D1E, rgba(13, 171, 118, 0.5));
+    background: linear-gradient(to bottom right, #0B5D1E, rgba(13, 171, 118, 0.5));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100px;
+    padding:0.5em 0;
+}
+
+#nav ul li:hover {
+    background: -webkit-linear-gradient(top left, #293F14, rgba(13, 171, 118, 0.8));
+    background: -o-linear-gradient(top left, #293F14, rgba(13, 171, 118, 0.8));
+    background: linear-gradient(to bottom right, #293F14, rgba(13, 171, 118, 0.8));
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 2px 3px #000;
+
+    font-size: 20px;
+}
+
+
+/**
+ *Contenido
+ */
+
+section {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px 5px 5px 40px;
+    background-color: rgba(11, 93, 30, 0.5);
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+article>h3 {
+    text-align: left;
+    padding: 0 20px;
+    font-size: 30px;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 1px;
+}
+
+article>p {
+    color: #fff;
+    padding: 5px 20px;
+    text-align: justify;
+    text-shadow: 2px 1px 2px #000;
+}
+
+
+/**
+ * Contenido > paginación
+ */
+
+#paginacion {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(11, 93, 30, 0.5);
+    padding: 5px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#paginacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#paginacion ul li {
+    display: inline-block;
+}
+
+#paginacion a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 1px 2px #000;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+/**
+ * Contenido secundario
+ */
+
+aside>section>p {
+    font-size: 20px;
+    text-shadow: 2px 1px 2px #000;
+
+}
+
+
+/**
+ * Pié de página
+ */
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    text-shadow: 0px 2px 0px #424242;
+    font-size: 20px;
+}
+
+
+/**
+ * Imágenes
+*/
+
+#imagen {
+    width: 100px;
+    height: 82px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#imagen:hover {
+    animation-duration: 3s;
+    animation-name: rotar;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imagen2 {
+    float: left;
+    border-radius: 1em;
+    width: 12em;
+    height: 8em;
+    margin: .2em 1em 1em 0;
+}
+
+#imagen2:hover {
+    transition: transform 1s;
+    transform: scale(1.2, 1.2);
+}
+
+.rrss {
+    max-width: 65px;
+    max-height: 65px;
+    transition: transform 1s;
+}
+
+.rrss:hover {
+    transition: transform 1s;
+    transform: scale(1.2, 1.2);
+}
+
+#usuario {
+    margin-bottom: -3px;
+    width: 30px;
+    height: 18px;
+}
+
+#pass {
+    margin-bottom: -3px;
+    margin-right: 2px;
+    margin-left: 3px;
+    width: 25px;
+    height: 18px;
+}
+
+
+/**
+ * estilo input
+ */
+
+input[type="email"]:valid {
+    box-shadow: 0 0 0 1px #49D731;
+}
+
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+    box-shadow: 0 0 0 2px #D02828;
+}
+
+input[type="email"] {
+    width: 80%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px auto;
+    display: inline;
+}
+
+input[type="password"] {
+    width: 80%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px auto;
+    display: inline;
+}
+
+input[type="submit"] {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}

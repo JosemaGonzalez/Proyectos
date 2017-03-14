@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Transformaciones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+    <h2>TRANSFORMACIONES</h2>
+    <h3>CSS3 permite realizar transformaciones en los elementos de nuestra web. Podemos mover/trasladar, escalar (redimensionar/cambiar tamaño), rotar y torcer/deformar cualquier elemento. Las transformaciones pueden ser en 2D o en 3D.</h3>
+
+    <section>
+        
+        <article>
+            <h3>translate</h3>
+            <p>Traslada/mueve el elemento según las coordenadas x e y.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Su estructura es translate(x,y) dónde x se refiere a la cantidad de distancia que queremos mover el elemento sobre el eje x y la y a la cantidad de distancia que queremos mover el elemento sobre el eje y.</p>
+                transform:translate(20px,20px).
+                <p>Movemos 20px sobre el eje x y 20px sobre el eje y.</p>
+                <div class="original">Ejemplo Translate</div>
+                <div class="translate">Ejemplo Translate</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>translateX(x)</h3>
+            <p>Traslada/mueve el elemento sobre el eje X.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Su estructura es translateX(x) dónde x se refiere a la cantidad de distancia que queremos mover el elemento sobre el eje x.</p>
+                transform:translateX(200px).
+                <p>Movemos 200px sobre el eje x.</p>
+                <div class="original">Ejemplo TranslateX</div>
+                <div class="translateX">Ejemplo TranslateX</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>translateY(y)</h3>
+            <p>Traslada/mueve el elemento sobre el eje Y.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Su estructura es translateY(y) dónde y se refiere a la cantidad de distancia que queremos mover el elemento sobre el eje Y.</p>
+                transform:translateY(20px).
+                <p>Movemos 20px sobre el eje Y.</p>
+                <div class="original">Ejemplo TranslateY</div>
+                <div class="translateY">Ejemplo TranslateY</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>translateZ(z)</h3>
+            <p>Traslada/mueve el elemento sobre el eje Z.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Su estructura es translateZ(z) dónde z se refiere a la cantidad de distancia que queremos mover el elemento sobre el eje Z.</p>
+                transform:perspective(500px) rotateX(45deg) translateZ(40px);.
+                <p>Movemos 40px sobre el eje Z. Necesitamos utilizar una perspectiva distinta y una rotación sobre el eje x para poder ver correctamente la translación.</p>
+                <div class="original">Ejemplo TranslateZ</div>
+                <div class="translateZ">Ejemplo TranslateZ</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>translate3d</h3>
+            <p>Traslada/mueve el elemento añadiendo el eje Z.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p>Gracias al eje z ganaremos profundida en el efecto, pero para ello necesitaremos usar la propiedad perspective.</p>
+                transform: perspective(500px) translate3d(40px,0px,150px).
+                <p>Se mueve el elemento 40px sobre el eje de la x, se queda igual en el eje de la y y 150px sobre el eje de la z. Gracias a perspective podemos ver como el elemento da la impresión de que está más cerca nuestra que el original.</p>
+                <div class="original">Ejemplo Translate3D</div>
+                <div class="translate3D">Ejemplo Translate3D</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>scale(x,y)</h3>
+            <p>Escala el elemento según las unidades dadas.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Según las unidades que usemos obtendremos un tamaño diferente en el elemento. </p>
+                <p>Si usamos el valor 1, el elemento estaría al 100%(tamaño original), si el valor es menor que 1, el elemento sería más pequeño que el original y por último, si el valor es mayor que 1, el elemento sería más grande que el original. Los valores negativos invierten el elemento según el eje.</p>
+                Algunos ejemplos son: 
+                <br/>
+                <ul>
+                <li>scale(1.75, 1.75)(75% más grande en ambos ejes)</li>
+                <li>scale(0.50,0.50)(50% más pequeño en ambos ejes)</li>
+                </ul>
+                <br/>
+                <p>En nuestro caso:</p>
+                transform:scale(-0.75,0.75).
+                <p> Hemos conseguido disminuir el tamaño del elemento un 25% y además, invertir el elemento sobre el eje de la x al poner el valor en negativo.</p>
+                <div class="original">Ejemplo Scale</div>
+                <div class="scale">Ejemplo Scale</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>scaleX(x)</h3>
+            <p>Escala el elemento según las unidades dadas pero sólo en el eje de la x.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Cambiamos el tamaño del elemento pero sólo sobre el eje de la x.</p>
+                transform:scaleX(1.25).
+                <p> El elemento es un 25% más grande sólo por el eje de la x (el ancho del elemento es un 25% mayor).</p>
+                <div class="original">Ejemplo ScaleX</div>
+                <div class="scaleX">Ejemplo ScaleX</div>
+                </div>
+            </div>
+        </article>
+
+         <article>
+            <h3>scaleY(y)</h3>
+            <p>Escala el elemento según las unidades dadas pero sólo en el eje de la y.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Cambiamos el tamaño del elemento pero sólo sobre el eje de la y.</p>
+                transform:scaleY(1.40).
+                <p> El elemento es un 40% más grande sólo por el eje de la y (el alto del elemento es un 40% mayor).</p>
+                <div class="original">Ejemplo ScaleY</div>
+                <div class="scaleY">Ejemplo ScaleY</div>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <h3>scaleZ(z)</h3>
+            <p>Escala el elemento según las unidades dadas pero sólo en el eje de la z.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Cambiamos el tamaño del elemento pero sólo sobre el eje de la z.</p>
+                transform: perspective(500px) scaleZ(4) rotateX(45deg);
+                <p> El elemento es 4 veces más grande sólo por el eje de la z (su profundidad es 4 veces mayor). Para ver el efecto correctamente hemos aplicado una perspectiva de 500px y una rotación sobre el eje x de 45 grados.</p>
+                <div class="original">Ejemplo ScaleZ</div>
+                <div class="scaleZ">Ejemplo ScaleZ</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>scale3D</h3>
+            <p>Escala el elemento en todos los ejes.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> El efecto es parecido a scaleZ pero en este caso, tenemos la posibilidad de escalar el eje X y Z.</p>
+                transform: scale3d(1.5, 1.25, 2) perspective(500px) rotateX(45deg);
+                <p> Para ver el efecto correctamente hemos aplicado una perspectiva de 500px y una rotación sobre el eje x de 45 grados.</p>
+                <div class="original">Ejemplo Scale3D</div>
+                <div class="scale3D">Ejemplo Scale3D</div>
+                </div>
+            </div>
+        </article>
+        
+        <article>
+            <h3>rotate(angulo)</h3>
+            <p>Rota el elemento según los grados dados (deg).</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> A partir de 360º, el efecto visual sería el mismo a 0º. Sin embargo, si aplicamos una transición veremos como el elemento da una vuelta completa.</p>
+                transform:rotate(180deg);
+                <p> Rotamos el elemento 180º por lo que aparece invertido.</p>
+                <div class="original">Ejemplo Rotate</div>
+                <div class="rotate">Ejemplo Rotate</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>rotateX(angulo)</h3>
+            <p>Rota el elemento según los grados dados (deg) pero sólo por el eje X.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Rota el elemento a través del eje X.</p>
+               transform:rotateX(40deg);
+                <p> Rotamos el elemento sobre el eje X 40 grados. Cuando el ángulo es 90º o 270º, el elemento desaparece porque formaría un ángulo recto con la pantalla.</p>
+                <div class="original">Ejemplo RotateX</div>
+                <div class="rotateX">Ejemplo RotateX</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>rotateY(angulo)</h3>
+            <p>Rota el elemento según los grados dados (deg) pero sólo por el eje Y.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Rota el elemento a través del eje Y.</p>
+                transform:rotateY(60deg);
+                <p> Rotamos el elemento sobre el eje Y 60 grados. Al igual que rotateX, si usamos ángulos como 90º y 270º, el elemento desaparece porque forma un ángulo recto con respecto a la pantalla.</p>
+                <div class="original">Ejemplo RotateY</div>
+                <div class="rotateY">Ejemplo RotateY</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>rotateZ(angulo)</h3>
+            <p>Rota el elemento según los grados dados (deg) pero sólo por el eje Z.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Rota el elemento a través del eje Z.</p>
+                transform:rotateZ(30deg);
+                <p> Rotamos el elemento sobre el eje Z 30 grados.</p>
+                <div class="original">Ejemplo RotateZ</div>
+                <div class="rotateZ">Ejemplo RotateZ</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h3>rotate3d(x,y,z,ángulo)</h3>
+            <p>Rota el elemento en función de los valores para el eje x, eje y, eje z y el ángulo (el eje Y está invertido).</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Con este efecto conseguimos que el elemento esté en 3D gracias a la incorporación de un ángulo a la propiedad.</p>
+                transform: rotate3d(1, -1, 1, 60deg);
+                </br>
+                <div class="original">Ejemplo Rotate3D</div>
+                <div class="rotate3D">Ejemplo Rotate3D</div>
+            </div>
+        </article>
+
+        <article>
+            <h3>perspective</h3>
+            <p>Define una perspectiva para ver el elemento en 3D.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Gracias a esta propiedad, vamos a poder ver los elementos en 3D.</p>
+                transform: perspective(500px) rotateX(40deg);
+                <p>Para poder ver correctamente este efecto, necesitaremos rotar uno de los ejes.</p>
+                </br>
+                <div class="original">Ejemplo Perspective</div>
+                <div class="perspective">Ejemplo Perspective</div>
+            </div>
+        </article>
+
+        <article>
+            <h3>skewX</h3>
+            <p>Deforma(estira) el elemento sobre el eje X.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Realiza una deformación sobre el eje X para estirar el elemento según los grados que le indiquemos.</p>
+                transform:skewX(30deg);
+                </br>
+                <div class="original">Ejemplo SkewX</div>
+                <div class="skewX">Ejemplo SkewX</div>
+            </div>
+        </article>
+
+        <article>
+            <h3>skewY</h3>
+            <p>Deforma(estira) el elemento sobre el eje Y.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Realiza una deformación sobre el eje Y para estirar el elemento según los grados que le indiquemos.</p>
+                transform:skewY(10deg);
+                </br>
+                <div class="original">Ejemplo SkewY</div>
+                <div class="skewY">Ejemplo SkewY</div>
+            </div>
+        </article>
+
+        <article>
+            <h3>skew(x,y)</h3>
+            <p>Deforma(estira) el elemento sobre ambos ejes.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p> Realiza una deformación sobre el eje X e Y para estirar el elemento según los grados que le indiquemos.</p>
+                transform:skew(10deg, 10deg);
+                </br>
+                <div class="original">Ejemplo Skew</div>
+                <div class="skew">Ejemplo Skew</div>
+            </div>
+        </article>
+
+        <article>
+            <h3>matrix</h3>
+            <p>Combina todas las transformaciones 2D en una sola.</p>
+            <div>
+                <div class="descripcionTransformaciones"><p>Su estructura es la siguiente:</p>
+                <p>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
+                <div class="original">Ejemplo Matrix</div>
+                <div class="matrix">Ejemplo Matrix</div>
+                </div>
+            </div>
+        </article>
+
+
+
+       
+    </section>   
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

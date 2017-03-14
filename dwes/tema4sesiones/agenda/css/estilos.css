@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    font-family: Cormorant Garamond;
+    width: 90%;
+    color: #000;
+    text-align: center;
+    margin: 0 auto!important;
+}
+
+input {
+    font-family: Cormorant Garamond!important;
+}
+
+h1 {
+    font-size: 70px!important;
+}
+
+
+/**
+ *menú navegación
+ */
+
+nav ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+nav ul li {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 20px;
+}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    font-family: Cormorant Garamond;
+    width: 90%;
+    color: #000;
+    text-align: center;
+    margin: 0 auto!important;
+}
+
+input {
+    font-family: Cormorant Garamond!important;
+}
+
+h1 {
+    font-size: 70px!important;
+}
+
+#lista {
+    text-align: center;
+}
+
+#lista>table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 20px;
+}

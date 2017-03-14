@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/butto7"
+                android:id="@+id/butto7"
+                style="@style/EstiloBoton"
+                android:onClick="numeros" />
+
+            <Button
+                android:text="@string/butto8"
+                style="@style/EstiloBoton"
+                android:id="@+id/butto8"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto9"
+                android:id="@+id/butto9"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="/"
+                android:id="@+id/buttodivi"
+                android:onClick="operaciones" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto4"
+                android:id="@+id/butto4"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto5"
+                android:id="@+id/butto5"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto6"
+                android:id="@+id/butto6"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="X"
+                android:id="@+id/buttomulti"
+                android:onClick="operaciones" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto1"
+                android:id="@+id/butto1"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto2"
+                android:id="@+id/butto2"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto3"
+                android:id="@+id/butto3"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="-"
+                android:id="@+id/buttorest"
+                android:onClick="operaciones" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="."
+                android:id="@+id/buttocoma"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="@string/butto0"
+                android:id="@+id/butto0"
+                android:onClick="numeros" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="%"
+                android:id="@+id/buttoporc"
+                android:onClick="operaciones" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="+"
+                android:id="@+id/buttosuma"
+                android:onClick="operaciones" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="="
+                android:id="@+id/buttoigual"
+                android:onClick="igual" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="AC"
+                android:id="@+id/buttoac"
+                android:background="#dff53f3f"
+                android:onClick="teclaAC" />
+
+            <Button
+                style="@style/EstiloBoton"
+                android:text="C"
+                android:id="@+id/buttoC"
+                android:background="#dff53f3f"
+                android:onClick="teclaC" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textView"
+        android:background="#cdc9c9"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:enabled="false"
+        android:editable="false"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="false"
+        android:textAlignment="textEnd" />
+
+</RelativeLayout>

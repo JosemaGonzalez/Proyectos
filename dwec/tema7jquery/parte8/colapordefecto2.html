@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+    </style>
+    <!--Aqui se pone el enlace al javascript-->
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/colapordefecto2.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+    body {
+        font-size: 0.75em;
+        font-family: tahoma, verdana, sans-serif;
+    }
+
+    .notar {
+        color: #339;
+    }
+
+    #mensaje {
+        margin: 20px 5px;
+    }
+
+    #micapa {
+        left: 200px;
+        top: 150px;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #3d3;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cola 2: Josema González
+        </h1>
+        <noscript>Este navegador no es compatible</noscript>
+    </header>
+    <!-- /header -->
+    <main>
+        <button id="botonfade">Muestra y luego oculta con fadeIn y fadeOut</button>
+        <button id="botonslide">Muestra y luego oculta con slideUp slideDown</button>
+        <button id="botontamanocola">Muestra el número de funciones en cola ahora mismo</button>
+        <div id="mensaje">
+            En estos momentos no hay funciones de efectos en la cola por defecto.
+            <br>
+            <span class="notar">Pulsa repetidas veces los botones de arriba para ir metiendo funciones en la cola</span>
+        </div>
+        <div id="micapa"></div>
+    </main>
+</body>
+
+</html>

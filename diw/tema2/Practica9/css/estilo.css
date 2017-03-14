@@ -1,0 +1,242 @@
+/**Fuentes*/
+
+@font-face {
+    font-family: "UbuntuRegular";
+    src: url(fuentes/Ubuntu-R.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuBold";
+    src: url(fuentes/Ubuntu-B.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuBoldItalic";
+    src: url(fuentes/Ubuntu-BI.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "UbuntuItalic";
+    src: url(fuentes/Ubuntu-I.ttf) format("truetype");
+}
+
+
+/** Tamaño letras*/
+
+h1 {
+    font-family: UbuntuBold;
+    margin-left: 100px;
+}
+
+h2 {
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: UbuntuRegular;
+    text-align: justify;
+}
+
+
+/**Cajas*/
+
+body {
+    margin: 0;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    background-color: grey;
+    background: url(../img/fondo.jpg), url(../img/blanco.png), url(../img/azul.png), url(../img/negro.png);
+}
+
+#sobremi {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 5px 0 25px 0;
+}
+
+#principal {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#cajaheader {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#contenido {
+    box-shadow: 0 0 10px #fff;
+    margin-top: 120px;
+    border: 1px solid #fff;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/**Menu navegacion */
+
+nav ul li {
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #fff;
+    float: right;
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    margin: 2px;
+    border-radius: 0 10px;
+}
+
+nav ul li:hover {
+    transition: box-shadow 1s;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 50px #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/**contenido */
+
+article>p,
+article>h3,
+article>h4,
+article>time {
+    margin-left: 150px;
+    padding-right: 10px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px #000;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 0 20px;
+}
+
+article:hover {
+    transform: scale(1.1);
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 50px #fff;
+    transition-property: color box-shadow transform;
+    transition-duration: 3s;
+}
+
+section {
+    width: 70%;
+    margin: 10px;
+}
+
+time {
+    font-family: UbuntuItalic;
+    float: right;
+    padding-right: 5px;
+}
+
+
+/**Imagenes */
+
+#logo {
+    text-align: left;
+}
+
+#tipo {
+    position: absolute;
+    left: 150px;
+    text-align: left;
+}
+
+#mifoto {
+    background-image: url(../img/logo.svg);
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    float: left;
+}
+
+#mifoto:hover {
+    transition: transform 2s;
+    transform: rotate(360deg);
+}
+
+#logotrailer {
+    background-image: url(../fotos/trailer.jpg);
+}
+
+#logojamendo {
+    background-image: url(../fotos/jamendo.jpg);
+}
+
+#logosesiones {
+    background-image: url(../fotos/dawblog.jpg);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    position: absolute;
+    transform: translate(-150, 0);
+    border: 1px solid #fff;
+    border-radius: 5px 0;
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+
+/**Contenido secundario*/
+
+aside {
+    box-shadow: 0 0 15px #fff;
+    margin: 0;
+    padding: 5px;
+    width: 25%;
+    text-align: left;
+    float: right;
+    border: 1px solid #fff;
+    border-radius: 0 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+aside ul {
+    display: inline;
+    list-style: none;
+}
+
+
+/**pie */
+
+footer > h6 {
+    text-align: center;
+}
+
+footer {
+    border: 1px solid #fff;
+    border-radius: 0 0 0 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #fff;
+}

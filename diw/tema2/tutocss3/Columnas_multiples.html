@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Columnas Múltiples</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+    <h2>Columnas múltiples.</h2>
+    <h3>En este apartado trataremos el uso de las columnas en CSS3 y sus distintas propiedades. </br>Dependiendo del navegador debemos tener cuidado ya que quizás necesitemos indicarlo (-moz para Mozilla Firefox, -webkit para Chrome, Safari u Opera).
+    </br></br>Índice Propiedades: 
+    <ul>
+         <!--Anclado a los 3 elementos principales de Columnas Múltiples -->
+            
+            <li><a href="#anchorCount">Column-count</a></li>
+            <li><a href="#anchorGap">Column-gap</a></li>
+            <li><a href="#anchorRule">Column-rule</a></li>
+        </ul>
+    </h3>
+
+
+    <section>
+        <article>
+            <h3>Compatibilidades con los navegadores actuales.</h3>
+            <p>
+                <img src="img/caniuseColumn.jpg">
+            </p>
+            
+        </article>
+        <article>
+            <h3 id="anchorCount">Column-count</h3>
+
+            <p>Esta propiedad especifica la cantidad de columnas en la que se dividirá un elemento.</p>
+            
+             <p>
+                -webkit-column-count: 4; /* Para Chrome, Safari, Opera */<br>
+                -moz-column-count: 4; /* Para Firefox */<br>
+                column-count: 4;<br>
+                 
+             </p>   
+
+                </ul>
+            </p>
+            
+            
+            <div>
+                <p>El siguiente ejemplo muestra un elemento dividido en 4 columnas.</p>
+                <p id="columncount4">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+                Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+                Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            </div>
+        </article>
+
+        <article>
+            <h3 id="anchorGap">Column gap</h3>
+                <p>Esta propiedad especifica la distancia del espaciado entre columnas. En el siguiente ejemplo vemos un párrafo de 4 columnas y espaciado de 50 pixeles.</p>
+                <p>
+                    -webkit-column-gap: 50px;/* Para Chrome, Safari, Opera */<br>
+                    -moz-column-gap: 50px; /* Para Firefox */<br>
+                    column-gap: 50px<br>
+                    </ul>
+                    
+                </p>
+                <div id="columngap50" class="cuatroColumnas">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+
+                You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+                 </div>
+            </div>
+        </article>
+
+        <article>
+            <h3 id="anchorRule">Column-rule</h3>
+            
+                <p>Propiedades: </p>
+                <p> 
+
+                    column-rule-width<br>
+                    column-rule-style<br>
+                    column-rule-color<br>
+                          
+                            
+                </p>
+                <p>Esta propiedad especifica el estilo de la línea de separación de las columnas. En el siguiente ejemplo aplicamos en una misma línea una anchura de la línea separadora de <i>6px</i> de ancho. estilo de línea <i>sólida</i> y de color <i>rojo</i>.</p>
+
+                <p>
+                    
+                    webkit-column-rule: 6px solid red;   /* Para Chrome, Safari, Opera */<br>
+                    -moz-column-rule: 6px solid red;      /* Para Firefox */<br>
+                    column-rule: 6px solid red;<br>
+                    
+                </p>
+
+                 
+
+
+                <div id="columnrule6" class="cuatroColumnas">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+
+                You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+                 </div>
+            
+        </article>
+       <article>
+                <h3>column-rule-width</h3>
+                <p>Esta propiedad especifica la anchura de la línea entre columnas  </p>
+                <p>Sus valores son:<br>
+                    thin: Anchura fina.<br>
+                    thick: Anchura gruesa.<br>
+                    length: Nosotros definimos el tamaño.<br>
+                            
+                <p>En el ejemplo aplicamos una anchura de la línea de valor <i>thin</i>.</br>
+                     column-rule-width: thin</br>
+                </p>
+
+                <div id="widthThin" class="cuatroColumnas">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+
+                You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</div>
+
+                <p>En el siguiente ejemplo aplicamos una anchura de la línea de valor <b>thick</b>.</br>
+                    column-rule-width: thick</br>
+                </p>
+
+                <div id="widthThick" class="cuatroColumnas">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+
+                My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</div>
+
+                <p>En el siguiente ejemplo aplicamos una anchura de línea de valor <b>length</b>, es decir nosotros indicamos el tamaño del ancho de la línea de separación de 12px.Los valores pueden ser dados en "pixeles" o "em", aunque se recomienda usar pixeles como medida.</br>
+                    column-rule-width: 12px</br>
+                </p>
+    
+    
+                <div id="widthLength" class="cuatroColumnas">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+
+                You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</div>
+
+            </article>
+            <article>
+                <h3>column-rule-style</h3>
+                    <p>Esta propiedad especifica el estilo de la línea entre columnas <br>
+                    Sus posibles valores:<br>
+                        <b>none</b>: no hay línea separación.<br>
+                        <b>hidden</b>: define una línea de separación oculta.<br> 
+                        <b>dotted</b>: línea de separación de tipo puntos.<br>
+                        <b>dashed</b>: línea de separación discontinua.<br>
+                        <b>solid</b>: línea de separación continua. <br>
+                        <b>double</b>: doble línea.<br>
+                    A continuación aplicamos un estilo <i>dotted</i> a la línea.<br>
+                        column-rule-style: dotted.<br>
+                    </p>
+    
+    
+                    <div id="styleDotted" class="cuatroColumnas">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+
+                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+                    </div>
+                    <p>A continuación aplicamos un estilo <i>dashed</i> a la línea.<br>
+                        column-rule-style: dashed <br>
+                    </p>
+    
+    
+                    <div id="styleDashed" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+                    </div>
+                    <p>A continuación aplicamos un estilo <i>solid</i> a la línea.<br>
+                        column-rule-style: solid ;/* Para Chrome, Safari, Opera */<br>
+                    </p>
+    
+    
+                    <div id="styleSolid" class="cuatroColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+                    </div>
+
+                    <p>A continuación aplicamos un estilo <i>double</i> a la línea.<br>
+                        column-rule-style: double <br>
+                    </p>
+                    <div id="styleDouble" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+                    </div>
+
+
+                    <p>A continuación aplicamos un estilo <i>hidden</i> a la línea.<br>
+                        column-rule-style: hidden<br>
+                    </p>
+    
+    
+                    <div id="styleHidden" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+                    </div>
+
+            </article>
+            
+            <article>
+                <h3>column-rule-color</h3>
+                    <p>Esta propiedad especifica el color de la línea entre columnas. Su valor por defecto es el color del elemento. <br>
+                    El color puede ser inicializado de distintas formas:<br>
+                        El nombre del color: red, blue, yellow, etc.<br>
+                            Su valor hexadecimal: #000000, #FFFFFF, etc.<br>
+                            Su valor rgb: rgb(120,240,255), rgba(255,240,20,0.5), etc.<br>
+                            Valor <i>initial</i>: valor por defecto.<br>
+                    A continuación aplicamos un color ya definido <i>yellow</i> a la línea.<br> 
+                        column-rule-color: yellow.<br>
+                    </p>
+                    <div id="colorAma" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. </div>
+
+                    <p>En el siguiente ejemplo aplicamos un color hexadecimal <i>#CC6900</i> a la línea.<br> 
+                        column-rule-color: #CC6900<br>
+                    
+                    <div id="colorHexa" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </div>
+                    <p>En el siguiente ejemplo aplicamos un color RGB <i>rgb(69,255,69)</i> a la línea.<br>
+                        column-rule-color: rgb(69,255,69)<br>
+
+                    <div id="colorRGB" class="cuatroColumnas">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </div>
+                </article>
+    </section>   
+   
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

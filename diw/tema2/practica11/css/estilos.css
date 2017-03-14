@@ -1,0 +1,462 @@
+/**
+ * Estilos principales
+ */
+
+
+/*
+ * Tamaños y tipos de letra
+ */
+
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: left;
+    margin-top: -25px;
+}
+
+
+/*
+ *Caja principal
+ */
+
+body {
+    font-size: 1.2em;
+    background-image: url('../images/fondo.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    color: #fff;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto!important;
+}
+
+main {
+    margin-top: 4%;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+
+/**
+ * Botones laterales (fijos)
+ */
+
+aside {
+    position: fixed;
+    width: 10%;
+}
+
+aside input {
+    position: fixed;
+    right: 1em;
+    top: 3em;
+}
+
+#top {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    transition: transform 1s;
+}
+
+#new {
+    position: fixed;
+    right: 14em;
+    top: 2em;
+    transition: transform 1s;
+}
+
+#abrir {
+    position: fixed;
+    right: 2em;
+    top: 4em;
+    transition: transform 1s;
+}
+
+#cerrar>img {
+    width: 2em!important;
+    height: 2em!important;
+}
+
+#cerrar {
+    display: none;
+    position: fixed;
+    right: 12em;
+    top: 3em;
+    transition: transform 1s;
+}
+
+#new:hover,
+#top:hover,
+#abrir:hover,
+#cerrar:hover {
+    transition: transform 1s;
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+aside a>img {
+    width: 3em;
+    height: 3em;
+}
+
+
+/**
+ *Menu (fijo)
+ */
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    border: 1px solid #fff;
+    width: 0px;
+    height: 360px;
+    background: #F0CF65;
+    background-image: url('../images/lineahorizontal.png');
+    background-repeat: repeat-y;
+    background-size: 100% 6%;
+    background-origin: border-box;
+    border-radius: 15px 0 0 20px;
+    box-shadow: -2px -2px 10px #FFFFFF;
+}
+
+#menu ul {
+    bottom: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#menu ul li {
+    list-style: none;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#menu ul li:last-child {
+    border: 0;
+    border-radius: 0 0 0 20px;
+}
+
+#menu ul li:last-child:hover {
+    padding-bottom: 8px;
+}
+
+#menu ul li:hover {
+    background: #FCCA6A;
+    background-image: url('../images/lineahorizontal.png');
+    background-repeat: repeat-y;
+    background-size: 100% 50%;
+    background-origin: border-box;
+    font-weight: bold;
+}
+
+#menu ul li a {
+    padding: 8px 85px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu p {
+    color: #000;
+    position: fixed;
+    top: 90px;
+    right: 70px;
+}
+
+#menu input {
+    position: fixed;
+    width: 210px;
+    right: 0.2em;
+    top: 3em;
+}
+
+#menu a>img {
+    border: 1px solid #3A3A3A;
+    padding: 0;
+    border-radius: 50%;
+    position: fixed;
+    width: 2em;
+    height: 2em;
+    top: 100px;
+    right: 170px;
+    transition: transform 1s;
+}
+
+#menu a img:hover {
+    position: fixed;
+    width: 2em;
+    height: 2em;
+    top: 100px;
+    right: 170px;
+    transition: transform 1s;
+    transform: scale(1.5, 1.5);
+}
+
+
+/**
+ * Cajas del main
+ */
+
+section {
+    display: inline-block!important;
+    width: 28%;
+    height: 150px;
+    margin-top: 40px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    background: #FAF49D;
+    background-image: url('../images/lineahorizontal.png');
+    background-repeat: repeat-y;
+    background-size: 100% 9%;
+    background-origin: border-box;
+    padding: 15px;
+    color: #000;
+    border-radius: 20px 10px 50px 3px;
+    box-shadow: 3px 4px 10px #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+section>a {
+    font-size: 22px;
+}
+
+section>a:hover {
+    font-weight: bold;
+}
+
+section>article>a {
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+section>article>time {
+    width: 15%;
+    margin-right: -35px;
+    font-size: 16px;
+}
+
+
+/*
+ * Pines
+ */
+
+section>img {
+    width: 25%;
+    margin-right: 15%;
+    margin-top: -200px;
+}
+
+
+/*
+ * Caja main ultima
+ */
+
+#ult {
+    background-color: #FCCA6A;
+    vertical-align: top;
+}
+
+#ult>article>a {
+    width: 45%;
+}
+
+
+/**
+ * Estilos Paginas
+ */
+
+
+/**
+ * secciones
+ */
+
+#secciones2 {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    margin-top: 30px;
+}
+
+#secciones {
+    display: inline-block;
+    width: 80%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#secciones>img,
+#secciones2>img,
+#formulario>img {
+    width: 12%;
+    margin-right: 12%;
+    margin-top: -200px;
+}
+
+#secciones>article>img {
+    width: 3em;
+    margin-right: -10px;
+    margin-left: 10px;
+    float: right;
+    margin-top: -10px;
+    transition: transform 1s;
+}
+
+#secciones>article>img:hover {
+    transition: transform 1s;
+    transform: scale(1.1, 1.1);
+}
+
+#secciones>article>p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#secciones>article>h3 {
+    margin: 0 auto;
+    margin-top: -25px;
+    font-size: 24px;
+}
+
+#secciones>article>a {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 10%;
+    float: right;
+}
+
+#secciones>article>a:hover {
+    font-weight: bold;
+}
+
+#secciones>article>time {
+    width: 15%;
+    float: right;
+    font-size: 22px;
+    margin-right: 5px;
+    margin-top: -25px;
+}
+
+
+/**
+ * Contenido > paginación
+ */
+
+#paginacion {
+    display: inline-block;
+    width: 25%;
+    height: 30px;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 0 20%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #FAF49D;
+    background-image: url('../images/lineahorizontal.png');
+    background-repeat: repeat-y;
+    background-size: 100% 50%;
+    background-origin: border-box;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px #FFFFFF;
+}
+
+#paginacion img {
+    position: absolute;
+    width: 15%;
+    left: -25px;
+    top: -40px;
+}
+
+#paginacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#paginacion ul li {
+    display: inline-block;
+}
+
+#paginacion a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+/**
+ *Formulario
+ */
+
+#formulario {
+    display: inline-block;
+    width: 60%;
+    height: 30%;
+    margin-top: 30px;
+}
+#form{
+    margin-top: -10px;
+}
+#form p {
+    margin: 10px 25px;
+    float: left;
+}
+
+#form p:last-child {
+    float: right;
+}
+
+#form p:first-child {
+    margin: 10px 0px 30px;
+}
+
+select {
+    width: 200px;
+    height: 155px;
+    vertical-align: text-top;
+}
+
+textarea {
+    vertical-align: text-top;
+    width: 300px;
+    height: 150px;
+}
+
+#form input[type="text"]:valid {
+    box-shadow: 0 0 0 1px #17D817;
+}
+
+#form input[type="text"]:invalid {
+    box-shadow: 0 0 0 2px #ED0C0C;
+}
+#form input[type="text"],#form input[type="submit"],#form textarea {
+    font-family: 'Dosis', sans-serif;
+}

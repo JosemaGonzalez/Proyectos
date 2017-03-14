@@ -1,0 +1,193 @@
+/*
+Principal
+ */
+
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 13.5px;
+    color: #474f51;
+    background: #D4D9DD url('imagenes/bg03.jpg');
+}
+
+main {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    width: 50%;
+}
+
+#contenedor {
+    display: inline-block;
+    background: #f7f7f7 url('imagenes/bg04.png');
+    border: 1px solid #fff;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#izquierda {
+    display: inline-block;
+    width: 20%;
+    margin: 0px 20px;
+}
+
+#derecha {
+	vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0px 20px;
+
+}
+
+
+/*
+secciones
+ */
+
+section {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 2px 1px rgba(128, 128, 128, 0.9);
+    padding: 10px;
+}
+
+h2 {
+    color: #373f42;
+    transition: transform 3s;
+    padding:0 10px;
+
+}
+
+h3 {
+    color: #96a9b5;
+    transition: transform 4s;
+    padding:10px;
+
+}
+
+p {
+    text-align: justify;
+    padding:10px;
+    line-height: 24px;
+}
+
+a {
+    color: #ED391B;
+}
+
+section li {
+    border: 1px solid #e2e6e8;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    padding: 5px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*
+Menú secundario
+ */
+
+aside {
+    vertical-align: top;
+    margin: 20px;
+}
+
+
+/*
+Menu navegación
+ */
+
+header {
+    height: 155px;
+    background: #3B4346 url('imagenes/bg01.jpg');
+    border: 5px solid #272d30;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 5px;
+    text-shadow: 2px 2px 2px grey;
+    transition: transform 3s;
+}
+
+h1 a {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 30px;
+}
+
+nav li a {
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+    color: #c6c8c8;
+    font-size: 25px;
+}
+
+nav li a:hover {
+    color: #f6f8f8;
+}
+
+
+/*
+pié
+ */
+
+footer h2 {
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/**
+ Efectos
+ */
+
+nav ul li {
+    transition: transform 1s;
+}
+
+nav ul li:hover {
+    transition: transform 1s;
+    transform: scale(1.1, 1.1);
+}
+h1:hover {
+    transition: transform 1s;
+    transform: scale(0.5, 0.5) translateX(1000px) ;
+}
+#contenedor h2:hover {
+    transition: transform 1s;
+    transform: translateX(50px);
+}
+h3:hover {
+    transition: transform 1s;
+    transform: translateX(90px);
+}
+nav ul li:hover {
+    transition: transform 1s;
+    transform: scale(1.1, 1.1);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas Josema</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript">
+    function cargaContextoCanvas(idCanvas) {
+        var elemento = document.getElementById(idCanvas);
+        if (elemento && elemento.getContext) {
+            var contexto = elemento.getContext('2d');
+            if (contexto) {
+                return contexto;
+            }
+        }
+        return FALSE;
+    }
+
+    function aleatorio(inferior, superior) {
+        numPosibilidades = superior - inferior;
+        aleat = Math.random() * numPosibilidades;
+        aleat = Math.floor(aleat);
+        return parseInt(inferior) + aleat;
+    }
+
+    function colorAleatorio() {
+        return "rgb(" + aleatorio(0, 255) + "," + aleatorio(0, 255) + "," + aleatorio(0, 255) + ")";
+    }
+
+    function cuadradosAleatorios() {
+        for (i = 0; i <= 300; i += 10) {
+            for (j = 0; j <= 250; j += 10) {
+                contexto.fillStyle = colorAleatorio();
+                contexto.fillRect(i, j, 10, 10);
+            }
+        }
+    }
+    var contexto;
+    window.onload = function() {
+
+        contexto = cargaContextoCanvas('canvas1');
+        if (contexto) {
+            //Accedo al contexto de '2d' de este canvas, necesario para dibujar
+            // if (contexto) {
+            setInterval("cuadradosAleatorios(contexto)", 1000);
+            /* contexto.fillStyle = '#29BA96';
+                for (i = 0; i <= 100; i += 10) {
+                    contexto.fillRect(i, i, 5, 5);
+                }
+                contexto.strokeStyle = '#2EDFE1';
+                for (i = 100; i >= 0; i -= 10) {
+                    contexto.strokeRect(i, 100 - i, 5, 5);
+                }
+            }*/
+        }
+
+    }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas1" height="200" width="200">
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>

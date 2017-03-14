@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+
+</head>
+
+<body>
+    <ul id="lista">
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ul>
+</body>
+<script>
+    var lista = document.getElementById("lista");
+    lista.innerHTML += "<li>Elemento</li>";
+    var lista = document.getElementById("lista");
+    lista.insertAdjacentHTML("beforeend", "<li>Elemento</li>");
+    </script>
+</html>

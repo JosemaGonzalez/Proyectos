@@ -1,0 +1,21 @@
+window.addEventListener("load", function() {
+	let html = document.getElementsByTagName("html")[0];
+	let body = html.lastChild;
+	let head = html.childNodes[0];
+	let hijosBody = document.getElementsByTagName("body")[0].childNodes.length;
+	let Parrafo = document.createElement("p");
+	let textoParrafo = document.createTextNode("Hola a todos");
+	Parrafo.appendChild(textoParrafo);
+	body.appendChild(Parrafo);
+	let OL = document.createElement("ol");
+	let LIuno = document.createElement("li");
+	let textoLIuno = document.createTextNode("Josema");
+	let LIdos = document.createElement("li");
+	let textoLIdos = document.createTextNode("González");
+	LIdos.appendChild(textoLIdos);
+	LIuno.appendChild(textoLIuno);
+	OL.appendChild(LIuno);
+	OL.appendChild(LIdos);
+	body.insertBefore(OL, body.childNodes[0]);
+	body.removeChild(body.childNodes[body.childNodes.length - 3]);
+});

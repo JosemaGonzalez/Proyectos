@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas Josema</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript">
+    function cargaContextoCanvas(idCanvas) {
+        var elemento = document.getElementById(idCanvas);
+        if (elemento && elemento.getContext) {
+            var contexto = elemento.getContext('2d');
+            if (contexto) {
+                return contexto;
+            }
+        }
+        return FALSE;
+    }
+
+
+    window.onload = function() {
+
+        var contexto2 = cargaContextoCanvas('canvas1');
+            if (contexto2) {
+        contexto2.strokeStyle = '#000000';
+        contexto2.beginPath();
+        contexto2.moveTo(0, 0);
+        contexto2.lineTo(10, 10);
+        contexto2.moveTo(10, 0);
+        contexto2.lineTo(0, 10);
+        contexto2.moveTo(5, 0);
+        contexto2.lineTo(5, 10);
+        contexto2.moveTo(0, 5);
+        contexto2.lineTo(10, 5);
+        contexto2.stroke();
+    }
+
+    }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas1" height="2000" width="2000">
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>

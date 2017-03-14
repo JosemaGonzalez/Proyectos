@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tutorial CSS3 alumnos IES Gran Capitán 2º DAW 2016/2017 - Fondos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>TUTORIAL CSS3 - 2016/2017</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <main>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Efectos Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Columnas_multiples.html">Col Multiples</a></li>
+            <li><a href="Degradados.html">Degradados</a></li>
+        </ul>
+    </nav>
+    <h2>FONDOS</h2>
+            <section id="propiedades">
+                <article id="bgimage">
+                    <h3 id="h3bgimage">background-image</h3>
+                    <p id="parrafobimage">Sintaxis: background-image: url("URL de la imagen") | none | inherit;</p>
+                    <ul>
+                        <p id="parrafobimage">Coloca una imagen de fondo</p>
+                        <li>
+                            <div id="backgroundImage1"></div>
+                            <span class="legend">background-image: url('../fondos/fondo1.png');<br/>background-size: 100%;(Ya que la imagen es más grande)</span>
+                        </li>
+                        <li>
+                            <div id="backgroundImage2"></div>
+                            <span class="legend">background-image: url('../fondos/fondo2.png');<br/>background-size: 100%;(Ya que la imagen es más grande)</span>
+                        </li>
+                        <p id="parrafobimage">Podemos usar dos imágenes de fondo en lugar de una:</p>
+                        <li>
+                            <div id="backgroundImage3"></div>
+                            <span class="legend">background-image: url('../fondos/fondo2.png'),url('../fondos/fondo1.png');(La imagen (fondo2) se superpone a la imagen (fondo1))<br/>background-size: 100%,145%;(El primer valor para la primera imagen, el segundo para la segunda imagen)</span>
+                        </li>
+                        <p id="parrafobimage">Podemos usar más de dos imágenes de fondo:</p>
+                        <li>
+                            <div id="backgroundImage4"></div>
+                            <span class="legend">background-image: url('../fondos/fondo2.png'),url('../fondos/fondo3.png'),url('../fondos/fondo1.png');<br/>background-size: 100%,10%,145%;</span>
+                        </li>
+                        
+                    </ul>
+                </article>
+                <article id="bgrepeat">
+                    <h3 id="h3bgrepeat">background-repeat</h3>
+                    <p id="parrafobrepeat">Sintaxis: background-repeat: repeat (Valor inicial) | no-repeat | repeat-x | repeat-y | space | round</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">no-repeat:</span> El fondo no se repite.
+                            <div id="backgroundNoRepeat"></div></li>
+                        <li>
+                            <span class="destacar">repeat:</span> Se repite el fondo hasta ocupar todo el contenedor.
+                            <div id="backgroundSiRepeat"></div>
+                        </li>
+                        <li>
+                            <span class="destacar">repeat-x:</span> Se repite el fondo en el eje X hasta ocupar todo el contenedor.
+                            <div id="backgroundRepeatX"></div>
+                        </li>
+                        <li>
+                            <span class="destacar">repeat-y:</span> Se repite el fondo en el eje Y hasta ocupar todo el contenedor.
+                            <div id="backgroundRepeatY"></div>
+                        </li>
+                        <li>
+                            <span class="destacar">space:</span> Significa que a la imagen que se lo apliquemos se repetirá en horizontal y vertical, pero se añadirán espacios entre las imágenes para mostrarlas enteras y que no se corten los bordes.
+                            <div id="backgroundRepeatSpace"></div>
+                        </li>
+                        <li>
+                            <span class="destacar">round:</span> Para mostrar las imágenes repetidas en horizontal y vertical pero se adaptan para que se muestren completas y no se corten.
+                            <div id="backgroundRepeatRound"></div>
+                        </li>
+                    </ul>
+                </article>
+                <article id="bgclip">
+                    <h3 id="h3bgclip">background-clip</h3>
+                    <p id="parrafobrepeat">Sintaxis: background-clip: border-box (Valor inicial) | padding-box | content-box</p>
+                    <p id="parrafobclip">Permite definir la zona en la que aparecerá el fondo</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">border-box:</span> El fondo se define hasta el borde.
+                            <div id="backgroundClipBorderBox"><p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p></div>
+                        </li>
+                        <li>
+                            <span class="destacar">padding-box:</span> El fondo se define hasta el margen interior.
+                            <div id="backgroundClipPaddingBox"><p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p></div>
+                        </li>
+                        <li>
+                            <span class="destacar">content-box:</span> El fondo se limita al contenido.
+                            <div id="backgroundClipContentBox"><p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p></div>
+                        </li>
+                    </ul>
+                </article>
+                <article id="bgsize">
+                    <h3 id="h3bgsize">background-size</h3>
+                    <p id="parrafobsize">Sintaxis: background-size: length | percentage | auto (Valor inicial) | cover | contain</p>
+                    <p id="parrafobsize">Especifica el tamaño que tendrán las imágenes de fondo</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">length:</span> Escala la imagen de fondo a la longitud especificada en la dimensión correspondiente.<br/>
+                            <div id="backgroundSizeLength"></div>
+                            <span class="legend">background-size:6em;</span>
+                            <div id="backgroundSizeLength-2"></div>
+                            <span class="legend">background-size:6em 3em;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">percentage:</span> Escala la imagen de fondo en la dimensión correspondiente al porcentaje especificado de la caja que lo contiene.
+                            <div id="backgroundSizePercentage"></div>
+                            <span class="legend">background-size:50%;</span>
+                            <div id="backgroundSizePercentage-2"></div>
+                            <span class="legend">background-size:30% 80%;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">auto:</span> Escala la imagen de fondo en la dirección correspondiente de modo que su relación de aspecto se mantiene.
+                            <div id="backgroundSizeAuto"></div>
+                            <span class="legend">background-size:20% auto;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">cover:</span> Especifica que la imagen de fondo debe de ser escalada lo más grande posible para que el fondo esté totalmente cubierto por la imagen. Si la imagen y el container tienen diferentes dimensiones, la imagen se recorta, ya sea de izquierda/derecha o arriba/abajo.
+                            <div id="backgroundSizeCover"></div>
+                        </li>
+                        <li>
+                            <span class="destacar">contain:</span> Especifica que la imagen de fondo debería ser escalada lo más grande posible y mantiene la relación de aspecto de la misma (Que la imagen no quede aplastada). Si la imagen y el container tienen diferentes dimensiones, los huecos en blanco se rellenan con el color de fondo.
+                            <div id="backgroundSizeContain"></div>
+                        </li>
+                    </ul>
+                </article>
+                <article id="bgcolor">
+                    <h3 id="h3bgcolor">background-color</h3>
+                    <p id="parrafobcolor">Sintaxis: background-color: color (rgb(),rgba(),hex-color,named-color,gradiente radial/lineal) | trasparent (Valor inicial) | inherit</p>
+                    <p id="parrafobposition">Especifica el color de fondo de la caja.</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">color:</span> Se puede especificar el color de fondo de la caja.<br/>
+                            <p><strong>rgb():</strong></p>
+                            <div id="backgroundColorRgb"></div>
+                            <span class="legend">background-color: rgb(89, 200, 150);</span>
+                            <p><strong>rgba():</strong></p>
+                            <div id="backgroundColorRgba"></div>
+                            <span class="legend">background-color: rgba(89, 200, 150,0.5);</span>
+                            <p><strong>hex-color:</strong></p>
+                            <div id="backgroundColorHexColor"></div>
+                            <span class="legend">background-color: #118888;</span>
+                            <p><strong>named-color:</strong></p>
+                            <div id="backgroundColorNamedColor"></div>
+                            <span class="legend">background-color: lightcoral;</span>
+                            <p><strong>gradiente radial:</strong></p>
+                            <div id="backgroundColorGradienteRadial"></div>
+                            <span class="legend">background: radial-gradient(50% 30%, #FFFFFF 10%, #990000 90%);</span>
+                            <p><strong>gradiente lineal:</strong></p>
+                            <div id="backgroundColorGradienteLineal"></div>
+                            <span class="legend">background: linear-gradient(to right,#FFFFFF 20%,#990000 80%);</span>
+                        </li>
+                        <li>
+                            <span class="destacar">trasparent:</span> El color de fondo es transparente, colocando así de color de fondo el que está justo debajo de la caja.
+                            <div id="backgroundColorTrasparent"></div>
+                            <span class="legend">background-color: trasparent;</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="bgposition">
+                    <h3 id="h3bgposition">background-position</h3>
+                    <p id="parrafobposition">Sintaxis: background-position: percentage (Valor inicial 0% 0%) | left | center | right | top | bottom | inherit</p>
+                    <p id="parrafobposition">Especifica la posición de la imagen respecto a la caja que lo contiene.</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">top:</span> Se coloca la imagen en la parte superior de la caja que lo contiene.<br/>
+                            <div id="backgroundPositionTop"></div>
+                            <span class="legend">background-repeat: no-repeat;<br/>background-position: top;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">bottom:</span> Se coloca la imagen en la parte inferior de la caja que lo contiene.
+                            <div id="backgroundPositionBottom"></div>
+                            <span class="legend">   background-repeat: no-repeat;<br/>background-position: bottom;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">right:</span> Se coloca la imagen en la parte derecha de la caja que lo contiene.
+                            <div id="backgroundPositionRight"></div>
+                            <span class="legend">   background-repeat: no-repeat;<br/>background-position: right;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">left:</span> Se coloca la imagen en la parte izquierda de la caja que lo contiene.
+                            <div id="backgroundPositionLeft"></div>
+                            <span class="legend">background-repeat: no-repeat;<br/>background-position: left;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">center:</span> Se coloca la imagen en el centro de la caja que lo contiene.
+                            <div id="backgroundPositionCenter"></div><span class="legend">background-repeat: no-repeat;<br/>background-position: center;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">percentage:</span> Se coloca la imagen en función del porcentaje indicado.
+                            <div id="backgroundPositionPercentage"></div><span class="legend">background-repeat: no-repeat;<br/>background-position: 73% 67%;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">medida:</span> Se coloca la imagen en función de la medida indicada.
+                            <div id="backgroundPositionMedida"></div><span class="legend">background-repeat: no-repeat;<br/>background-position: 110px 0.1em;</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="bgattachment">
+                    <h3 id="h3bgattachment">background-attachment</h3>
+                    <p id="parrafobattachment">Sintaxis: background-attachment: scroll (Valor inicial) | fixed | inherit</p>
+                    <p id="parrafobattachment">Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador.</p>
+                    <p id="valores"><span class="destacar">Valores:</span></p>
+                    <ul>
+                        <li>
+                            <span class="destacar">scroll:</span> La imagen de fondo se mueve cuando la página hace scroll.<br/>
+                            <div id="backgroundAttachmentScroll"></div>
+                            <span class="legend">background-repeat: no-repeat;<br/>background-attachment: scroll;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">fixed:</span> La imagen de fondo se queda fija cuando la página hace scroll.
+                            <div id="backgroundAttachmentFixed"></div>
+                            <span class="legend">background-repeat: no-repeat;<br/>background-attachment: fixed;</span>
+                        </li>
+                    </ul>
+                </article>
+                <article id="combinaciones">
+                    <h3 id="h3combinaciones">Combinaciones</h3>
+                    <p id="valores"><span class="destacar">Posibles combinaciones:</span></p>
+                    <ul>
+                        <p id="parrafocombinaciones">También podemos colocar las imágenes de fondo como queramos combinando la propiedad background-position y background-repeat:</p>
+                        <li>
+                            <span class="destacar">Combinación 1:</span>
+                            <div id="combinacion1"></div>
+                            <span class="legend">background-image: url('../fondos/fondo2.png'), url('../fondos/fondo1.png');<br/>background-position: top right;<br/>background-repeat: no-repeat, no-repeat;(Ambas imágenes no se repiten en ningún eje del div).</span>
+                        </li>
+                        <li>
+                            <span class="destacar">Combinación 2:</span> Unión de todas las propiedades en la propiedad background: En este apartado combinaremos y uniremos todas las propiedades de fondos en la propiedad background
+                            <div id="combinacion2"></div>
+                            <span class="legend">background: rgba(150,0,90,0.3) url('../fondos/fondo2.png')left no-repeat fixed;</span>
+                        </li>
+                        <li>
+                            <span class="destacar">Combinación 3:</span>
+                            <div id="combinacion3"></div>
+                            <span class="legend">background-color: rgba(30,30,200,0.3);
+                                            <br/>background-image: url('../fondos/fondo2.png');
+                                            <br/>background-repeat: no-repeat;
+                                            <br/>background-position: center top;
+                                            <br/>background-attachment: scroll;</span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+</html>

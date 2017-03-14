@@ -1,0 +1,133 @@
+#ejemlinear1 {
+    background: linear-gradient(#7800FF, #48FF00);
+}
+
+#ejemlinear2 {
+    background: -webkit-linear-gradient(top left, #fff, #f66);
+}
+
+#ejemlinear3 {
+    background: linear-gradient(180deg, #f0f, #f66);
+}
+
+#ejemlinear4 {
+    background: linear-gradient(#00f 50%, #000);
+}
+
+#ejemlinear5 {
+    background: linear-gradient(45deg, #66f, #f80, #ffc);
+}
+
+#ejemlinear6 {
+    background: linear-gradient(45deg, #66f 10%, #f80 30%, #ffc 60%);
+}
+
+#ejemlinear7 {
+    background: linear-gradient(45deg, #66f 160px, #f80 180px, #ffc);
+}
+
+#ejemlinear8 {
+    background: -webkit-linear-gradient(left, #f00, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+}
+
+#ejemradial1 {
+    background: radial-gradient(#0f0, #06f);
+}
+
+#ejemradial2 {
+    background: -webkit-radial-gradient(top left, #fff, #f66);
+    background: -moz-radial-gradient(top left, #fff, #f66);
+    background: radial-gradient(top left, #fff, #f66);
+}
+
+#ejemradial3 {
+    background: radial-gradient(200px 30px, #f0f, #000);
+}
+
+#ejemradial4 {
+    background: -webkit-radial-gradient(center, #00f, #000 50%);
+    background: -moz-radial-gradient(center, #00f, #000 50%);
+    background: radial-gradient(center, #00f, #000 50%);
+}
+
+#ejemradial5 {
+    background: radial-gradient(circle, #66f, #f80, #ffc);
+}
+
+#ejemradial6 {
+    background: -webkit-radial-gradient(ellipse cover, #66f, #f80, #ffc);
+    background: -moz-radial-gradient(ellipse cover, #66f, #f80, #ffc);
+    background: radial-gradient(ellipse cover, #66f, #f80, #ffc);
+}
+
+#ejemradial7 {
+    background: -webkit-radial-gradient(10%, ellipse closest-side, #66f 60%, #f80 85%, #ffc);
+    background: -moz-radial-gradient(10%, ellipse closest-side, #66f 60%, #f80 85%, #ffc);
+    background: radial-gradient(10%, ellipse closest-side, #66f 60%, #f80 85%, #ffc);
+}
+
+#ejemradial8 {
+    background: -webkit-radial-gradient(10%, ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);
+    background: -moz-radial-gradient(10%, ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);
+    background: radial-gradient(10%, ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);
+}
+
+#ejemradial9 {
+    background: -webkit-radial-gradient(20px 100px, 30% 80%, #fff, #666, #66f);
+    background: -moz-radial-gradient(20px 100px, 30% 80%, #fff, #666, #66f);
+    background: radial-gradient(20px 100px, 30% 80%, #fff, #666, #66f);
+}
+
+#ejemradial10 {
+    background: -webkit-radial-gradient(top left, 150px 100px, #ffc, #f96, #963, #630);
+    background: -moz-radial-gradient(top left, 150px 100px, #ffc, #f96, #963, #630);
+    background: radial-gradient(top left, 150px 100px, #ffc, #f96, #963, #630);
+}
+
+#ejemradial11 {
+    background: -webkit-radial-gradient(20% 80%, 100% 50%, red, blue 50px, red);
+    background: -moz-radial-gradient(20% 80%, 100% 50%, red, blue 50px, red);
+    background: radial-gradient(20% 80%, 100% 50%, red, blue 50px, red);
+}
+
+#ejemradial12 {
+    background: -webkit-radial-gradient(left, 200px 200px, #f00 20%, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+    background: -moz-radial-gradient(left, 200px 200px, #f00 20%, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+    background: radial-gradient(left, 200px 200px, #f00 20%, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+}
+
+#repeating_linear_gradient1{
+    background: repeating-linear-gradient(#fff, #00f 25%);
+}
+
+#repeating_linear_gradient2{
+    background: -webkit-repeating-linear-gradient(left, #ffc, #f96 30%, #963 40%, #630 51%);
+    background: -moz-repeating-linear-gradient(left, #ffc, #f96 30%, #963 40%, #630 51%);
+    background: -o-repeating-linear-gradient(left, #ffc, #f96 30%, #963 40%, #630 51%);
+}
+
+#repeating_linear_gradient3{
+    background: repeating-linear-gradient(45deg, red, blue, red 50px);
+}
+
+#repeating_radial_gradient1{
+    background: repeating-radial-gradient(circle, #fff, #666 25%);
+}
+
+#repeating_radial_gradient2{
+    background: -webkit-repeating-radial-gradient(left, circle, #ffc, #f96 30%, #963 40%, #630 51%);
+    *background: repeating-radial-gradient(circle, #ffc, #f96 30%, #963 40%, #630 51%);
+}
+
+#repeating_radial_gradient3{
+    background: repeating-radial-gradient(20% 80%, ellipse closest-side, red, blue, red 50px);
+    background: -webkit-repeating-radial-gradient(20% 30%, ellipse closest-side, red, blue, red 50px)
+}
+
+.cuadros {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 0px;
+    height: 130px;
+    width: 230px;
+}

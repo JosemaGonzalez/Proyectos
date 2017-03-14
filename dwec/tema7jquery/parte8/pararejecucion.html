@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josema González</title>
+    </style>
+    <!--Aqui se pone el enlace al javascript-->
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/pararejecucion.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+    body {
+        font-size: 0.75em;
+        font-family: tahoma, verdana, sans-serif;
+    }
+
+    #micapa {
+        margin-top: 20px;
+        width: 400px;
+        background-color: #f80;
+        padding: 18px;
+        text-align: center;
+        font-size: 1.5em;
+        top: 100px;
+        left: 300px;
+        position: absolute;
+    }
+
+    button.botondetener {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Parar Ejecución de cola: Josema González
+        </h1>
+        <noscript>Este navegador no es compatible</noscript>
+    </header>
+    <!-- /header -->
+    <main>
+        <button id="botoncomenzar">Comenzar animación</button>
+        <br>
+        <button id="botonparar" class="botondetener">Pasar a la siguiente etapa de la animación</button>
+        <br>
+        <button id="botonpararllegar" class="botondetener">Pasar a la siguiente etapa, pero llegar hasta el final de donde se planeaba la animación</button>
+        <br>
+        <button id="botonparartodo" class="botondetener">Parar todo!</button>
+        <div id="micapa">Hola a todos!!!</div>
+    </main>
+</body>
+
+</html>
