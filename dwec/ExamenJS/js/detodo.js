@@ -4,26 +4,24 @@
     let btnInforma;
     let btnRaton;
     let contenido;
+    let btnSalir;
 
-    let generarVentana = function () {
-        document.write("<!DOCTYPE html><html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/><title>De Todo</title><meta charset=\"utf-8\"/>    <script src=\"js/detodo.js\"></script></head><body><noscript>Este navegador no tiene activado javascript</noscript><h2>De todo un poco - Josema Gonzalez</h2><input id=\"Informa\" type=\"submit\" value=\"Informa\"/><input id=\"Raton\" type=\"submit\" value=\"Ratón\"/><input id=\"Salir\" type=\"submit\" value=\"Salir\" onclick='window.close()'/><br><br><div id='contenido'></div></body></html>");
-    }
     let diaDeLaSemana = function (date) {
         switch (date.getDay()) {
             case 0:
-                return "Domingo";
+            return "Domingo";
             case 1:
-                return "Lunes";
+            return "Lunes";
             case 2:
-                return "Martes";
+            return "Martes";
             case 3:
-                return "Miércoles";
+            return "Miércoles";
             case 4:
-                return "Jueves";
+            return "Jueves";
             case 5:
-                return "Viernes";
+            return "Viernes";
             default:
-                return "Sábado";
+            return "Sábado";
         }
     }
     let reloj = function (date) {
@@ -39,7 +37,7 @@
         }
 
         return horas + ":" + minutos;
-        
+
     }
     let raton = function (event) {
         x = event.clientX;
@@ -66,16 +64,20 @@
         contenido.innerHTML = "Hoy es " + diaDeLaSemana(hoy) + " hora " + reloj(hoy)+"<br>"+calculo(hoy);
 
     }
+    let salir = function(){
+        window.close();
+    }
 
     let init= function() {
-        generarVentana();
         hoy = new Date();
         btnInforma = document.getElementById("Informa");
         btnRaton = document.getElementById("Raton");
         contenido = document.getElementById("contenido");
+        btnSalir = document.getElementById("Salir");
 
         btnInforma.addEventListener("click", informar);
         btnRaton.addEventListener("click", raton);
+        btnSalir.addEventListener("click",salir);
     }
     window.onload = init;
 }

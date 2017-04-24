@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/efecto.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/reserva.js"></script>
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="js/jquery.fancybox.min.js"></script>
 </head>
 
 <body id="home">
@@ -32,57 +40,70 @@
         <main>
             <section id="secciones1">
                 <article id="reservas">
-                    <img src="img/casa1.jpg" alt="">
+                    <a data-fancybox="gallery" href="img/casa1.jpg">
+                        <img src="img/casa1.jpg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/casa2.jpeg"></a>
+                    <a data-fancybox="gallery" href="img/casa3.jpg"></a>
+                    <a data-fancybox="gallery" href="img/casa4.jpg">
+                    </a>
                     <p> Casa Rural 1</p>
                     <p>Localización: Villa del Río</p>
                     <p> Habitaciones: 5</p>
                     <p>Precio: 50€</p>
                     <span id="span">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </span>
-                    <p id="ver">Nuestro alojamiento ...<a>Ver más</a></p>
-                    <div id="vermas">Nuestro alojamiento dispone de dos casas independientes en torno a un patio central en el que se encuentra la piscina y la barbacoa. Rivero Rural era una casa de labor, por lo que el patio tenia una función fundamentalmente instrumental, en torno a él estaban la propia casa, el granero, la cuadra o la cocina campera. Tras su restauración en Rivero Rural contamos con una casa para 6 personas y otra para 14 personas. Nuestra casa tiene por tanto dos formas en las que alojarse, alquilar el alojamiento al completo con una disponibilidad de 20 personas, o alquilar una las dos casas. La casa Andalucía para 6 personas, o la casa Grande para 14 personas. Los espacios comunes son el patio central, la piscina y la barbacoa. El resto de estancias como salón o cocinas cada casa dispone de los suyos propios. Tradicionalmente, nuestra casa suele ser alquilada al completo; muchos clientes celebran aquí sus reuniones familiares o sus fiestas mas entrañables desde hace años. Una casa como la nuestra donde sea cómodo más de 20 personas puedan comer todas juntas, o disfrutar del típico perol cordobés en el patio, no es fácil de encontrar. Disfrutareis en ese caso de 10 habitaciones, 2 cocinas, dos salones y cuatro baños completos, además del patio, la barbacoa, y piscina para vosotros solos. <a id="cerrar"> Cerrar</a></div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                    <div id="vermas" style="text-align: justify;">Nuestro alojamiento dispone de dos casas independientes en torno a un patio central en el que se encuentra la piscina y la barbacoa. Rivero Rural era una casa de labor, por lo que el patio tenia una función fundamentalmente instrumental, en torno a él estaban la propia casa, el granero, la cuadra o la cocina campera. Tras su restauración en Rivero Rural contamos con una casa para 6 personas y otra para 14 personas. Nuestra casa tiene por tanto dos formas en las que alojarse, alquilar el alojamiento al completo con una disponibilidad de 20 personas, o alquilar una las dos casas. La casa Andalucía para 6 personas, o la casa Grande para 14 personas. Los espacios comunes son el patio central, la piscina y la barbacoa. El resto de estancias como salón o cocinas cada casa dispone de los suyos propios. Tradicionalmente, nuestra casa suele ser alquilada al completo; muchos clientes celebran aquí sus reuniones familiares o sus fiestas mas entrañables desde hace años. Una casa como la nuestra donde sea cómodo más de 20 personas puedan comer todas juntas, o disfrutar del típico perol cordobés en el patio, no es fácil de encontrar. Disfrutareis en ese caso de 10 habitaciones, 2 cocinas, dos salones y cuatro baños completos, además del patio, la barbacoa, y piscina para vosotros solos.</div>
                 </article>
                 <article>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8395.495747681834!2d-4.292358600295627!3d37.98278520767747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1484738945302" frameborder="0" allowfullscreen></iframe>
-                    <form action="reserva_submit" method="post" accept-charset="utf-8" id="formulario">
+                    <form action="" accept-charset="utf-8" id="formulario">
                         <p>
-                            <i class="fa fa-user"></i>
-                            <input type="text" placeholder="Nombre y apellidos">
-                        </p>
-                        <p>
-                            <i class="fa fa-envelope"></i>
-                            <input type="email" placeholder="Email">
-                        </p>
-                        <p>
-                            <i class="fa fa-calendar-check-o"></i>
-                            <input type="date" placeholder="">
-                        </p>
-                        <p>
-                            <i class="fa fa-calendar-times-o"></i>
-                            <input type="date" placeholder="">
-                        </p>
-                        <p>
-                            <i class="fa fa-phone"></i>
-                            <input type="text" placeholder="Teléfono">
-                        </p>
-                        <p>
-                            <i class="fa fa-users"></i>
-                            <input type="number" placeholder="Nº de personas" min="1" max="100">
-                        </p>
-                        <button class="btn btn-5 btn-5b icon-cart" type="submit"><span>Reservar</span></button>
-                    </form>
-                </article>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>
-            &#169; Josema González - Práctica Casa Rural</p>
+                           <label><i class="fa fa-user"></i></label>
+                           <input type="text" data-validation="custom" placeholder="Nombre y apellidos" id="nombre" data-validation-regexp="[a-zA-Z Á-Úá-ú][^1234567890]+$" data-validation-help="Escribe 3 letras mínimo" data-validation-error-msg="Campo incorrecto">
+                       </p>
+                       <p>
+                        <label><i class="fa fa-envelope"></i></label>
+                        <input type="email" placeholder="Email" id="email" data-validation="custom" data-validation-regexp="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" data-validation-help="Ejemplo: algo@algo.com" data-validation-error-msg="Campo incorrecto" required>
+                    </p>
+                    <p>
+                        <label for="finicio"><i class="fa fa-calendar-check-o"></i></label>
+                        <input type="text" placeholder="" id="finicio" data-validation="date" data-validation-format="dd/mm/yyyy" data-validation-error-msg="Fecha errónea" required>
+                    </p>
+                    <p>
+                    <label for="ffin"><i class="fa fa-calendar-times-o"></i></label>
+                        <input type="text" placeholder="" id="ffin" data-validation="date" data-validation-format="dd/mm/yyyy" data-validation-error-msg="Fecha errónea" required>
+                    </p>
+                    <p>
+                        <label><i class="fa fa-phone"></i></label>
+                        <input type="text" placeholder="Teléfono" id="telefono" data-validation="custom" data-validation-regexp="^\d{9}$" data-validation-help="9 dígitos de teléfono" data-validation-error-msg="Campo incorrecto" required>
+                    </p>
+                    <p>
+                        <label><i class="fa fa-users"></i></label>
+                        <input type="number" placeholder="Nº de personas" min="1" max="100" id="personas"  data-validation="custom" data-validation-regexp="^\d{1,}$" data-validation-help="Mínimo 1 persona" data-validation-error-msg="Campo incorrecto" required>
+                    </p>
+                    <p>
+                      <input id="check" type="checkbox" name="check" data-validation="checkbox_group" data-validation-qty="1">
+                      <label style="width: 340px;" for="check">Acepto la condiciones de uso </label>
+                  </p>
+
+                  <div style="display: inline-flex;">
+                    <button class="btn btn-5 btn-5b icon-cart" type="button" id="enviar" disabled style="padding:0;"><span>Reservar</span></button>
+                    <input class="btn btn-5 btn-5b reset" type="reset" id="reset" value="Limpiar Campos">
+                </div>
+            </form>
+        </article>
+    </section>
+</main>
+</div>
+<footer>
+    <p>
+        &#169; Josema González - Práctica Casa Rural</p>
     </footer>
 </body>
 

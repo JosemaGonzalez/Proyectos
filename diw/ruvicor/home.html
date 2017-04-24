@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="css/estiloprincipal.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/efecto.js"></script>
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="js/jquery.fancybox.min.js"></script>
 </head>
 
 <body id="home">
@@ -32,71 +36,119 @@
         <main>
             <section id="secciones">
                 <article>
-                    <img src="img/casa1.jpg" alt="">
-                    <p> Casa Rural 1</p>
+                    <a data-fancybox="gallery" href="img/c1.jpg">
+                        <img src="img/c1.jpg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/c2.jpg"></a>
+                    <a data-fancybox="gallery" href="img/c3.jpg"></a>
+                    <a data-fancybox="gallery" href="img/c4.jpg">
+                    </a>
+                    <p>
+                        <div id="letter-container" class="letter-container">
+                            <p>
+                                <a href="#">Casa Rural 1</a>
+                            </p>
+                        </div>
+                    </p>
                     <p>Localización: Villa del Río</p>
                     <p> Habitaciones: 5</p>
                     <p>Precio: 50€</p>
                     <p id="ver">Pista de tenis privada ...<a>Ver más</a></p>
                     <div id="vermas">Pista de tenis privada, piscina, porche, barbacoa, Chiringuito para fiestas, WIFI, chimenea, calefacción, Esta encantadora casa rural está enclavada en uno de los parajes más bellos de Andalucía, la Subbetica Cordobesa, en pleno corazón de las Sierras Subbéticas en el municipio de Carcabuey, a tan sólo 10 o 15km de otros pueblos "blancos" como Priego, Cabra o Zuheros<a id="cerrar"> Cerrar</a></div>
                     <span>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
                     <button class="btn btn-5 btn-5b icon-cart" type="submit" onclick="window.location.href='reserva.html'"><span>Reservar</span></button>
                 </article>
                 <article>
-                    <img src="img/casa2.jpeg" alt="">
-                    <p>Casa Rural 2</p>
+                    <a data-fancybox="gallery2" href="img/casa2.jpeg">
+                        <img src="img/casa2.jpeg">
+                    </a>
+                    <a data-fancybox="gallery2" href="img/c2.jpg"></a>
+                    <a data-fancybox="gallery2" href="img/c3.jpg"></a>
+                    <a data-fancybox="gallery2" href="img/c4.jpg">
+                    </a>
+                    <p>
+                        <div id="letter-container" class="letter-container">
+                            <p>
+                                <a href="#">Casa Rural 2</a>
+                            </p>
+                        </div>
+                    </p>
                     <p>Localización: Montoro</p>
                     <p> Habitaciones: 4</p>
                     <p>Precio: 40€</p>
                     <p id="ver1">El Rincón de Carmen ...<a>Ver más</a></p>
                     <div id="vermas1">El Rincón de Carmen, forma parte de un antiguo cortijo andaluz restaurado lujosamente equipado, conservando todo su encanto. Se trata de 3 alojamientos. se pueden alquiler de forma conjunta o totalmente independiente.<a id="cerrar1"> Cerrar</a></div>
                     <span>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
                     <button class="btn btn-5 btn-5b icon-cart" type="submit" onclick="window.location.href='reserva.html'"><span>Reservar</span></button>
                 </article>
                 <article>
+                    <a data-fancybox="gallery12" href="img/casa3.jpg">
                     <img src="img/casa3.jpg" alt="">
-                    <p>Casa Rural 3</p>
+                    </a>
+                    <a data-fancybox="gallery12" href="img/c2.jpg"></a>
+                    <a data-fancybox="gallery12" href="img/c3.jpg"></a>
+                    <a data-fancybox="gallery12" href="img/c4.jpg">
+                    </a>
+                    <p>
+                        <div id="letter-container" class="letter-container">
+                            <p>
+                                <a href="#">Casa Rural 3</a>
+                            </p>
+                        </div>
+                    </p>
                     <p>Localización: Andújar</p>
                     <p> Habitaciones: 5</p>
                     <p>Precio: 60€</p>
                     <p id="ver2">El Cortijo el Rodeo ...<a>Ver más</a></p>
                     <div id="vermas2">El Cortijo el Rodeo consta de una amplia terraza-jardín, con una piscina totalmente vallada para no tener peligro con los niños, donde podrá disfrutar de unas maravillosas vistas del parque de la subbética y de una tranquilidad inmejorable<a id="cerrar2"> Cerrar</a></div>
                     <span>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
                     <button class="btn btn-5 btn-5b icon-cart" type="submit" onclick="window.location.href='reserva.html'"><span>Reservar</span></button>
                 </article>
                 <article>
+                <a data-fancybox="gallery21" href="img/casa4.jpg">
                     <img src="img/casa4.jpg" alt="">
-                    <p>Casa Rural 4</p>
+                    </a>
+                    <a data-fancybox="gallery21" href="img/c2.jpg"></a>
+                    <a data-fancybox="gallery21" href="img/c3.jpg"></a>
+                    <a data-fancybox="gallery21" href="img/c4.jpg">
+                    </a>
+                    <p>
+                        <div id="letter-container" class="letter-container">
+                            <p>
+                                <a href="#">Casa Rural 4</a>
+                            </p>
+                        </div>
+                    </p>
                     <p>Localización: Marmolejo</p>
                     <p> Habitaciones: 5</p>
                     <p>Precio: 80€</p>
                     <p id="ver3">Cortijo del Zoco Bajo ...<a>Ver más</a></p>
                     <div id="vermas3">Cortijo del Zoco Bajo está dotado de todas las comodidades, reconstruido sobre el cortijo original con más de 300 años y sobre restos romanos. El alojamiento destaca por ser un "agroturismo" donde practican el reciclaje, reutilización de las aguas, compostaje, hacen donaciones a una ONG de parte de lo que recaudan, etc.<a id="cerrar3"> Cerrar</a></div>
                     <span>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
                     <button class="btn btn-5 btn-5b icon-cart" type="submit" onclick="window.location.href='reserva.html'"><span>Reservar</span></button>
                 </article>
             </section>
@@ -191,25 +243,25 @@
     <footer>
         <p>
             &#169; Josema González - Práctica Casa Rural</p>
-    </footer>
-    <script>
-    var rangeSlider = function() {
-        var slider = $('.range-slider'),
-            range = $('.range-slider__range'),
-            value = $('.range-slider__value');
-        slider.each(function() {
-            value.each(function() {
-                var value = $(this).prev().attr('value');
-                $(this).html(value);
-            });
-            range.on('input', function() {
-                $(this).next(value).html(this.value);
-            });
-        });
-    };
-    rangeSlider();
-    </script>
-    <script src="js/classie.js"></script>
-</body>
+        </footer>
+        <script>
+            var rangeSlider = function() {
+                var slider = $('.range-slider'),
+                range = $('.range-slider__range'),
+                value = $('.range-slider__value');
+                slider.each(function() {
+                    value.each(function() {
+                        var value = $(this).prev().attr('value');
+                        $(this).html(value);
+                    });
+                    range.on('input', function() {
+                        $(this).next(value).html(this.value);
+                    });
+                });
+            };
+            rangeSlider();
+        </script>
+        <script src="js/classie.js"></script>
+    </body>
 
-</html>
+    </html>

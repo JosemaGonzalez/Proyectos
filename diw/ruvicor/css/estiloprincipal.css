@@ -3,21 +3,27 @@
 
 /*
 Estilo pagina principal
- */
+*/
 
 * {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
 }
-
+#principal{
+    display: none;
+}
 body {
     background-color: #79B598;
     background: url('../img/ph3.jpg') center center fixed;
     background-repeat: repeat-y;
     background-size: cover;
-}
+    z-index: 100;
 
+}
+noscript{
+    z-index: 200;
+}
 h1 {
     color: #1C3312;
     font-family: 'Indie Flower', cursive;
@@ -91,7 +97,7 @@ footer p {
 
 /*
 Estilo pagina home
- */
+*/
 
 #flex {
     margin: 0 auto;
@@ -120,7 +126,7 @@ Estilo pagina home
     top: 130px;
 }
 
-#home img {
+#home article>img,#home article a>img {
     width: 90%;
     max-width: 480px;
     margin: 0 auto;
@@ -142,8 +148,8 @@ input[type="email"] {
     text-align: left;
 }
 
-#home input[type="submit"],
-#home button {
+#home article> input[type="submit"],
+#home article> button ,#aside button,form button{
     width: 8rem;
     padding: 0;
     margin-right: 15px;
@@ -161,7 +167,7 @@ input[type="email"] {
     box-shadow: -3px -3px 5px 3px rgba(255, 255, 255, 0.2);
 }
 
-#home img {
+#home article>img,#home article a>img {
     box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin: 20px auto;
@@ -210,7 +216,7 @@ input[type="email"] {
     color: white;
 }
 
-#home div {
+#home>div {
     margin: 10px auto;
     margin-bottom: 30px;
     text-align: justify;
@@ -237,7 +243,7 @@ input[type="email"] {
 
 /*
 Estilo reservas
- */
+*/
 
 #span {
     float: none;
@@ -279,7 +285,7 @@ iframe {
 
 /*
 Estilo paginacion
- */
+*/
 
 #paginacion {
     padding: 10px;
@@ -318,7 +324,7 @@ Estilo paginacion
  menú navegación
  */
 
-#nav {
+ #nav {
     display: none;
 }
 
@@ -355,7 +361,7 @@ Estilo paginacion
 
 /*
 Botones
- */
+*/
 
 
 /* Button 5 */
@@ -520,10 +526,17 @@ Botones
     content: "\f090";
 }
 
-
+.reset{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-size: 1.2rem!important;
+}
 /*
 Checkbox
- */
+*/
 
 [type="checkbox"] {
     position: absolute;
@@ -576,7 +589,7 @@ Checkbox
 
 /*
 Estilo range
- */
+*/
 
 .range-slider {
     margin: 0 auto;
@@ -675,37 +688,37 @@ input::-moz-focus-outer {
 @media (min-width: 768px) {
     /*
 Estilo pagina principal
- */
-    * {
-        font-size: 1.2rem;
-    }
-    body {
-        background-position: 0% 30%;
-    }
-    h1 {
-        font-size: 7rem!important;
-        margin-top: 1.1rem!important;
-    }
-    #principal img {
-        width: 70%;
-    }
-    article {
-        margin-top: 3rem;
-    }
-    a {
-        font-size: 2rem;
-    }
-    i {
-        margin-right: 10px;
-    }
-    footer p {
-        left: 10%;
-        right: 10%;
-        font-size: 1.3rem;
-    }
+*/
+* {
+    font-size: 1.2rem;
+}
+body {
+    background-position: 0% 30%;
+}
+h1 {
+    font-size: 7rem!important;
+    margin-top: 1.1rem!important;
+}
+#principal img {
+    width: 70%;
+}
+article {
+    margin-top: 3rem;
+}
+a {
+    font-size: 2rem;
+}
+i {
+    margin-right: 10px;
+}
+footer p {
+    left: 10%;
+    right: 10%;
+    font-size: 1.3rem;
+}
     /*
     Estilos home
-     */
+    */
     #home main {
         margin-top: -2.5rem;
     }
@@ -716,7 +729,7 @@ Estilo pagina principal
         top: 100px;
         margin-right: 10px;
     }
-    #home img {
+    #home article>img ,#home article a>img{
         width: 90%;
         max-width: 630px;
     }
@@ -740,8 +753,10 @@ Estilo pagina principal
         max-width: 70%;
     }
     #formulario p {
+        vertical-align: top;
         display: inline-block;
         margin-right: 20px;
+        height: 75px;
     }
     #formulario button{
         display: block;
@@ -755,29 +770,33 @@ Estilo pagina principal
 @media (min-width: 1024px) {
     /*
 Estilo pagina principal
- */
-    h1 {
-        font-size: 6rem!important;
-        margin-top: 1rem!important;
-    }
-    #principal img {
-        width: 40%;
-    }
-    article {
-        margin-top: 3rem;
-    }
-    a {
-        font-size: 2rem;
-    }
-    i {
-        margin-right: 10px;
-    }
-    footer p {
-        font-size: 1.1rem;
-    }
+*/
+h1 {
+    font-size: 6rem!important;
+    margin-top: 1rem!important;
+}
+#principal img {
+    width: 40%;
+}
+article {
+    margin-top: 3rem;
+}
+a {
+    font-size: 2rem;
+}
+i {
+    margin-right: 10px;
+}
+footer p {
+    font-size: 1.1rem;
+}
     /*
     estilo home
-     */
+    */
+
+    .fancybox-container,.fancybox-bg{
+        margin: 0!important;
+    }
     #menu {
         top: 60px;
     }
@@ -805,8 +824,16 @@ Estilo pagina principal
     #home input[type="text"],
     #home input[type="password"], input[type="date"], input[type="number"], input[type="email"] {
         min-width: 50px;
-        width: 10rem;
+        width: 12rem;
         font-size: 16px!important;
+        display: block;
+    }
+    #vermas,#vermas2,#vermas3,#vermas1{
+        text-align: justify;
+    }
+    #home #aside input[type="text"],
+    #home #aside input[type="password"]{
+        width: 10rem;
         display: inline-block;
     }
     #menu,
@@ -815,8 +842,8 @@ Estilo pagina principal
         transition-property: transform;
         transition-duration: 2s;
     }
-    #home input[type="submit"],
-    #home button {
+    #home article>input[type="submit"],
+    #home article>button,#aside button,form button {
         width: 8rem;
         padding: 0;
         margin-right: 15px;
@@ -834,7 +861,7 @@ Estilo pagina principal
         padding-top: 10px;
         padding-bottom: 25px;
     }
-    #home img {
+    #home article>img,#home article a>img {
         margin: 20px auto;
         margin-bottom: 0;
         width: 90%;
@@ -932,14 +959,14 @@ Estilo pagina principal
     /*
  menú navegación
  */
-    #nav ul {
-        margin-top: -120px;
-        padding: 0;
-        width: 280px;
-    }
-    #nav ul li {
-        padding: 0.5em;
-    }
+ #nav ul {
+    margin-top: -120px;
+    padding: 0;
+    width: 280px;
+}
+#nav ul li {
+    padding: 0.5em;
+}
 }
 
 

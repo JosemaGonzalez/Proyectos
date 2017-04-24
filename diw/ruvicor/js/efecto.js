@@ -1,5 +1,7 @@
 {
     $(document).ready(function() {
+
+        $("#letter-container p a").lettering();
         $("#vermas,#vermas1,#vermas2,#vermas3").hide();
         $("#menu").click(function(event) {
             event.preventDefault();
