@@ -2,7 +2,7 @@
 		<?php
 if($_SESSION['perfil']!="invitado"){?>
 <div class="col s1 m1 l1 center">
-	<a class="btn light-blue darken-1" href="cerrarSesion.php">Cerrar Sesión<i class="material-icons right">exit_to_app</i>
+	<a class="btn indigo lighten-2 waves-effect waves-light" href="cerrarSesion.php">Cerrar Sesión<i class="material-icons right">exit_to_app</i>
 	</a>
 </div>
 <?php

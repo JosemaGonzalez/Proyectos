@@ -41,7 +41,7 @@ h3{
 	text-shadow: 1px 1px 20px black;
 	font-family: 'Orbitron', sans-serif;
 	margin-bottom:10px;
-	margin-top:-10px;
+	margin-top:-20px;
 }
 
 a img{
@@ -160,7 +160,7 @@ nav ul li:hover {
 }
 .centro{
 	position: absolute;
-	bottom: 80px;
+	bottom: 10%;
 }
 
 .made{
@@ -191,11 +191,17 @@ Sobre mi
 	vertical-align: middle;
 	vertical-align: -webkit-baseline-middle;
 }
+#sobremi span{
+	background: url('../images/tick.svg') no-repeat;
+	background-size: 25px 25px;
+	background-position: auto;
+
+}
 #sobremi .drcha{
 	order: 2;
 	width: 100%;
 	margin:0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 10%;
 }
 #sobremi .izda{
 	order: 3;

@@ -1,5 +1,5 @@
 <?php
-class Alumnos
+class RTutoresLegales
 {
     private static $instancia;
     private $dbh;
@@ -23,26 +23,12 @@ class Alumnos
         }
         return self::$instancia;
     }
-    public function get_alumnosgrupo($id)
+    public function get_alumnostutor($id)
     {
         try {
-            $query = $this->dbh->prepare('select id,nombre,apellido1,apellido2 from alumnos where grupo="'.$id.'"');
+            $query = $this->dbh->prepare('select a.id, a.nombre, a.apellido1, a.apellido2 from alumnos a,tutoreslegales t,rtutoreslegalesalumnos r where a.id = r.IdAlumno and t.id = r.idTutorLega and t.idUsuario="'.$id.'"');
             $query->execute();
             $resultado=$query->fetchAll();
-            return($resultado);
-            $this->dbh = null;
-        }catch (PDOException $e) {
-            $e->getMessage();
-        }
-    }
-
-    public function get_alumno($id)
-    {
-        try {
-            $query = $this->dbh->prepare('select nombre,apellido1,apellido2,foto,puntos,grupo from alumnos where id='.$id);
-            $query->execute();
-            $resultado=$query->fetch();
-
             return($resultado);
             $this->dbh = null;
         }catch (PDOException $e) {

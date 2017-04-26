@@ -2,29 +2,31 @@
 session_start();
 include 'includes/header.php';
 include 'funciones/funciones.php';
+require_once 'clases/grupos.php';
+if ($_SESSION['perfil']!="PRO") {
+	header("Location: index.php");
+}
 comprobarVariablesSesion();
-require_once 'clases/profesores.php';
-$profesores=profesores::singleton();
-$profe=$profesores->get_profesor($_SESSION['id']);
+$grupos= grupos::singleton();
+$grupo=$grupos->get_grupos();
 ?>
 <div class="row center" style="border-radius: 2%;">
 	<div class="col s12 center">
 		<h4>Carnet de convivencia</h4>
 	</div>
-
-		<div class="col s12">
-			<div class="row">
-				<div class="col s3 left" id="vuelta">
-					<button type="button" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">undo</i></button>
-				</div>
+	<div class="col s12">
+		<div class="row">
+			<div class="col s12">
 				<?php
-				if ($_SESSION['perfil']=="PRO") {?>
-				<div class="col s3 right" id="anadir">
-					<button type="button" class="btn-floating btn-large waves-effect waves-light red darken-1"><i class="material-icons">add</i></button>
-				</div>
+				?>
 				<?php
-			}
-			?>
+				foreach ($grupo as $key => $value) {
+					echo '<div class="col s6 m3">';
+					echo '<br>';
+					echo "<a href=\"fichaProfesorAlumno.php?grupo=".base64_encode($value[0])."\" class=\"waves-effect waves-light btn indigo darken-1\">".$value[0]."<br/>"."</a></div>";
+				}
+				?>
+			</div>
 		</div>
 	</div>
 </div>

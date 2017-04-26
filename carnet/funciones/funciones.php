@@ -7,6 +7,7 @@ function comprobarVariablesSesion(){
 		header("Location: index.php");
 	}
 }
+
 function comprobarUsuario($usuario,$password){
 	$usuarios = usuario::singleton();
 	$usuario = $usuarios->get_usuarios($usuario,$password);
@@ -22,7 +23,26 @@ function comprobarUsuario($usuario,$password){
 		header("Location: fichaProfesor.php");
 	}
 	if($_SESSION['perfil']=="TUT"){
-		header("Location: fichaTutor.php");
+		header("Location: fichaTutorAlumno.php");
 	}
+}
+
+function calcularColor(){
+	/*switch (variable) {
+		case 'value':
+			# code...
+			break;
+
+		default:
+			# code...
+			break;
+	}
+
+	<div id="puntos" class="circle valign-wrapper green darken-4">
+				<h4 class="valign">
+					<?php
+					echo $al[4].'/ 10';
+					?></h4>
+				</div>*/
 }
 ?>
