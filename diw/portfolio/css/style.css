@@ -43,6 +43,12 @@ h3{
 	margin-bottom:10px;
 	margin-top:-20px;
 }
+h4{
+	font-size: 20px;
+	text-shadow: 1px 1px 20px black;
+	font-family: 'Orbitron', sans-serif;
+	color: #1D88A7;
+}
 
 a img{
 	width: 15%;
@@ -179,6 +185,24 @@ Inicio
 /*
 Sobre mi
 */
+.pro{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+    top: -10px;
+}
+.pro span{
+    position: absolute;
+    font-size: 14px;
+    left: 25%;
+    top: 20%;
+}
+.apt{
+	margin-top: 10px;
+	width: 25%;
+	float: left;
+}
 #sobremi{
 	display: flex;
 	flex-direction: column;
@@ -187,21 +211,23 @@ Sobre mi
 	order: 1;
 	width: 100%;
 }
-#sobremi span{
+#sobremi .izda span{
 	vertical-align: middle;
 	vertical-align: -webkit-baseline-middle;
+	font-size: 18px;
+	font-weight: 600;
 }
-#sobremi span{
-	background: url('../images/tick.svg') no-repeat;
-	background-size: 25px 25px;
-	background-position: auto;
-
+#sobremi span > img{
+	width: 25px;
+	vertical-align: text-top;
+	margin-right: 10px;
 }
 #sobremi .drcha{
 	order: 2;
 	width: 100%;
 	margin:0 auto;
-	margin-bottom: 10%;
+	margin-bottom: 3%;
+	background-color: rgba(255,255,255,0.15);
 }
 #sobremi .izda{
 	order: 3;
@@ -209,19 +235,10 @@ Sobre mi
 	margin:0 auto;
 	background-color: rgba(255,255,255,0.15);
 }
-#sobremi span{
-	font-size: 18px;
-	    font-weight: 600;
-}
-#sobremi .drcha{
-	border: 0;
-	box-shadow:0px 0px 0px black;
-}
 #sobremi .drcha img{
-	width: 135px;
-	border-radius: 45%;
-	box-shadow: 1px 1px 20px black;
-	margin:10px;
+	width: 40px;
+	margin:5px;
+	margin-top: 10px;
 }
 
 #sobremi div > img{
