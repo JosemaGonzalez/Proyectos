@@ -17,8 +17,8 @@
 
     estados.innerHTML += "[" + milisegundos + " mseg.] " + estadosPosibles[peticion.readyState] + "<br/>";
 
-    if(peticion.readyState == 4) {
-      if(peticion.status == 200) {
+    if(peticion.readyState == 4) {//completo
+      if(peticion.status == 200) {//respuesta correcta
         contenidos.innerHTML = peticion.responseText.transformaCaracteresEspeciales();
       }
       muestraCabeceras();
