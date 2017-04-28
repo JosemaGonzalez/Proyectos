@@ -17,6 +17,16 @@ jQuery(function($) {
         offset: '90%',
         triggerOnce: true
     });
+    $(".pro").css("opacity", "0");
+    $('.pro').waypoint(function() {
+        $(this).toggleClass( 'bounceInRight animated' );
+        $('.pro').trigger("redraw");
+        $(".pro").css("opacity", "1");
+    },
+    {
+        offset: '100%',
+        triggerOnce: true
+    });
 
     $("#inicio").css("opacity", "0");
     $('#inicio').waypoint(function() {

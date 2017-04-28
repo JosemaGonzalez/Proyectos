@@ -12,23 +12,22 @@ $(document).ready(function() {
         progressFillGradient: ['#FAEB69','#5ECA50'],
         progressWidth: 4,
         unitsOutput: '%',
-        endFill: 85
+        endFill: 90
     });
     $('.svg1').svgprogress({
         figure: "hexagon",
         progressFillGradient: ['#FAC369','#41AD49'],
         progressWidth: 4,
         unitsOutput: '%',
-        endFill: 80
+        endFill:80
     });
     $('.svg2').svgprogress({
         figure: "hexagon",
         progressFillGradient: ['#FAC369','#41AD49'],
         progressWidth: 4,
         unitsOutput: '%',
-        endFill: 90
+        endFill: 70
     });
-    $('.pro').trigger("redraw");
     let ventana_centro = $(window).width()/4;
     $(".centro").css("right", ventana_centro);
     $(".centro").css("left", ventana_centro);
