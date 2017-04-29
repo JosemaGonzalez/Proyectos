@@ -29,7 +29,7 @@ $(document).ready(function() {
         unitsOutput: '%',
         endFill: 70
     });
-    let ventana_centro = $(window).width()/4;
+    let ventana_centro = $(window).width()/20;
     $(".centro").css("right", ventana_centro);
     $(".centro").css("left", ventana_centro);
     $('.ancla').click(function(e) {
@@ -52,15 +52,17 @@ $(document).ready(function() {
         $("#mistrabajos .drcha").css("float","right");
         $("#mistrabajos .izda a,#mistrabajos .drcha a").height(ventana_alto2/1.6);
     }
-    if ($(window).height() < "550" || $(window).width() < "380") {
-        $(".apt img").css("width", "35px");
-        $(".apt img").css("margin", "0");
+    if ($(window).height() < "550" || $(window).width() < "350") {
+        $(".apt img").css("margin", "2px");
         $(".apt div").css("width", "35px");
         $(".apt div").css("height", "35px");
         $(".apt div").css("top", "0");
-        $("#sobremi h4").css("margin-bottom", "3%");
-        $(".apt").css("margin-top", "0");
-        $(".apt").css("width", "33%");
+        $("#sobremi h4").css("margin-bottom", "1%");
+        $(".apt").css("margin-top", "2%");
+        $(".centro2").css("margin-top", "5%");
+        $(".apt").css("margin-left", "2%");
+        $(".apt").css("width", "25%");
+
     }
     if ($(window).width() > "768") {
         $("#sobremi .izda,#sobremi .drcha").height(ventana_alto/3);

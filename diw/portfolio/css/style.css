@@ -33,6 +33,7 @@ h1{
 h2{
 	font-size: 22px;
 	color: #404BA0;
+	margin: 2px 5px;
 	text-shadow: 1px 1px 20px black;
 	font-family: 'Orbitron', sans-serif;
 }
@@ -168,12 +169,14 @@ nav ul li:hover {
 }
 .centro{
 	position: absolute;
-	bottom: 10%;
+	bottom: 10.5%;
 }
 
 .made{
 	position: absolute;
 	bottom: 150px;
+	padding:5px 0;
+	margin: 0 20px;
 }
 /*
 Inicio
@@ -182,6 +185,7 @@ Inicio
 	width: 90%;
 	max-width: 400px;
 	border-radius: 4px;
+	margin-top: 10%;
 	box-shadow: 0px 0px 40px black;
 }
 
@@ -190,10 +194,14 @@ Sobre mi
 */
 .pro{
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 38%;
+	height: 38%;
 	display: inline-block;
 	top: -8px;
+}
+.pro svg{
+	height: inherit;
+
 }
 .pro span{
 	position: absolute;
@@ -202,9 +210,9 @@ Sobre mi
 	top: 20%;
 }
 .apt{
-	margin-top: 10px;
-	width: 25%;
-	float: left;
+	margin-top: 1%;
+	width: 30%;
+	display: inline-block;
 }
 #sobremi{
 	display: flex;
@@ -251,7 +259,7 @@ Sobre mi
 }
 
 #sobremi .drcha img{
-	width: 40px;
+	width: 38%;
 	margin:5px;
 	margin-top: 10px;
 }
@@ -305,8 +313,11 @@ Mis trabajos
 Contacto
 */
 #contacto span>a> img{
-	width: 50px;
+	width: 15%;
 	margin:20px;
+}
+.centro2{
+	margin-top: 10%;
 }
 
 /* ESTILOS RESPONSIVE para Móviles en horizontal o tablets en vertical */
