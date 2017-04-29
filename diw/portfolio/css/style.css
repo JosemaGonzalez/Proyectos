@@ -88,10 +88,10 @@ main .ancla>img:hover{
 #menu{
 	height: 45px;
 	width: 45px;
-	z-index: 100;
+	z-index: 999;
 }
 .oculto{
-	z-index: 100;
+	z-index: 999;
 	display: block;
 	position: fixed;
 	top: 0;
@@ -101,7 +101,7 @@ main .ancla>img:hover{
 }
 /*Elementos internos del menu*/
 header ul{
-	z-index: 100;
+	z-index: 999;
 	display: none;
 	position: fixed;
 	top: 0;
@@ -162,8 +162,9 @@ nav ul li:hover {
 	margin:1px 0;
 	padding: 0;
 	box-shadow: 1px 1px 20px black;
-	border: 1px solid black;
+	border: 1px solid rgba(0,0,0,0.6);
 	width: 100%;
+	max-width: 520px;
 }
 .centro{
 	position: absolute;
@@ -179,6 +180,7 @@ Inicio
 */
 #inicio > img{
 	width: 90%;
+	max-width: 400px;
 	border-radius: 4px;
 	box-shadow: 0px 0px 40px black;
 }
@@ -227,10 +229,11 @@ Sobre mi
 	float: left;
 	text-align: left;
 	vertical-align: middle;
+	overflow-y: auto;
+	max-height:inherit;
 	vertical-align: -webkit-baseline-middle;
 	font-size: 18px;
 	font-weight: 600;
-	text-shadow: 0px 0px 20px black;
 }
 #sobremi span > img{
 	width: 25px;
@@ -262,23 +265,22 @@ Mis trabajos
 */
 #mistrabajos .izda,#mistrabajos .drcha{
 	width: 48%;
-	z-index: 110;
+	max-width: 300px;
 	position: relative;
 	display: inline-block;
 	background-size: cover;
 }
-#mistrabajos .izda:hover,#mistrabajos .drcha:hover{
-	background-color: rgba(0,0,0,0.2);
-}
-#mistrabajos span{
-	background-color: rgba(0,0,0,0.2);
+#mistrabajos .izda a, #mistrabajos .drcha a{
+	text-decoration:none;
+	background-color: rgba(0,0,0,0.6);
     bottom: 0;
+    padding-bottom: 5px;
+    font-size: 1.4em;
     color: white;
     width: 100%;
     height: 60px;
     left: 0;
     position: absolute;
-    z-index: 100;
 }
 
 #rural{
@@ -310,12 +312,52 @@ Contacto
 /* ESTILOS RESPONSIVE para Móviles en horizontal o tablets en vertical */
 
 @media (min-width: 768px) {
-	/*Menu*/
+
+	/*Cajas internas*/
+	.izda,.drcha{
+		display: inline-block;
+		border: 1px solid black;
+		width: 80%;
+	    min-width: 500px;
+	}
+	.centro{
+		bottom: 15%;
+	}
+	.made{
+		left:50px;
+		right: 50px;
+	}
+	#mistrabajos .izda,#mistrabajos .drcha{
+		width: 35%;
+		margin: 5px 20px;
+
+	}
+	#sobremi{
+		display: block;
+	}
+	#sobremi .izda,#sobremi .drcha{
+		width: 49.5%;
+		margin:5px;
+	}
+}
+
+/* ESTILOS RESPONSIVE para Tablets en horizonal y escritorios normales */
+
+@media (min-width: 1024px) {
+	    /*
+	Estilo pagina principal
+	*/
+/*Desplazamiento de elementos para
+	no superponerlos en el menu*/
+	main>div{
+		padding-top: 90px;
+	}
+/*Menu*/
 	header {
 		background: rgba(51,74,188,0.8);
 		width: 100%;
 		position: fixed;
-		z-index: 100;
+		z-index: 999;
 	}
 	.oculto{
 		display: none;
@@ -349,40 +391,6 @@ Contacto
 	nav ul li:hover {
 		background: rgba(41,54,158,0.9);
 	}
-	/*Desplazamiento de elementos para
-	no superponerlos en el menu*/
-	main>div{
-		padding-top: 80px;
-	}
-	/*Cajas internas*/
-	.izda,.drcha{
-		display: inline-block;
-		border: 1px solid black;
-		width: 49.5%;
-	}
-	.made{
-		left:50px;
-		right: 50px;
-	}
-	#mistrabajos .izda,#mistrabajos .drcha{
-		width: 35%;
-		margin: 5px 20px;
-
-	}
-	#sobremi{
-		display: block;
-	}
-	#sobremi .izda,#sobremi .drcha{
-		width: 49.5%;
-	}
-}
-
-/* ESTILOS RESPONSIVE para Tablets en horizonal y escritorios normales */
-
-@media (min-width: 1024px) {
-	    /*
-	Estilo pagina principal
-	*/
 	#inicio > img{
 		width: 40%;
 	}
