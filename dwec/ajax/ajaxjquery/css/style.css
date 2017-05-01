@@ -28,12 +28,12 @@ h2 {
   overflow: scroll;
 }
 #estados {
-  min-height: 100px;
+  min-height: 150px;
 }
 #cabeceras {
   min-height: 100px;
 }
 #codigo {
-  min-height: 50px;
+  min-height: 30px;
   font-size: 1.5em;
 }
