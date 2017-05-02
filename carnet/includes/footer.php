@@ -1,8 +1,8 @@
 		</div>
 		<?php
 if($_SESSION['perfil']!="invitado"){?>
-<div class="col s1 m1 l1 center">
-	<a class="btn indigo lighten-2 waves-effect waves-light" href="cerrarSesion.php">Cerrar Sesión<i class="material-icons right">exit_to_app</i>
+<div class="col s1 m1 l1 center" id="cerrar">
+	<a class="btn-floating btn-large red lighten-1	 waves-effect waves-light" href="cerrarSesion.php"> <i class="material-icons right">exit_to_app</i>
 	</a>
 </div>
 <?php
