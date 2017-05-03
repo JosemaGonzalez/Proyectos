@@ -3,10 +3,10 @@ session_start();
 include 'includes/header.php';
 include 'funciones/funciones.php';
 require_once 'clases/grupos.php';
+comprobarVariablesSesion();
 if ($_SESSION['perfil']!="PRO") {
 	header("Location: index.php");
 }
-comprobarVariablesSesion();
 $grupos= grupos::singleton();
 $grupo=$grupos->get_grupos();
 ?>

@@ -26,23 +26,55 @@ function comprobarUsuario($usuario,$password){
 		header("Location: fichaTutorAlumno.php");
 	}
 }
+function cargarBotonParte(){
+	if ($_SESSION['perfil']=="PRO") {?>
+	<div class="col s3 right" id="anadir">
+		<?php
+		if (isset($_GET['alu'])) {
+			echo "<a href=\"anadirParte.php?alu=".base64_encode($_SESSION['idAlu'])."\" class=\"btn-floating btn-large waves-effect waves-light indigo darken-1\"><i class=\"material-icons\">add</i></a></div>";
+		}
+		else{
+			echo "<a href=\"anadirParte.php?alu=".base64_encode($_SESSION['id'])."\" class=\"btn-floating btn-large waves-effect waves-light indigo darken-1\"><i class=\"material-icons\">add</i></a></div>";
 
-function calcularColor(){
-	/*switch (variable) {
-		case 'value':
-			# code...
-			break;
-
-		default:
-			# code...
-			break;
+		}
 	}
-
-	<div id="puntos" class="circle valign-wrapper green darken-4">
-				<h4 class="valign">
-					<?php
-					echo $al[4].'/ 10';
-					?></h4>
-				</div>*/
+}
+function cargarBotonAtras(){
+	if ($_SESSION['perfil']=="PRO") {?>
+	<div class="col s3 left">
+		<?php
+		echo '<a href="fichaProfesorAlumno.php?grupo='.base64_encode($_SESSION["grupo"]).'" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">undo</i></a></div>';
+	}
+	if ($_SESSION['perfil']=="TUT") {?>
+	<div class="col s3 left">
+		<br>
+		<form action="fichaTutorAlumno.php" method="post" accept-charset="utf-8">
+			<button type="submit" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">undo</i></button>
+		</form>
+	</div>
+	<?php
+	}
+}
+function calcularColor($num){
+	switch ($num) {
+		case 7:
+		echo '<div id="puntos" class="circle valign-wrapper yellow">';
+		break;
+		case 8:
+		echo '<div id="puntos" class="circle valign-wrapper amber">';
+		break;
+		case 9:
+		echo '<div id="puntos" class="circle valign-wrapper orange">';
+		break;
+		case 10:
+		echo '<div id="puntos" class="circle valign-wrapper red">';
+		break;
+		default:
+		echo '<div id="puntos" class="circle valign-wrapper green">';
+		break;
+	}
+	echo'<h4 class="valign">';
+	echo $num.'/ 10';
+	echo'</div>';
 }
 ?>

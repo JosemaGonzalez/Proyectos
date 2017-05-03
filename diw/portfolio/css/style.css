@@ -52,11 +52,8 @@ h4{
 	margin-bottom:5px;
 }
 
-a img{
-	width: 15%;
-	vertical-align: sub;
-}
 main .ancla>img{
+	vertical-align: sub;
 	box-shadow: 1px 2px 1px black;
 	border-radius: 50%;
 	width: 50px;
@@ -110,7 +107,6 @@ header ul{
 }
 
 nav > a {
-
 	list-style: none;
 	overflow: hidden;
 	background: rgba(41,54,158,0.8);
@@ -130,7 +126,7 @@ nav a > img{
 /*La imagen de mis trabajos hay que moverla
 para que se quede alineada a las demás*/
 #correccion{
-	margin-bottom: -1px;
+	margin-bottom: -2px;
 }
 
 nav ul {
@@ -201,7 +197,6 @@ Sobre mi
 }
 .pro svg{
 	height: inherit;
-
 }
 .pro span{
 	position: absolute;
@@ -281,14 +276,14 @@ Mis trabajos
 #mistrabajos .izda a, #mistrabajos .drcha a{
 	text-decoration:none;
 	background-color: rgba(0,0,0,0.6);
-    bottom: 0;
-    padding-bottom: 5px;
-    font-size: 1.4em;
-    color: white;
-    width: 100%;
-    height: 60px;
-    left: 0;
-    position: absolute;
+	bottom: 0;
+	padding-bottom: 5px;
+	font-size: 1.4em;
+	color: white;
+	width: 100%;
+	height: 60px;
+	left: 0;
+	position: absolute;
 }
 
 #rural{
@@ -313,8 +308,8 @@ Mis trabajos
 Contacto
 */
 #contacto span>a> img{
-	width: 15%;
-	margin:20px;
+	width: 12%;
+	margin:10px 30px;
 }
 .centro2{
 	margin-top: 10%;
@@ -323,13 +318,41 @@ Contacto
 /* ESTILOS RESPONSIVE para Móviles en horizontal o tablets en vertical */
 
 @media (min-width: 768px) {
-
+	*{
+		font-size: 18px;
+	}
+	/*Estilos principales*/
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	h4{
+		font-size: 26px;
+		margin-bottom:15px;
+	}
+	main .ancla>img{
+		width: 80px;
+	}
+	/*Menu hamburguesa*/
+	#menu{
+		height: 65px;
+		width: 65px;
+	}
+	.oculto{
+		width: 65px;
+		height: 65px;
+	}
 	/*Cajas internas*/
 	.izda,.drcha{
 		display: inline-block;
 		border: 1px solid black;
 		width: 80%;
-	    min-width: 500px;
+		min-width: 500px;
 	}
 	.centro{
 		bottom: 15%;
@@ -338,17 +361,29 @@ Contacto
 		left:50px;
 		right: 50px;
 	}
-	#mistrabajos .izda,#mistrabajos .drcha{
-		width: 35%;
-		margin: 5px 20px;
-
+	#inicio>img{
+		max-width: 500px;
 	}
+	/*Sobre mi*/
 	#sobremi{
 		display: block;
 	}
 	#sobremi .izda,#sobremi .drcha{
 		width: 49.5%;
 		margin:5px;
+	}
+	#sobremi .izda span{
+		font-size: 22px;
+	}
+	.pro span {
+		font-size: 18px;
+	}
+	/*Mis trabajos*/
+	#mistrabajos .izda,#mistrabajos .drcha{
+		width: 35%;
+		margin: 5px 20px;
+		*max-width: 200px;
+		min-width: 43%;
 	}
 }
 
@@ -358,12 +393,19 @@ Contacto
 	    /*
 	Estilo pagina principal
 	*/
-/*Desplazamiento de elementos para
+	/*Desplazamiento de elementos para
 	no superponerlos en el menu*/
 	main>div{
 		padding-top: 90px;
 	}
-/*Menu*/
+	a img{
+		width: 4%;
+	}
+	main .ancla>img{
+		width: 8%;
+		margin-bottom: 10px;
+	}
+	/*Menu*/
 	header {
 		background: rgba(51,74,188,0.8);
 		width: 100%;
@@ -402,18 +444,14 @@ Contacto
 	nav ul li:hover {
 		background: rgba(41,54,158,0.9);
 	}
+
+	/*Inicio*/
 	#inicio > img{
 		width: 40%;
 	}
-	a img{
-		width: 4%;
-	}
+	/*Sobre mi*/
 	#sobremi div > img{
 		width: 20%;
-	}
-	main .ancla>img{
-		width: 8%;
-		margin-bottom: 10px;
 	}
 	#sobremi .drcha img{
 		width: 20%;

@@ -24,7 +24,7 @@ else{
 <div class="col s12 center" id="titulo">
 	<h4>Carnet de convivencia</h4>
 </div>
-<div class="row center" style="border-radius: 2%;position: absolute;" id="cara">
+<div class="row center" style="position: absolute;" id="cara">
 	<div class="col s3">
 		<?php
 		echo'<img src="images/'.$al[3].'" alt="" class="circle responsive-img">';
@@ -53,7 +53,7 @@ else{
 	<div class="col s3">
 		<div class="col s12">
 			<?php
-			calcularColor();
+			calcularColor($al[4]);
 			?>
 		</div>
 	</div>
@@ -63,48 +63,29 @@ else{
 				<button type="button" class="btn-floating btn-large waves-effect waves-light indigo lighten-1"><i class="material-icons">autorenew</i></button>
 			</div>
 			<?php
-			if ($_SESSION['perfil']=="PRO") {?>
-			<div class="col s3 right" id="anadir">
-				<button type="button" class="btn-floating btn-large waves-effect waves-light indigo darken-1"><i class="material-icons">add</i></button>
-			</div>
-			<?php
-		}
-		?>
-	</div>
-	<div class="row">
-		<?php
-		if ($_SESSION['perfil']=="PRO") {?>
-		<div class="col s3 left">
-			<?php
-			echo '<a href="fichaProfesorAlumno.php?grupo='.base64_encode($_SESSION["grupo"]).'" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">undo</i></a></div>';
-		}
-		if ($_SESSION['perfil']=="TUT") {?>
-		<div class="col s3 left">
-			<br>
-			<form action="fichaTutorAlumno.php" method="post" accept-charset="utf-8">
-				<button type="submit" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">undo</i></button>
-			</form>
+			cargarBotonParte();
+			?>
 		</div>
-		<?php
-	}
-	?>
-</div>
-</div>
+		<div class="row">
+			<?php
+			cargarBotonAtras();
+			?>
+		</div>
+	</div>
 </div>
 </div>
 <div id="cruz" style="position: absolute;" class="row center">
 	<div class="col s12">
-	<?php
-	//print_r($par);
-	foreach ($par as $key => $value){
-		echo "<div class=\"row\">";
-		echo "<p class='left-align'>Fecha: ". $value[0]."</p>";
-		echo "<p class='left-align'>Descripción: ". $value[1]."</p>";
-		echo "<p class='left-align'>Observaciones: ". $value[2]."</p>";
-		echo "<p class='left-align'>Puntos: ". $value[3]."</p>";
-		echo "</div><hr>";
-	}
-	 ?>
+		<?php
+		foreach ($par as $key => $value){
+			echo "<div class=\"row\">";
+			echo "<p class='left-align'>Fecha: ". $value[0]."</p>";
+			echo "<p class='left-align'>Descripción: ". $value[1]."</p>";
+			echo "<p class='left-align'>Observaciones: ". $value[2]."</p>";
+			echo "<p class='left-align'>Puntos: ". $value[3]."</p>";
+			echo "</div><hr>";
+		}
+		?>
 	</div>
 	<div class="col s12">
 		<div class="row">
@@ -112,15 +93,10 @@ else{
 				<button type="button" class="btn-floating btn-large waves-effect waves-light indigo lighten-1"><i class="material-icons">autorenew</i></button>
 			</div>
 			<?php
-			if ($_SESSION['perfil']=="PRO") {?>
-			<div class="col s3 right" id="anadir">
-				<button type="button" class="btn-floating btn-large waves-effect waves-light indigo darken-1"><i class="material-icons">add</i></button>
-			</div>
-			<?php
-		}
-		?>
+			cargarBotonParte();
+			?>
+		</div>
 	</div>
-</div>
 </div>
 <?php
 include 'includes/footer.php';

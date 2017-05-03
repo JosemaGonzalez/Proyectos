@@ -1,21 +1,14 @@
 {
 	$(document).ready(function() {
-		let input = $("#input");
-		let contenido = $("#coincidencias");
+		let busqueda = $("#busqueda");
+		let coincidencias = $("#coincidencias");
 
-		input.keyup(function(){
+		busqueda.keyup(function(){
 			$.ajax({
-				url: "nombres.php?cad="+input.val(),
-				type: "GET",
-				dataType: "text",
-				error: function (xhr){
-					contenidos.text("Error\nNo se encuentran coincidencias");
-				}
+				url: "alumnos.php?busqueda="+busqueda.val()
 			})
-			.done(function(data,textStatus,xhr){
-			})
-			.fail(function(xhr){
-
+			.done(function(data){
+				coincidencias.text(data);
 			});
 		});
 	});

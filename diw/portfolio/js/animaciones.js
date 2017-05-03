@@ -55,5 +55,23 @@ jQuery(function($) {
         offset: '50%',
         triggerOnce: true
     });
+    $(".centro2>span a img").css("opacity", "0");
+    $('.centro2>span a img').waypoint(function() {
+        $(this).toggleClass( 'animated rollIn' );
+        $(".centro2>span a img").css("opacity", "1");
+    },
+    {
+        offset: '100%',
+        triggerOnce: true
+    });
+    $(".centro,.made").css("opacity", "0");
+    $('.centro,.made').waypoint(function() {
+        $(this).toggleClass( 'animated zoomInDown' );
+        $(".centro,.made").css("opacity", "1");
+    },
+    {
+        offset: '100%',
+        triggerOnce: true
+    });
 
 });
