@@ -169,10 +169,17 @@ nav ul li:hover {
 }
 
 .made{
+	color:#6C6969;
 	position: absolute;
-	bottom: 150px;
+	bottom: 21%;
 	padding:5px 0;
+	left: 0.1%;
+	right: 0.1%;
 	margin: 0 20px;
+}
+.made a{
+	text-decoration:none;
+	color: #2D2C2C;
 }
 /*
 Inicio
@@ -196,13 +203,17 @@ Sobre mi
 	top: -8px;
 }
 .pro svg{
+	width: 90%;
 	height: inherit;
+	max-height: 48px;
 }
 .pro span{
 	position: absolute;
-	font-size: 14px;
-	left: 25%;
-	top: 20%;
+	font-size: 1em;
+	left: 1%;
+	right: 1%;
+	top: 1.2%;
+	bottom:1%;
 }
 .apt{
 	margin-top: 1%;
@@ -254,9 +265,9 @@ Sobre mi
 }
 
 #sobremi .drcha img{
-	width: 38%;
+	width: 37%;
+	max-width: 45px;
 	margin:5px;
-	margin-top: 10px;
 }
 
 #sobremi div > img{
@@ -315,8 +326,7 @@ Contacto
 	margin-top: 10%;
 }
 
-/* ESTILOS RESPONSIVE para Móviles en horizontal o tablets en vertical */
-
+/* ESTILOS RESPONSIVE */
 @media (min-width: 768px) {
 	*{
 		font-size: 18px;
@@ -329,7 +339,7 @@ Contacto
 		font-size: 30px;
 	}
 	h3{
-		font-size: 28px;
+		font-size: 29px;
 	}
 	h4{
 		font-size: 26px;
@@ -355,12 +365,9 @@ Contacto
 		min-width: 500px;
 	}
 	.centro{
-		bottom: 15%;
+		bottom: 10%;
 	}
-	.made{
-		left:50px;
-		right: 50px;
-	}
+
 	#inicio>img{
 		max-width: 500px;
 	}
@@ -372,18 +379,39 @@ Contacto
 		width: 49.5%;
 		margin:5px;
 	}
+	#sobremi .drcha img{
+		max-width: auto!important;
+	}
 	#sobremi .izda span{
 		font-size: 22px;
 	}
 	.pro span {
 		font-size: 18px;
 	}
+	.apt{
+		margin-top: 5%;
+	}
 	/*Mis trabajos*/
 	#mistrabajos .izda,#mistrabajos .drcha{
 		width: 35%;
 		margin: 5px 20px;
-		*max-width: 200px;
 		min-width: 43%;
+	}
+	/*Contacto*/
+	.made{
+		left:50px;
+		right: 50px;
+		bottom: 25%;
+	}
+	.centro>p{
+		margin-bottom: 5%;
+	}
+	.centro2{
+		width: 80%;
+		margin: 50px auto;
+	}
+	#contacto span>a> img{
+		margin:25px 35px;
 	}
 }
 
@@ -403,7 +431,18 @@ Contacto
 	}
 	main .ancla>img{
 		width: 8%;
-		margin-bottom: 10px;
+		max-width: 55px;
+		margin-bottom: 25px;
+	}
+	h4{
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	h3{
+		margin-bottom: 15px;
+	}
+	.centro{
+		z-index: 50;
 	}
 	/*Menu*/
 	header {
@@ -447,17 +486,109 @@ Contacto
 
 	/*Inicio*/
 	#inicio > img{
-		width: 40%;
+		width: 45%;
+		margin-top:20px;
 	}
 	/*Sobre mi*/
+	#sobremi .izda,#sobremi .drcha{
+		width: 48.5%;
+		max-width: 48.5%;
+		min-width: auto;
+		margin:10px 5px;
+	}
+	#sobremi .izda{
+		float: left;
+	}
+	#sobremi .drcha{
+		float: right;
+	}
 	#sobremi div > img{
 		width: 20%;
 	}
-	#sobremi .drcha img{
-		width: 20%;
+	.apt{
+		min-width: 25%;
+		width: 28%;
+		max-width: 192px;
+		margin:5px 10px;
+	}
+	/*Mis trabajos*/
+	#mistrabajos .izda a, #mistrabajos .drcha a {
+		font-size: 1.8em;
+		z-index: 60;
+	}
+	#mistrabajos .izda{
+		margin-right: 3%;
+	}
+	#mistrabajos .drcha {
+		margin-left: 3%;
+	}
+	#mistrabajos .izda, #mistrabajos .drcha {
+		width: 40%;
+		z-index: 55;
+		min-width: 40%;
+	}
+
+	/*Contacto*/
+	.made{
+		bottom: 21%;
+	}
+	#contacto span>a> img{
+		max-width:80px;
 	}
 }
 
 /* ESTILOS RESPONSIVE para Escritorios muy anchos */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	/*Espacio para superponer el menu*/
+	main>div{
+		padding-top: 110px;
+	}
+	/*Estilos principales*/
+	h4{
+		font-size: 29px;
+		margin-bottom:30px;
+	}
+	h3{
+		font-size: 33px;
+	}
+	.centro {
+		bottom: 11%;
+	}
+	/*flecha*/
+	main .ancla>img {
+		max-width: 55px;
+	}
+	/*Inicio*/
+	#inicio > img{
+		margin-top: 5%;
+	}
+	/*Sobre mi*/
+	.apt{
+		margin:15px 10px;
+	}
+	#sobremi .izda div {
+		width: 45%;
+		margin-left: 25px;
+	}
+	#sobremi .drcha img{
+		width: 40%;
+		max-width: 55px;
+	}
+	.pro>span{
+		top:17%;
+	}
+	.pro span{
+		font-size: 20px;
+	}
+	.pro svg{
+		max-height: 55px;
+		}/*Mis trabajos*/
+		#mistrabajos .izda, #mistrabajos .drcha{
+			min-width: 35%;
+		}
+		/*Contacto*/
+		.centro2{
+			width: 50%;
+		}
+	}

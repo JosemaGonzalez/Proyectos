@@ -12,11 +12,9 @@
 	}
 	let buscar = function(){
 		xhr = new XMLHttpRequest();
-		if(xhr) {
-			xhr.onreadystatechange = escribir;
-			xhr.open("GET", "alumnos.php?busqueda="+busqueda.value , true);
-			xhr.send(null);
-		}
+		xhr.onreadystatechange = escribir;
+		xhr.open("GET", "alumnos.php?busqueda="+busqueda.value , true);
+		xhr.send(null);
 	}
 
 	let init = function(){

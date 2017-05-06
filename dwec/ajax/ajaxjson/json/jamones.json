@@ -1,0 +1,17 @@
+{
+	"jamones":
+	[
+		{
+			"tipo":"Negro"
+		},
+		{
+			"tipo":"Rojo"
+		},
+		{
+			"tipo":"Verde"
+		},
+		{
+			"tipo":"Blanco"
+		}
+	]
+}

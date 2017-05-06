@@ -1,0 +1,21 @@
+{
+	"aceites":
+	[
+		{
+			"tipo":"Aceite de Oliva Virgen Extra",
+			"descripcion":"El aceite más bueno"
+		},
+		{
+			"tipo":"Aceite de Oliva Virgen",
+			"descripcion":"El aceite bueno de la casa"
+		},
+		{
+			"tipo":"Aceite de Oliva",
+			"descripcion":"El aceite de la freidora"
+		},
+		{
+			"tipo":"Aceite de Orujo de Oliva",
+			"descripcion":"El aceite malo"
+		}
+	]
+}

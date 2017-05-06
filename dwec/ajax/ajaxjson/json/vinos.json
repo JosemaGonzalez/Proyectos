@@ -1,0 +1,17 @@
+{
+	"vinos":
+	[
+		{
+			"tipo":"Rosado"
+		},
+		{
+			"tipo":"Tinto joven"
+		},
+		{
+			"tipo":"Tinto de crianza"
+		},
+		{
+			"tipo":"Rioja"
+		}
+	]
+}
