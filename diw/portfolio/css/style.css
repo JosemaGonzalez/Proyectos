@@ -547,25 +547,26 @@ Contacto
 	/*Estilos principales*/
 	h4{
 		font-size: 29px;
-		margin-bottom:30px;
+		margin-bottom:20px;
 	}
 	h3{
 		font-size: 33px;
 	}
 	.centro {
-		bottom: 11%;
+		bottom: 12%;
 	}
 	/*flecha*/
 	main .ancla>img {
+		width: 4%;
 		max-width: 55px;
 	}
 	/*Inicio*/
 	#inicio > img{
-		margin-top: 5%;
+		margin-top: 2%;
 	}
 	/*Sobre mi*/
 	.apt{
-		margin:15px 10px;
+		margin:10px;
 	}
 	#sobremi .izda div {
 		width: 45%;
