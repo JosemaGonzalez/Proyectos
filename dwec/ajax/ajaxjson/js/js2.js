@@ -4,7 +4,7 @@
     let xhr;
 
     let escribir = function (data, objeto) {
-        resultado.innerHTML = "Tipo: "+objeto.toUpperCase() +"<br>";
+        resultado.innerHTML = "Tipo: "+objeto.toUpperCase() +"<br><br>";
         for (i in data) {
             for (j in data[objeto]) {
                 resultado.innerHTML += data[objeto][j].tipo + "<br>";
