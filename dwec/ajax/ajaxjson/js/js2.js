@@ -4,6 +4,7 @@
     let xhr;
 
     let escribir = function (data, objeto) {
+        resultado.innerHTML = "Tipo: "+objeto.toUpperCase() +"<br>";
         for (i in data) {
             for (j in data[objeto]) {
                 resultado.innerHTML += data[objeto][j].tipo + "<br>";
@@ -18,7 +19,6 @@
         xhr.open("GET", fichero, true);
         xhr.onreadystatechange = function () {
             if (xhr.status == 200 && xhr.readyState == 4) {
-                resultado.innerHTML = "";
                 escribir(JSON.parse(xhr.responseText), objeto);
             }
         }
