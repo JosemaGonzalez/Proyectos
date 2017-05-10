@@ -22,7 +22,8 @@ if ($busqueda != "") {
 			if(!isset($coincidencias)){
 				$coincidencias = $alumno;
 			}else{
-				$coincidencias .= ", " . $alumno;
+			//mirar salto de linea
+				$coincidencias .= ", \n" . $alumno;
 			}
 		}
 	}

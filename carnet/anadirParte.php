@@ -6,39 +6,8 @@ comprobarVariablesSesion();
 if ($_SESSION['perfil']!="PRO"||!isset($_GET['alu'])) {
 	header("Location: index.php");
 }
-
 ?>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap-material-datetimepicker.css">
-<script src="js/moment.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/bootstrap-material-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
-<script>
-	$(document).ready(function() {
-		var now = new Date();
-		$('.timepicker').bootstrapMaterialDatePicker();
-
-		$('.datepicker').pickadate({
-			selectMonths: true,
-			selectYears: 15,
-			labelMonthNext: 'Mes siguiente',
-			labelMonthPrev: 'Mes anterior',
-			labelMonthSelect: 'Selecciona un mes',
-			labelYearSelect: 'Selecciona un año',
-			monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
-			monthsShort: [ 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic' ],
-			weekdaysFull: [ 'Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado' ],
-			weekdaysShort: [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab' ],
-			weekdaysLetter: [ 'D', 'L', 'M', 'X', 'J', 'V', 'S' ],
-			formatSubmit: 'yyyy-mm-dd HH:MM:ss',
-			format: 'dd//mm/yyyy '+ now.getHours()+':'+now.getMinutes()+':'+now.getSeconds(),
-			today: 'Hoy',
-			clear: 'Limpiar',
-			close: 'Cerrar',
-			firstDay: true
-		});
-
-	});
-</script>
 <div class="row center" style="border-radius: 2%;">
 	<div class="col s12 center">
 		<h4>Añadir Parte</h4>
@@ -47,24 +16,89 @@ if ($_SESSION['perfil']!="PRO"||!isset($_GET['alu'])) {
 		<div class="row">
 			<form action="crearParte.php" method="post" accept-charset="utf-8">
 				<div class="col s6 m4">
-					<input type="date" class="datepicker" id="fecha" placeholder="Fecha">
+					<input type="date"  name="fecha" placeholder="Fecha">
 				</div>
 				<div class="col s6 m4">
-					<input type="date" class="datepicker" id="fechaComunicacion" placeholder="Fecha Comunicación">
+					<input type="date"  name="fechaComunicacion" placeholder="Fecha Comunicación">
 				</div>
 				<div class="col s6 m4">
-					<input type="date" class="datepicker" id="fechaConfirmacion" placeholder="Fecha Confirmación">
+					<input type="date"  name="fechaConfirmacion" placeholder="Fecha Confirmación">
 				</div>
 				<div class="input-field col s12 m6">
-					<textarea id="textarea1" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
-					<label for="textarea1">Descripción</label>
+					<textarea id="Descripcion" name="Descripcion" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
+					<label for="Descripcion">Descripción</label>
 				</div>
 				<div class="input-field col s12 m6">
-					<textarea id="textarea" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
-					<label for="textarea">Tareas</label>
+					<textarea id="tareas" name="tareas" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
+					<label for="tareas">Tareas</label>
 				</div>
 				<div class="col s6 m4">
-					<input type="text" class="timepicker" id="fechaConfirmacion" placeholder="Fecha Confirmación">
+					<input type="time" name="horaSalidaAula" placeholder="Hora salida del aula">
+				</div>
+				<div class="col s6 m4">
+					<input type="time" name="horaLlegadaJefatura" placeholder="Hora llegada a jefatura">
+				</div>
+				<div class="col s6 m4">
+					<input type="time" name="horaLlegadaAulaConvivencia" placeholder="Hora llegada a aula de convivencia">
+				</div>
+				<div class="col s6 m4">
+					<label for="formato">Formato</label>
+					<p>
+						<input name="formato" type="radio" id="Papel" value="Papel"/>
+						<label for="Papel">Papel</label>
+					</p>
+					<p>
+						<input name="formato" type="radio" id="Digital" value="Digital" checked />
+						<label for="Digital">Digital</label>
+					</p>
+				</div>
+				<div class="input-field col s12 m6">
+					<textarea id="observaciones" name="observaciones" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
+					<label for="observaciones">Observaciones</label>
+				</div>
+				<div class="input-field col s6 m4">
+					<input  id="puntos" name="puntos" type="number" min="0" max="10" class="validate">
+					<label for="puntos">Puntos 0-10</label>
+				</div>
+				<div class="col s6 m4">
+					<label for="estado">Estado</label>
+					<p>
+						<input name="estado" type="radio" id="Caducado"  value="Caducado" />
+						<label for="Caducado">Caducado</label>
+					</p>
+					<p>
+						<input name="estado" type="radio" id="Comunicado"  value="Comunicado" checked />
+						<label for="Comunicado">Comunicado</label>
+					</p>
+					<p>
+						<input name="estado" type="radio" id="Confirmado"  value="Confirmado" />
+						<label for="Confirmado">Confirmado</label>
+					</p>
+					<p>
+						<input name="estado" type="radio" id="Iniciado"  value="Iniciado" />
+						<label for="Iniciado">Iniciado</label>
+					</p>
+				</div>
+				<div class="col s6 m4">
+					<label for="tipo">Tipo</label>
+					<p>
+						<input name="tipo" type="radio" id="Muy Grave"  value="Muy Grave" />
+						<label for="Muy Grave">Muy Grave</label>
+					</p>
+					<p>
+						<input name="tipo" type="radio" id="Grave"  value="Grave" />
+						<label for="Grave">Grave</label>
+					</p>
+					<p>
+						<input name="tipo" type="radio" id="Leve" value="Leve"  checked />
+						<label for="Leve">Leve</label>
+					</p>
+				</div>
+				<div class="col s12">
+				<br><br>
+					<button class="btn waves-effect waves-light" type="submit" name="anadirParte">Enviar
+						<i class="material-icons right">send</i>
+					</button>
 				</div>
 			</form>
 		</div>

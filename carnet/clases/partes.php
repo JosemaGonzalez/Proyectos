@@ -35,5 +35,29 @@ class Partes
             $e->getMessage();
         }
     }
+    public function insertar_parte($fecha,$fechaComunicacion,$fechaConfirmacion,$descripcion,$tareas,$horaSalidaAula,$horaLlegadaJefatura,$horaLlegadaAulaConvivencia,$formato,$observaciones,$puntos,$estado,$tipo,$idAlumno,$idProfesor){
+       try {
+            $query = $this->dbh->prepare('insert into partes (fecha,fechaComunicacion,fechaConfirmacion,descripcion,tareas,horaSalidaAula,horaLlegadaJefatura,horaLlegadaAulaConvivencia,formato,observaciones,puntos,estado,tipo,idAlumno,idProfesor) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+            $query->bindParam(1, $fecha);
+            $query->bindParam(2, $fechaComunicacion);
+            $query->bindParam(3, $fechaConfirmacion);
+            $query->bindParam(4, $descripcion);
+            $query->bindParam(5, $tareas);
+            $query->bindParam(6, $horaSalidaAula);
+            $query->bindParam(7, $horaLlegadaJefatura);
+            $query->bindParam(8, $horaLlegadaAulaConvivencia);
+            $query->bindParam(9, $formato);
+            $query->bindParam(10, $observaciones);
+            $query->bindParam(11, $puntos);
+            $query->bindParam(12, $estado);
+            $query->bindParam(13, $tipo);
+            $query->bindParam(14, $idAlumno);
+            $query->bindParam(15, $idProfesor);
+            $query->execute();
+            $this->dbh = null;
+        } catch (PDOException $e) {
+            $e->getMessage();
+        }
+    }
 
 }
