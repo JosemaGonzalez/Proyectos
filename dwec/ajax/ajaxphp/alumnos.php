@@ -20,10 +20,10 @@ if ($busqueda != "") {
 	foreach ($alumnos as $alumno) {
 		if(stristr($alumno,$busqueda)){
 			if(!isset($coincidencias)){
-				$coincidencias = $alumno;
+				$coincidencias = "<li>".$alumno."</li>";
 			}else{
 			//mirar salto de linea
-				$coincidencias .= ", \n" . $alumno;
+				$coincidencias .= "<li>" . $alumno."</li>";
 			}
 		}
 	}
@@ -31,6 +31,6 @@ if ($busqueda != "") {
 if (!isset($coincidencias)) {
 	echo "No hay coincidencias";
 }else{
-	echo "Coincide: ".$coincidencias;
+	echo "<ul>".$coincidencias."</ul>";
 }
 ?>

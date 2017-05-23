@@ -15,6 +15,17 @@ $grupo=$grupos->get_grupos();
 		<h4>Carnet de convivencia</h4>
 	</div>
 	<div class="col s12">
+		<form method="post" action="buscar.php">
+			<div class="col m4"></div>
+			<div class="col s6 m4">
+				<input type="text" name="alumnoABuscar" placeholder="Buscar alumno por NIE">
+			</div>
+			<div class="col s1 m1">
+				<input type="submit" name="buscarAlumno" value="Buscar" class="waves-effect waves-light btn indigo darken-1">
+			</div>
+		</form>
+	</div>
+	<div class="col s12">
 		<div class="row">
 			<div class="col s12">
 				<?php

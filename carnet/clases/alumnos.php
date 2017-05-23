@@ -35,7 +35,20 @@ class Alumnos
             $e->getMessage();
         }
     }
+    public function get_alumno_DNI($id)
+    {
+        try {
+            $query = $this->dbh->prepare('select id,grupo from alumnos where nie="'.$id.'"');
+            $query->execute();
 
+            $resultado=$query->fetch();
+
+            return($resultado);
+            $this->dbh = null;
+        }catch (PDOException $e) {
+            $e->getMessage();
+        }
+    }
     public function get_alumno($id)
     {
         try {

@@ -1,0 +1,32 @@
+{
+	"carteles":
+	[
+		{
+			"ruta":"images/cartel.jpg"
+		},
+		{
+			"ruta":"images/cartelSysmana2016.png"
+		},
+		{
+			"ruta":"images/sysmana2015.jpg"
+		},
+		{
+			"ruta":"images/sysmana2014.jpg"
+		},
+		{
+			"ruta":"images/sysmana2013.jpg"
+		},
+		{
+			"ruta":"images/sysmana2012.jpg"
+		},
+		{
+			"ruta":"images/sysmana2011.jpg"
+		},
+		{
+			"ruta":"images/sysmana2010-212x300.jpg"
+		},
+		{
+			"ruta":"images/cartelsysmana2009.jpg"
+		}
+	]
+}

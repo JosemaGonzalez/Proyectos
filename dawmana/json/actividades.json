@@ -1,0 +1,14 @@
+{
+	"actividades":
+	[
+		{
+			"url": "m1",
+			"titulo" : "Taller sobre diseño web nivel básico, para programadores",
+			"ponente" : "Claudia Lopez Iglesias",
+			"hora" : "8:15 - 11:15",
+			"lugar" : "T116",
+			"asistentes" : "Ciclo DAW",
+			"descripcion" : "En este taller, veremos un poco de leyes de composición visual, teoría del color y paletas, tipografías y sus posibles combinaciones, tendencias, recursos... Todo ello mientras usamos las herramientas básicas para crear imágenes vectoriales para exportar diferentes formatos, configurar espacios de trabajo, cómo hacer paletas de color, uso de las tipografías..."
+		}
+	]
+}

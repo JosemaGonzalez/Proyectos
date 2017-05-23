@@ -1,0 +1,19 @@
+<?xml version="1.0" ?><quiz>
+<question type="essay"><name><text>
+Pregunta 1 de 17/5/2017 a las 
+</text></name><questiontext format="html"><text>
+﻿1. Desarrolle una consulta que liste el nombre del empleado, el código del  departamento y la fecha de inicio que empezó a trabajar, ordenando el resultado por departamento y por fecha de inicio, el ultimo que entro a trabajar va de primero.@
+
+</text></questiontext><generalfeedback format="html"><text>
+select first_name, department_id, hire_date from employees order by department_id, hire_date desc;@
+
+</text></generalfeedback></question>
+<question type="essay"><name><text>
+Pregunta 3 de 17/5/2017 a las 
+</text></name><questiontext format="html"><text>
+2. Desarrolle una consulta que liste el código, nombre y apellido de los empleados y sus respectivos fejes con titulo Empleado y Jefe:@
+
+</text></questiontext><generalfeedback format="html"><text>
+select e1.employee_id||’ ‘||e1.first_name||’ ‘||e1.last_name as Empelado, e2.employee_id||’ ‘||e2.first_name||’ ‘||e2.last_name as Jefe from employees e1,employees e2 where e1.manager_id=e2.employee_id;@
+</text></generalfeedback></question>
+</quiz>

@@ -8,7 +8,7 @@
 				url: "alumnos.php?busqueda="+busqueda.val()
 			})
 			.done(function(data){
-				coincidencias.text(data);
+				coincidencias.html(data);
 			});
 		});
 	});
