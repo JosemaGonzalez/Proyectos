@@ -7,7 +7,7 @@ class RTutoresLegales
     private function __construct()
     {
     	try {
-            $this->dbh = new PDO('mysql:host=localhost;dbname=cnv', 'root', '');
+            $this->dbh = new PDO('mysql:host=localhost;dbname=2daw1617_gopejo', '2daw1617_gopejo', 'ies_0955');
             $this->dbh->exec("SET CHARACTER SET utf8");
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage();

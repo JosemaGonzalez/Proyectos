@@ -5,52 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>DAWMANA</title>
+  <!--Fuentes -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|News+Cycle|Orbitron" rel="stylesheet">
+  <!--JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|News+Cycle|Orbitron" rel="stylesheet">
+  <!--Animaciones -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
-  <link rel="stylesheet" type="text/css" href="css/lightgallery.min.css">
-  <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
-  <script src="js/materialize.js" type="text/javascript" charset="utf-8"></script>
-  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-  <script src="js/jquery.fancybox.min.js"></script>
-  <!--scripts necesarios para lightgallery -->
-  <script src="js/lightgallery.min.js"></script>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/lg-fullscreen.min.js"></script>
-  <script src="js/lg-video.min.js"></script>
-  <script src="js/lg-autoplay.min.js"></script>
-  <script src="js/lg-zoom.min.js"></script>
-  <script src="js/lg-hash.min.js"></script>
-  <script src="js/lg-pager.min.js"></script>
-  <script src="js/lg-thumbnail.min.js"></script>
-  <script src="js/jquery.mousewheel.min.js"></script>
-  <!--scripts necesarios para lightgallery -->
-  <script src='js/moment.min.js'></script>
-  <script src='js/fullcalendar.min.js'></script>
-  <script src='js/es.js'></script>
-  <script src="js/home.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/home2.js" type="text/javascript" charset="utf-8"></script>
+  <!--Material Design -->
+  <link type="text/css" rel="stylesheet" href="css/materialize/materialize.css"  media="screen,projection"/>
+  <!--Jquery UI-->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.structure.min.css">
+  <!--Fullcalendar -->
+  <link rel="stylesheet" type="text/css" href="css/fullcalendar/fullcalendar.min.css">
+  <!--Fullcalendar en modo de impresion, se deja comentado porque cambia los estilos
+  <link rel="stylesheet" type="text/css" href="css/fullcalendar/fullcalendar.print.min.css">
+-->
+<!--LightGallery  (ponentes) -->
+<link rel="stylesheet" type="text/css" href="css/lightgallery/lightgallery.min.css">
+<!--Fancybox (carteles) -->
+<link href="css/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+<!--Modal -->
+<link href="css/modal/jquery.modal.min.css" rel="stylesheet">
+<!--Estilos normales -->
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<!--material design -->
+<script src="js/materialize/materialize.js" type="text/javascript" charset="utf-8"></script>
+<!--Jquery UI-->
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<!--Fancybox (carteles) -->
+<script src="js/fancybox/jquery.fancybox.min.js"></script>
+<!--scripts necesarios para lightgallery (ponentes) -->
+<script src="js/lightgallery/lightgallery.min.js"></script>
+<script src="js/lightgallery/picturefill.min.js"></script>
+<script src="js/lightgallery/lg-autoplay.min.js"></script>
+<script src="js/lightgallery/lg-fullscreen.min.js"></script>
+<script src="js/lightgallery/lg-hash.min.js"></script>
+<script src="js/lightgallery/lg-pager.min.js"></script>
+<script src="js/lightgallery/lg-share.min.js"></script>
+<script src="js/lightgallery/lg-thumbnail.min.js"></script>
+<script src="js/lightgallery/lg-video.min.js"></script>
+<script src="js/lightgallery/lg-zoom.min.js"></script>
+<script src="js/lightgallery/jquery.mousewheel.min.js"></script>
+<!--Fullcalendar -->
+<script src='js/fullcalendar/moment.min.js'></script>
+<script src='js/fullcalendar/fullcalendar.min.js'></script>
+<script src='js/fullcalendar/es.js'></script>
+<!--Modal -->
+<script src='js/modal/jquery.modal.min.js'></script>
+<!--validate -->
+<script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/validate/messages_es.js"></script>
+<!--slider -->
+<script type="text/javascript" src="js/slides/jquery.slides.min.js"></script>
+<!--script normales -->
+<script src="js/comun.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 <body>
   <header>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed z-depth-5">
      <nav>
       <div class="nav-wrapper blue">
         <a href="#inicio" class="brand-logo left ancla hide-on-med-and-down"><img src="images/logo.jpg" alt=""></a>
+        <a href="#" id ="acceso" class="left nav2" style="margin-left: 75px;">Acceso</a>
+        <a href="#" id="registro" class="left nav2">Registro</a>
         <a href="#inicio" class="brand-logo center ancla hide-on-med-and-down">Dawmana 2017</a>
         <ul class="right">
-          <li><a href="#inicio" class="ancla">Inicio</a></li>
           <li><a href="#que" class="ancla">¿Qué es?</a></li>
           <li><a href="#ponentes" class="ancla">Ponentes</a></li>
           <li><a href="#programa" class="ancla">Programa</a></li>
           <li><a href="#galeria" class="ancla">Galería</a></li>
+          <li><a href="#concurso" class="ancla">Concurso</a></li>
         </ul>
       </div>
     </nav>
@@ -65,70 +94,60 @@
   <div class="section white" id="que">
     <div class="row container">
       <h2 class="header center blue-text">Acerca de la Dawmana</h2>
-      <ul>
+      <ul class="z-depth-5">
         <li>
-          <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal1">¿Qué es la Sysmana?</a>
-          <div id="modal1" class="modal">
-           <div class="modal-content">
+          <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal1" rel="modal:open">¿Qué es la Sysmana?</a>
+          <div id="modal1"   style="display:none;">
+           <div >
              <h4>¿Qué es la Sysmana?</h4>
              El nombre de Sysmana procede de la conjunción de Sistemas (de la información) y “semana” que es la duración de esta jornada de actividades dedicada a la Informática y las comunicaciones y que tiene lugar cada curso desde el curso 2008-2009. Las actividades consisten en talleres, charlas, concursos, mesas redondas, debates, etc.</div>
-             <div class="modal-footer">
-               <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-             </div>
+
            </div>
          </li>
          <li>
-          <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal2">¿Quién la organiza?</a>
-          <div id="modal2" class="modal">
+          <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal2" rel="modal:open">¿Quién la organiza?</a>
+          <div id="modal2"   style="display:none;">
 
-           <div class="modal-content">
+           <div >
              <h4>¿Quién la organiza?</h4>
              El departamento de Informática y Comunicaciones del IES Gran Capitán con la colaboración del alumnado y el apoyo del equipo directivo y del departamento de Hostelería.
            </div>
-           <div class="modal-footer">
-             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-           </div>
+
          </div>
        </li>
        <li>
-        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal3">¿Qué hacemos en la Sysmana?</a>
-        <div id="modal3" class="modal">
-         <div class="modal-content">
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal3" rel="modal:open">¿Qué hacemos en la Sysmana?</a>
+        <div id="modal3"   style="display:none;">
+         <div >
            <h4>¿Qué hacemos en la Sysmana?</h4>
            Intentamos abarcar todo tipo de actividades: desarrollo Web, desarrollo móvil, seguridad, robótica, talleres, concursos, buenas prácticas, temas de documentación, desarrollo ágil, pruebas, programación, mundo laboral, trabajo en equipo, hardware, nuevos dispositivos...</div>
-           <div class="modal-footer">
-             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-           </div>
+
          </div>
        </li>
        <li>
-        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal4">¿Cuál es el objetivo?</a>
-        <div id="modal4" class="modal">
-         <div class="modal-content">
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal4" rel="modal:open">¿Cuál es el objetivo?</a>
+        <div id="modal4"   style="display:none;">
+         <div >
            <h4>¿Cuál es el objetivo?</h4>
            Ampliar los conocimientos del alumnado, ponerles en contacto con el mundo laboral y con la realidad que van a encontrarse cuando finalicen los estudios, conocer herramientas y especialidades de la informática en las que pueden interesarse y desarrollar su carrera profesional en un futuro, conocer la experiencia de emprendedores y de antiguos alumnos y alumnas, etc. ¡Y todo esto sin olvidar divertirnos!</div>
-           <div class="modal-footer">
-             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-           </div>
+
          </div>
        </li>
        <li>
-        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal5">¿Quién participa?</a>
-        <div id="modal5" class="modal">
-         <div class="modal-content">
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal5" rel="modal:open">¿Quién participa?</a>
+        <div id="modal5"   style="display:none;">
+         <div >
            <h4>¿Quién participa?</h4>
            <p>Gran parte de los talleres y charlas son realizadas por profesionales del sector que comparten con nosotros sus conocimientos y experiencia de una forma altruista. Pero también participan el propio alumnado con algunos talleres específicos que son de interés para todos e incluso antiguo alumnado que regresa por unos días al centro para contarnos su trayectoria tras salir al mercado laboral.
            </p><p>
            Algunos ponentes son clásicos ya, y agradecemos de todo corazón el cariño que año tras año le ponen a nuestra Sysmana, y siempre de forma desinteresada. Pero lo que más nos enorgullece es la participación de nuestros ex-alumnos cuando vuelven ya como profesionales: cierran el círculo y viven la Sysmana desde el otro lado, ahora como entendidos que cuentan su experiencia a los alumnos todavía inexpertos pero ávidos de conocimiento</p></div>
-           <div class="modal-footer">
-             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-           </div>
+
          </div>
        </li>
        <li>
-        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal6">¿A quién está dirigido?</a>
-        <div id="modal6" class="modal">
-         <div class="modal-content">
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal6" rel="modal:open">¿A quién está dirigido?</a>
+        <div id="modal6"   style="display:none;">
+         <div >
            <h4>¿A quién está dirigido?</h4>
            <p>A todo aquél con inquietudes por ampliar sus conocimientos en el campo de la informática y comunicaciones y que quiera conocer “lo que se cuece” ahí fuera en el mundo laboral. Por supuesto, los asistentes imprescindibles a la Sysmana son nuestros alumnos de los ciclos formativos:</p>
            <ul>
@@ -138,44 +157,39 @@
             </li>
           </ul>
           <p>Pero intentamos adecuar el nivel de las ponencias y talleres para que los alumnos las disfruten al máximo y no se pierdan en conceptos más o menos técnicos fuera de su alcance.</p></div>
-          <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
+
+        </div>
+      </li>
+      <li>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal7" rel="modal:open">¿Puedo asistir si no pertenezco al IES Gran Capitán?</a>
+        <div id="modal7"   style="display:none;">
+         <div >
+           <h4>¿Puedo asistir si no pertenezco al IES Gran Capitán?</h4>
+           Estamos encantados de recibir asistentes de otros centros como durante varios años ha ocurrido con el alumnado y profesorado del IES "Fidiana", IES “Blas Infante”, IES “El Tablero”, IES “Francisco de los Ríos”. A los que esperamos se unan muchos más las próximas ediciones</div>
+
          </div>
-       </div>
-     </li>
-     <li>
-      <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal7">¿Puedo asistir si no pertenezco al IES Gran Capitán?</a>
-      <div id="modal7" class="modal">
-       <div class="modal-content">
-         <h4>¿Puedo asistir si no pertenezco al IES Gran Capitán?</h4>
-         Estamos encantados de recibir asistentes de otros centros como durante varios años ha ocurrido con el alumnado y profesorado del IES "Fidiana", IES “Blas Infante”, IES “El Tablero”, IES “Francisco de los Ríos”. A los que esperamos se unan muchos más las próximas ediciones</div>
-         <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
+       </li>
+       <li>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal8" rel="modal:open">Vídeos</a>
+        <div id="modal8"   style="display:none;">
+          <div class="center">
+           <h4>Vídeos</h4>
+           Si todavía tienes dudas, en este vídeo te lo contamos<iframe width="400" height="250" src="https://www.youtube.com/embed/eajeAu067a4" frameborder="0" allowfullscreen></iframe><iframe width="400" height="250" src="https://www.youtube.com/embed/BSxmAflrW9U" frameborder="0" allowfullscreen></iframe></div>
+
          </div>
-       </div>
-     </li>
-     <li>
-      <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal8">Vídeos</a>
-      <div id="modal8" class="modal">
-       <div class="modal-content center">
-         <h4>Vídeos</h4>
-         Si todavía tienes dudas, en este vídeo te lo contamos<iframe width="400" height="250" src="https://www.youtube.com/embed/eajeAu067a4" frameborder="0" allowfullscreen></iframe></div>
-         <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-         </div>
-       </div>
-     </li>
-   </ul>
+       </li>
+     </ul>
+   </div>
  </div>
-</div>
-<div class="parallax-container" id="ponentes">
+ <div class="parallax-container" id="ponentes">
+  <h2 class="header white-text">Nuestros Ponentes</h2>
   <div class="parallax"><img src="images/cabecera.jpg"></div>
   <ul id="lightgallery" class="list-unstyled row">
   </ul>
 </div>
 <div class="section white" id="programa">
   <div class="row container">
-    <h2 class="header">Programa</h2>
+    <h2 class="header blue-text">Programa</h2>
     <div class="row">
       <div id='calendar' class="col s12 "></div>
     </div>
@@ -185,21 +199,174 @@
   <div class="parallax"><img src="images/cabecera.jpg"></div>
   <div class="center-align row" id="cartel">
     <h2 class="header white-text">Galería de carteles</h2>
-
   </div>
 </div>
-<div id="modales" class="hidden">
-<div id="modal50" class="modal">
+<div class="section white" id="concurso">
+  <div class="row container">
+    <h2 class="header blue-text">Concurso de Twitter Sysmana 2017</h2>
+    <div class="z-depth-3">
+      <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c1" rel="modal:open"><p><strong>PRESENTACIÓN</strong></p></a>
+      <div id="c1" style="display: none;">
+        <h4>PRESENTACIÓN</h4>
+        <p>El Departamento de Informática y Comunicaciones valora que el alumnado construya su propia <a href="http://blog.iese.edu/impact-at-work/2016/04/07/tienes-una-identidad-digital-profesional/?lang=es">identidad digital profesional</a> en redes sociales como Twitter y LinkedIn. El objetivo de este concurso es promover la utilización responsable de las redes sociales y la difusión de las actividades programadas en la Sysmana 2017 a través de la red social Twitter.<br />
+          <span id="more-580"></span><br />
+        </p>
+      </div>
+      <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c2" rel="modal:open"><strong>OBJETIVO</strong></p></a>
+      <div id="c2" style="display: none;">
+        <h4>OBJETIVO</h4>
+        <p>Desarrollar una campaña de promoción de la #sysmana2017 a través de las cuentas personales de alumnado, profesorado y comunidad virtual en general y lograr el mejor posicionamiento en Destacados Twitter para el hastag #sysmana2017 (<a href="https://twitter.com/search?q=%23sysmana2017&amp;src=typd" target="_new">https://twitter.com/search?q=%23sysmana2017&amp;src=typd</a>).</p>
+        <p>Los Destacados se recopilan teniendo en cuenta una variedad de factores, entre ellos el número de &#8220;Retweets&#8221; y &#8220;Me Gusta&#8221;. Por tanto, hay que buscar que el resto de usuarios de twitter interactúen con nuestros tweets.</p>
+      </div>
+      <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c3" rel="modal:open"><p><strong>CATEGORÍAS</strong></p></a>
+      <div id="c3" style="display: none;">
+        <h4>CATEGORÍAS</h4>
+        <p>Se establecen 3 categorías:<br />
+          <u></u></p>
+          <ul>
+            <li>Alumnado</li>
+            <li>Profesorado</li>
+            <li>Comunidad Virtual</li>
+          </ul>
+        </div>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c4" rel="modal:open"><p><strong>INSCRIPCIÓN (REQUISITOS)</strong></p></a>
+        <div id="c4" style="display: none;">
+          <h4>INSCRIPCIÓN (REQUISITOS)
+          </h4>
+          <p>Podrán tomar parte en este concurso cualquier usuario de Twitter.</p>
+          <p>El proceso de inscripción es distinto según la categoría por la que se participe:</p>
+          <p><em>Categoría Alumnado</em></p>
+          <ol>
+            <li>La participación será individual</li>
+            <li>El participante deberá estar matriculado en el curso 2016-2017 en los Ciclos Formativos de Grado Superior del IES Gran Capitán de Córdoba</li>
+            <li>La inscripción podrá realizarse hasta el día <strong>27 de enero</strong> de 2017</li>
+            <li>La cuenta de twitter del participante deberá seguir a las cuentas de twitter  <a href="https://twitter.com/ies_grancapitan">@ies_grancapitan</a>, <a href="https://twitter.com/sisblog">@sisblog</a> y <a href="https://twitter.com/daw_gc">@daw_gc</a></li>
+            <li>Publicará un mensaje solicitando la participación en el concurso con el texto &#8220;@ies_grancapitan Quiero participar en el concurso de Twitter #sysmana2017&#8221;</li>
+            <li>La solicitud de participación supone la aceptación por parte de los participantes de las bases de la convocatoria</li>
+            <li>Una vez que se compruebe que el participante cumple los requisitos se agregará a la lista de Twitter  <a href="https://twitter.com/ies_grancapitan/lists/sysmana2017">Sysmana2017</a></li>
+            <li>La inscripción supone la aceptación por parte de los participantes de las bases de la convocatoria.</li>
+          </ol>
+          <p><em>Categoría Profesorado </em></p>
+          <ol>
+            <li>La participación será individual</li>
+            <li>El participante deberá impartir docencia en el IES Gran Capitán de Córdoba</li>
+            <li>No es necesaria la inscripción</li>
+          </ol>
+          <p><em>Categoría Comunidad Virtual</em></p>
+          <ol>
+            <li>La participación puede ser relativa a una cuenta personal, profesional, corporativa, etc.</li>
+            <li>No es necesaria la inscripción</li>
+          </ol>
+          <p>&nbsp;</p>
+        </div>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c5" rel="modal:open"><p><strong>CARACTERÍSTICAS DEL CONCURSO</strong></p></a>
+        <div id="c5" style="display: none;">
+          <h4>CARACTERÍSTICAS DEL CONCURSO
+          </h4>
+          <p>Los participantes en el concurso deberán publicar tweets que incluyan el hashtag #sysmana2017. El contenido de los tweets deberá estar relacionado con la Sysmana 2017.</p>
+          <p>La organización no asume ninguna responsabilidad por el contenido de los tweets del concurso ni por de los sitios enlazados desde éstos; además, no controla que entre ellos puedan aparecer sitios de Internet cuyos contenidos resulten ilícitos, ilegales, contrarios a la moral o a las buenas costumbres o inapropiados.</p>
+          <p>La organización del concurso no asume ninguna responsabilidad por las noticias e informaciones publicadas por los concursantes.</p>
+          <p>Los concursantes se abstendrán de incluir o enlazar contenidos difamatorios, racistas, obscenos, pornográficos, ofensivos, que promuevan el odio racial, étnico, religioso, homófobo o de género, de violencia explícita o incitación a la violencia y/o que afecten a la privacidad o derechos de la infancia.</p>
+          <p>Si durante el desarrollo del concurso se detectara la manipulación del sistema de promoción, bien mediante la automatización de su emisión o bien mediante cualquier otra técnica de alteración de los resultados de forma “no natural”, la organización del concurso podrá expulsar del mismo al participante que realizara dichas prácticas.</p>
+          <p>Cualquier violación de estas condiciones supondrá la expulsión inmediata del concurso.</p>
+          <p>Durante la Sysmana 2017 se realizará un captura de pantalla de la búsqueda del hashtag #Sysmana2017 sin haber iniciado sesión en la red social; siendo éste el criterio principal de determinación de los ganadores del concurso.</p>
+          <p>El jurado se reserva la posibilidad de publicar resultados parciales antes de la fecha de finalización del concurso y determinará el orden definitivo teniendo en cuenta la profesionalidad del perfil de Twitter: foto de perfil, foto de encabezado, tweets y biografía. La decisión del jurado será inapelable.</p>
+        </div>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c6" rel="modal:open"><p><strong>JURADO</strong></p></a>
+        <div id="c6" style="display: none;">
+          <h4>JURADO
+          </h4>
+          <p>El jurado estará constituido por el profesorado del departamento de Informática y Comunicaciones del IES Gran Capitán. La resolución del jurado, que será inapelable, se hará pública durante la Sysmana y posteriormente se difundirá a través de las redes sociales.</p>
+        </div>
+        <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c7" rel="modal:open"><p><strong>PREMIOS</strong></p></a>
+        <div id="c7" style="display: none;">
+          <h4>PREMIOS</h4>
+          <p><em>Categoría Alumnado</em></p>
+          <p>Se instituyen tres premios a determinar. En todo caso se tratará de premios simbólicos debido a las restricciones de presupuesto. Los premios podrán declararse desiertos por falta de participación. La entrega de los premios se llevará a cabo durante la Sysmana. Durante la entrega de los premios los ganadores expondrán las técnicas utilizadas para conseguir el objetivo del concurso.</p>
+          <p><em>Categorías Profesorado y Comunidad Virtual</em></p>
+          <p>Se instituyen tres insignias virtuales por categoría. Simplemente queremos reconocer a aquellos docentes, empresas, profesionales y particulares que participan en la difusión en redes sociales de la Sysmana 2017.</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="row container"  style="margin: 0 auto;">
+      <h4>Categoría Alumnado</h4>
+      <table class="responsive-table z-depth-2" id="clasificacion1">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Cuenta</th>
+            <th>Tweet</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <h4>Categoría Profesorado</h4>
+      <table class="responsive-table z-depth-2" id="clasificacion2">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Cuenta</th>
+            <th>Tweet</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <h4>Categoría Comunidad Virtual</h4>
+      <table class="responsive-table z-depth-2" id="clasificacion3">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Cuenta</th>
+            <th>Tweet</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="row container" style="margin: 0 auto;">
+      <h2 class="header blue-text">Nuestros Patrocinadores</h2>
+      <div id="slides">
 
-           <div class="modal-content">
-             <h4>¿Quién la organiza?</h4>
-             El departamento de Informática y Comunicaciones del IES Gran Capitán con la colaboración del alumnado y el apoyo del equipo directivo y del departamento de Hostelería.
-           </div>
-           <div class="modal-footer">
-             <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
-           </div>
-         </div>
-   </div>
- </main>
+      </div>
+    </div>
+    <div style="min-height: 50px;" class="light-blue darken-1">
+      <div class="container center" style="padding-top: 20px;padding-bottom: 10px;">
+        <a class="grey-text text-lighten-4 center" href="https://josemagonzalez.github.io/Proyectos/index.html" style="font-size: 20px;">© 2017 - Dawmana - Josema González</a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div style="display: none;">
+    <div id="modales" class="hidden">
+
+    </div>
+
+    <div id="caja1" class="ui-widget">
+      <form id="form1" method="post">
+        <p><label for="usuario"></label> <input type="text" name="usuario" id="usuario" placeholder="Usuario" required></p>
+        <p><label for="password"></label> <input type="password" name="password" id="password" placeholder="Password" required></p>
+      </form>
+    </div>
+    <div id="caja2" class="ui-widget">
+      <form id="form2" method="post" class="row">
+        <p class="col s6"><label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Nombre" required></p>
+        <p class="col s6"><label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required></p>
+        <p class="col s6"><label for="dni">DNI: </label> <input type="text" name="dni" id="dni" placeholder="12345678Z" required></p>
+        <p class="col s6"><label for="email">Correo electrónico:</label> <input type="email" name="email" id="email" placeholder="dawmana2017@gmail.com" required></p>
+        <p class="col s6"><label for="procedencia">Procedencia:</label> <input type="text" name="procedencia" id="procedencia" placeholder="IES, Universidad..." required></p>
+      </form>
+    </div>
+    <div id="dialog-message" class="ui-widget hidden">
+      <p>Se ha registrado con éxito en la DAWmana 2017.</p>
+    </div>
+  </div>
+
+</main>
 </body>
 </html>

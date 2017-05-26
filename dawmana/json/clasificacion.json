@@ -1,0 +1,78 @@
+{
+	"clasificacion":
+	[
+		{
+			"tipo":"alumno",
+			"posicion":"1",
+			"cuenta":"Juan Rueda (@JuanRuMor)",
+			"urlcuenta":"https://twitter.com/JuanRuMor",
+			"tweet":"Esto va tomando forma. Gran equipo!! @ies_grancapitan @daw_gc @jaimerr #Sysmana2017 #retropie",
+			"urltweet":"https://twitter.com/JuanRuMor/status/824346082331213825"
+		},
+		{
+			"tipo":"alumno",
+			"posicion":"2",
+			"cuenta":"Manuel Jesús (@Noloam)",
+			"urlcuenta":"https://twitter.com/Noloam",
+			"tweet":"Bueno pues, ya va quedando menos para la #sysmana2017, Y yo seré uno de los ponentes el viernes día 3 de febrero!!!! No os lo perdáis!!!😎😎",
+			"urltweet":"https://twitter.com/Noloam/status/824367699987984385"
+		},
+		{
+			"tipo":"alumno",
+			"posicion":"3",
+			"cuenta":"Javier Ponferrada (@jponferrada26)",
+			"urlcuenta":"https://twitter.com/jponferrada26",
+			"tweet":"A tope sin descanso @JesusMejias97 @JuanRuMor @miguel5gavilan 🙂 #Sysmana2017",
+			"urltweet":"https://twitter.com/jponferrada26/status/824347157109100546"
+		},
+		{
+			"tipo":"profe",
+			"posicion":"1",
+			"cuenta":"Jaime Rabasco (@jaimerr)",
+			"urlcuenta":"https://twitter.com/jaimerr",
+			"tweet":"Del 30 enero a 3 de feb realizaremos numerosas actividades gracias a la colaboración de profesionales del sector de Informática #sysmana2017",
+			"urltweet":"https://twitter.com/jaimerr/status/821329214725038080"
+		},
+		{
+			"tipo":"profe",
+			"posicion":"2",
+			"cuenta":"José Ramón Albendín (@jralbendin)",
+			"urlcuenta":"https://twitter.com/jralbendin",
+			"tweet":"Una vez que se ha creado una cuenta, es muy importante relacionarse con gente que comparte tus intereses. #sysmana2017 (1/2)",
+			"urltweet":"https://twitter.com/jralbendin/status/823637590393974785"
+		},
+		{
+			"tipo":"profe",
+			"posicion":"3",
+			"cuenta":"",
+			"urlcuenta":"",
+			"tweet":"",
+			"urltweet":""
+		},
+		{
+			"tipo":"otros",
+			"posicion":"1",
+			"cuenta":"Eduardo Sánchez (@eduSatoe)",
+			"urlcuenta":"https://twitter.com/eduSatoe",
+			"tweet":"Del 30Feb al 3Feb se celebra la IX Ed #Sysmana2017 del @ies_grancapitan Este año hablaré sobre Fugas de Información en la Red 😉 #Educación🔝",
+			"urltweet":"https://twitter.com/eduSatoe/status/821338558644502528"
+		},
+		{
+			"tipo":"otros",
+			"posicion":"2",
+			"cuenta":"Mª José Montes (@MMontesDiaz)",
+			"urlcuenta":"https://twitter.com/MMontesDiaz",
+			"tweet":"Es un honor para mí dar una charla en @ies_grancapitan, aquí empezó todo 😎 Os hablaré de Ingeniería Social y phishing. #Sysmana2017",
+			"urltweet":"https://twitter.com/MMontesDiaz/status/821343072214798337"
+		},
+		{
+			"tipo":"otros",
+			"posicion":"3",
+			"cuenta":"Nacho Álvarez (@neonigmacdb)",
+			"urlcuenta":"https://twitter.com/neonigmacdb",
+			"tweet":"Este año en la #Sysmana2017 de @ies_grancapitan doy dos charlas<br>– Metodologías de gestión ágil de proyectos<br>– Monitorización de logs con ELK",
+			"urltweet":"https://twitter.com/neonigmacdb/status/824686574621388800"
+		}
+
+	]
+}

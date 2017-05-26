@@ -1,0 +1,28 @@
+{
+	"datos":
+	[
+		{
+			"nombre" : "Claudia",
+			"apellidos" : "López Iglesias",
+			"imagen" : "ponentes/Claudia_Lopez.jpg",
+			"descripcion" : "Branding & Graphic Web Designer / Product Designer / Social Media Manager",
+			"redes" : "https://www.linkedin.com/in/claudialopeziglesias",
+			"empresa" : "WUL4",
+			"patrocinio" : "No",
+			"rango" : "30-01-2016 a 31-01-2016",
+			"observaciones" : "Necesita proyector"
+		}
+	],
+	"actividad":
+	[
+		{
+			"titulo" : "Taller sobre diseño web nivel básico, para programadores",
+			"descripcion_br" : "En este taller, veremos un poco de leyes de composición visual...",
+			"descripcion_ex" : "En este taller, veremos un poco de leyes de composición visual, teoría del color y paletas, tipografías y sus posibles combinaciones, tendencias, recursos... Todo ello mientras usamos las herramientas básicas para crear imágenes vectoriales para exportar diferentes formatos, configurar espacios de trabajo, cómo hacer paletas de color, uso de las tipografías...",
+			"url" : "ponentes/actividad.png",
+			"material_po" : "Proyector",
+			"material_al" : "PC",
+			"asistentes" : "50"
+		}
+	]
+}

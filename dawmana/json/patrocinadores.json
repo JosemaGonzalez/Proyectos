@@ -1,0 +1,20 @@
+{
+	"patrocinadores":
+	[
+		{
+			"ruta":"images/logo.jpg"
+		},
+		{
+			"ruta":"images/iknx.jpg"
+		},
+		{
+			"ruta":"images/svtcloud.png"
+		},
+		{
+			"ruta":"images/sopinet.png"
+		},
+		{
+			"ruta":"images/wul4.jpg"
+		}
+	]
+}
