@@ -68,16 +68,17 @@
 <body>
   <header>
     <div class="navbar-fixed z-depth-5">
-     <nav>
-      <div class="nav-wrapper blue">
+     <nav class="blue">
+       <p class="hide-on-med-and-up center">DAWMANA 2017</p>
+       <div class="nav-wrapper blue hide-on-med-and-down">
         <a href="#inicio" class="brand-logo left ancla hide-on-med-and-down"><img src="images/logo.jpg" alt=""></a>
         <a href="#" id ="acceso" class="left nav2" style="margin-left: 75px;">Acceso</a>
         <a href="#" id="registro" class="left nav2">Registro</a>
         <a href="#inicio" class="brand-logo center ancla hide-on-med-and-down">Dawmana 2017</a>
         <ul class="right">
           <li><a href="#que" class="ancla">¿Qué es?</a></li>
+          <li><a href="#programa" class="ancla">Calendario</a></li>
           <li><a href="#ponentes" class="ancla">Ponentes</a></li>
-          <li><a href="#programa" class="ancla">Programa</a></li>
           <li><a href="#galeria" class="ancla">Galería</a></li>
           <li><a href="#concurso" class="ancla">Concurso</a></li>
         </ul>
@@ -94,7 +95,9 @@
   <div class="section white" id="que">
     <div class="row container">
       <h2 class="header center blue-text">Acerca de la Dawmana</h2>
-      <ul class="z-depth-5">
+      <ul class="col m3">
+      </ul>
+      <ul class="col s12 m6">
         <li>
           <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#modal1" rel="modal:open">¿Qué es la Sysmana?</a>
           <div id="modal1"   style="display:none;">
@@ -181,18 +184,25 @@
      </ul>
    </div>
  </div>
- <div class="parallax-container" id="ponentes">
-  <h2 class="header white-text">Nuestros Ponentes</h2>
+ <div class="parallax-container" id="programa">
   <div class="parallax"><img src="images/cabecera.jpg"></div>
-  <ul id="lightgallery" class="list-unstyled row">
-  </ul>
-</div>
-<div class="section white" id="programa">
   <div class="row container">
-    <h2 class="header blue-text">Programa</h2>
+    <h2 class="header white-text">Programa</h2>
     <div class="row">
-      <div id='calendar' class="col s12 "></div>
+      <div id='calendar' class="col s12"></div>
     </div>
+  </div>
+</div>
+<div class="section white row" id="ponentes">
+  <div class="col s12 m6">
+    <h2 class="header blue-text">Nuestros Ponentes</h2>
+    <ul id="lightgallery" class="list-unstyled row">
+    </ul>
+  </div>
+  <div class="col s12 m6" id="lightgallery">
+    <h2 class="header blue-text text-center">Nuestras actividades</h2>
+    <ul id="lightgallery2" class="list-unstyled row">
+    </ul>
   </div>
 </div>
 <div class="parallax-container valign-wrapper" id="galeria">
@@ -204,7 +214,9 @@
 <div class="section white" id="concurso">
   <div class="row container">
     <h2 class="header blue-text">Concurso de Twitter Sysmana 2017</h2>
-    <div class="z-depth-3">
+    <div class="col m3">
+    </div>
+    <div class="col s12 m6">
       <a class="collapsible-header blue lighten-3 blue-text text-darken-2" href="#c1" rel="modal:open"><p><strong>PRESENTACIÓN</strong></p></a>
       <div id="c1" style="display: none;">
         <h4>PRESENTACIÓN</h4>
@@ -335,35 +347,30 @@
     </div>
     <div style="min-height: 50px;" class="light-blue darken-1">
       <div class="container center" style="padding-top: 20px;padding-bottom: 10px;">
-        <a class="grey-text text-lighten-4 center" href="https://josemagonzalez.github.io/Proyectos/index.html" style="font-size: 20px;">© 2017 - Dawmana - Josema González</a>
+        <a class="grey-text text-lighten-4 center" target="_blank" href="https://josemagonzalez.github.io/Proyectos/index.html" style="font-size: 20px;">© 2017 - Dawmana - Josema González</a>
 
       </div>
     </div>
   </div>
 
-
   <div style="display: none;">
     <div id="modales" class="hidden">
-
     </div>
 
     <div id="caja1" class="ui-widget">
       <form id="form1" method="post">
-        <p><label for="usuario"></label> <input type="text" name="usuario" id="usuario" placeholder="Usuario" required></p>
-        <p><label for="password"></label> <input type="password" name="password" id="password" placeholder="Password" required></p>
+        <p><label for="usuario"></label> <input type="text" name="usuario" id="usuario" placeholder="Usuario" ></p>
+        <p><label for="password"></label> <input type="password" name="password" id="password" placeholder="Password" ></p>
       </form>
     </div>
     <div id="caja2" class="ui-widget">
       <form id="form2" method="post" class="row">
-        <p class="col s6"><label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Nombre" required></p>
-        <p class="col s6"><label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required></p>
-        <p class="col s6"><label for="dni">DNI: </label> <input type="text" name="dni" id="dni" placeholder="12345678Z" required></p>
-        <p class="col s6"><label for="email">Correo electrónico:</label> <input type="email" name="email" id="email" placeholder="dawmana2017@gmail.com" required></p>
-        <p class="col s6"><label for="procedencia">Procedencia:</label> <input type="text" name="procedencia" id="procedencia" placeholder="IES, Universidad..." required></p>
+        <p class="col s6"><label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Nombre" ></p>
+        <p class="col s6"><label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" ></p>
+        <p class="col s6"><label for="dni">DNI: </label> <input type="text" name="dni" id="dni" placeholder="12345678Z" ></p>
+        <p class="col s6"><label for="email">Correo electrónico:</label> <input type="email" name="email" id="email" placeholder="dawmana2017@gmail.com" ></p>
+        <p class="col s6"><label for="procedencia">Procedencia:</label> <input type="text" name="procedencia" id="procedencia" placeholder="IES, Universidad..." ></p>
       </form>
-    </div>
-    <div id="dialog-message" class="ui-widget hidden">
-      <p>Se ha registrado con éxito en la DAWmana 2017.</p>
     </div>
   </div>
 

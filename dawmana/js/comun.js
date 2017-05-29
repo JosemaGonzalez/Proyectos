@@ -1,9 +1,10 @@
   $(document).ready(function () {
-    let $img = $('.navbar-fixed img');
     let $nav = $(".navbar-fixed");
     let header = $("header").height();
     $('.section,.parallax-container').css("padding-top",header+10);
-    $img.height($nav.height());
+    $('#ponentes').css("padding-top",header);
+
+    $('.navbar-fixed img').height($nav.height());
     $('.parallax').parallax();
     $('.navbar-fixed').css("z-index","90");
     $('.parallax-container').height($(window).height());

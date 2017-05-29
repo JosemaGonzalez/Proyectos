@@ -17,8 +17,20 @@ h1{
 	font-size: 40px;
 	margin-top: 150px;
 }
+.fc-left h2{
+color: white;
+}
+.fc-time-grid-container{
+	max-height:350px!important;
+}
+.fc-view-container{
+	background-color: white;
+}
 .oculto{
 	display: none;
+}
+.ancla>img{
+	height: 70px;
 }
 #slides{
 	width: 500px!important;
@@ -29,6 +41,7 @@ h1{
 	width: 100%!important;
 	height: 200px!important;
 }
+
 .nav2{
 	padding: 0px 15px;
 	font-size: 1rem;
@@ -38,25 +51,6 @@ h1{
 }
 #cartel h2{
 	margin-top: -70px!important;
-}
-@media (max-width: 615px) {
-	nav .nav-wrapper{
-		height: 200%!important;
-	}
-}
-@media (max-width: 768px) {
-	.fc-right,.fc-button-group{
-		width: 100%!important;
-	}
-	#calendar h2{
-		font-size: 18px;
-	}
-	.fc-prev-button,.fc-next-button{
-		padding:1%!important;
-	}
-	.fc-icon{
-		font-size: 12px!important;
-	}
 }
 .brand-logo{
 	font-size: 28px;
@@ -75,4 +69,34 @@ h1{
 #datos p, #datos a, #actividad p{
 	font-size: 18px;
 	padding-bottom: 10px;
+}
+.collapsible{
+	border: 0;
+	box-shadow: none;
+}
+.collapsible-header,.collapsible-body{
+	border: 0;
+}
+@media (max-width: 768px) {
+	#slides{
+		width: 100%!important;
+		margin: 0 auto;
+		height: 300px!important;
+	}
+	.slidesjs-control{
+		width: 100%!important;
+		height: 100px!important;
+	}
+	.fc-right,.fc-button-group{
+		width: 100%!important;
+	}
+	#calendar h2{
+		font-size: 18px;
+	}
+	.fc-prev-button,.fc-next-button{
+		padding:1%!important;
+	}
+	.fc-icon{
+		font-size: 12px!important;
+	}
 }

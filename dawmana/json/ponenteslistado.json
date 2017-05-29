@@ -1,0 +1,138 @@
+{
+	"ponentes":
+	[
+		{
+			"nombre" : "Claudia López Iglesias",
+			"titulo" : "Taller sobre diseño web nivel básico, para programadores",
+			"imagen" : "ponentes/Claudia_Lopez.jpg",
+			"descripcion" : "Branding & Graphic Web Designer / Product Designer / Social Media Manager",
+			"redes" : "https://www.linkedin.com/in/claudialopeziglesias"
+		},
+		{
+			"nombre" : "José Ignacio Álvarez Ruiz ",
+			"titulo" : "Metodologías de gestión ágil de proyectos",
+			"imagen" : "ponentes/Nacho_Alvarez.png",
+			"descripcion" : "Research&Devel engineer at @Redsys_es Software Engineer with experience in #Linux, #Python, #Android, #PHP, #J2EE and #FLOSS enthusiastic. https://goo.gl/LMSCi9",
+			"redes" : "https://twitter.com/neonigmacdb"
+		},
+		{
+			"nombre" : "Fernando Hidalgo (Sopinet)",
+			"titulo" : "Desarrollo de Apps móviles y proyectos Web",
+			"imagen" : "ponentes/Fernando_Hidalgo.png",
+			"descripcion" : "Estrategia LeanStartup, Analista / Programador, Cantautor, Métricas y Agile. CEO en @SopinetSoftware, Cofundador de @SusPasitos y @Trazeo",
+			"redes" : "https://twitter.com/hidabe"
+		},
+		{
+			"nombre" : "Álvaro Serrano (WUL4)",
+			"titulo" : "Taller de introducción a WebGL con three.js",
+			"imagen" : "ponentes/Alvaro_Serrano.jpg",
+			"descripcion" : "Frontend developer at WUL4 (http://wul4.com) - Working full time on @PayThunder project! - Casual WebGL/VR developer & fell in love with #threejs! :)",
+			"redes" : "https://twitter.com/hb_asg"
+		},
+		{
+			"nombre" : "Maria José Montes (SVTCloud)",
+			"titulo" : "Ingeniería Social y phishing",
+			"imagen" : "ponentes/MariaJose_Montes.jpg",
+			"descripcion" : "Auditora de seguridad en @svtcloud. Cofundadora de @HackSolidario @qurtubacon, @anphacket",
+			"redes" : "https://twitter.com/MMontesDiaz"
+		},
+		{
+			"nombre" : "IKNX",
+			"titulo" : "IKNX. Programación en el mundo real",
+			"imagen" : "ponentes/Iknx.jpg",
+			"descripcion" : "IKNX, es una empresa dedicada a la búsqueda de soluciones en el sector de la eficiencia energética en cualquier tipo de instalación doméstica, terciaria o industrial.",
+			"redes" : "https://twitter.com/IKNXIngenieria"
+		},
+		{
+			"nombre" : "Miguel Ángel Arroyo (SVTCloud)",
+			"titulo" : "¿Por qué formarse en seguridad Informática?",
+			"imagen" : "ponentes/MiguelAngel_Arroyo.jpg",
+			"descripcion" : "Auditor de seguridad de sistemas de redesrmación CEH por EC-Council. Formador en cursos de seguridad de la redesrmación. Autor del blog hacking-etico.com. Propulsor de la comunidad Hack&Beers. Colaborador del periódico digital cordopolis.es. Especialidades: Auditorías de Seguridad, Pruebas de Intrusión, Hacking Ético y Formación.",
+			"redes" : "https://twitter.com/Miguel_Arroyo76"
+		},
+		{
+			"nombre" : "Eduardo Sánchez (IES Fidiana)",
+			"titulo" : "Fugas de Información en la Red",
+			"imagen" : "ponentes/Edu_Sanchez.jpg",
+			"descripcion" : "Ing.redesrmático - Profesor de FP - Máster en Seguridad TIC - Fundador de Security High School.Cofundador de @HackandBeers @QurtubaCon y @ANPhacket",
+			"redes" : "https://twitter.com/eduSatoe"
+		},
+		{
+			"nombre" : "Lucia Expósito (SVTCloud)",
+			"titulo" : "MSOC-Guardianes del Ciberespacio",
+			"imagen" : "ponentes/Lucia_Exposito.jpg",
+			"descripcion" : "Security Technical Support en SvtCloud. Una vida, una meta.",
+			"redes" : "https://twitter.com/LuciaExpositoOr"
+		},
+		{
+			"nombre" : "Miguel Ángel Lopez Torralba (ShivaWeb)",
+			"titulo" : "Taller de modificación de plantillas en WordPress",
+			"imagen" : "ponentes/MiguelAngel_Lopez.jpg",
+			"descripcion" : "Desarrollador web y cofundador de shivaweb.es, rolero, amante de la naturaleza y los viajes, e investigador del desarrollo web y el marketing digital",
+			"redes" : "https://twitter.com/mialtorralba"
+		},
+		{
+			"nombre" : "Jesús Chicano (ShivaWeb)",
+			"titulo" : "Introducción al SEO",
+			"imagen" : "ponentes/Jesus_Chicano.jpg",
+			"descripcion" : "Full-Stack Developer & Co-Founder of @shivaweb_ . Web design, SEO, manuals...",
+			"redes" : "https://twitter.com/jesuschicano"
+		},
+		{
+			"nombre" : "Dobuss",
+			"titulo" : "Mobile MKT",
+			"imagen" : "ponentes/dobuss.jpeg",
+			"descripcion" : "Diseño web y posicionamiento web en Córdoba. #web #tiendaonline #MarketingDigital #Posicionamiento #SEO #RedesSociales #DiseñoWeb #ImagenCorporativa",
+			"redes" : "Diseño web y posicionamiento web en Córdoba. #web #tiendaonline #MarketingDigital #Posicionamiento #SEO #RedesSociales #DiseñoWeb #ImagenCorporativa"
+		},
+		{
+			"nombre" : "Jose Manuel Gonzalez",
+			"titulo" : "Introducción a MaterializeCSS",
+			"imagen" : "ponentes/Josema_Gonzalez.png",
+			"descripcion" : "Alumno 2ºDAW IES Gran Capitán",
+			"redes" : ""
+		},
+		{
+			"nombre" : "Juan Antonio Cubero",
+			"titulo" : "Conceptos básicos de EmberJS",
+			"imagen" : "ponentes/JuanAntonio_Cubero.png",
+			"descripcion" : "Alumno 2ºDAW IES Gran Capitán",
+			"redes" : "https://twitter.com/cuberolopez96"
+		},
+		{
+			"nombre" : "Juan Rueda Morales",
+			"titulo" : "Proyectos con Raspberry Pi",
+			"imagen" : "ponentes/Juan_Rueda.jpg",
+			"descripcion" : "Alumno 1ºDAW IES Gran Capitán",
+			"redes" : "https://twitter.com/JuanRuMor"
+		},
+		{
+			"nombre" : "Rafael Delgado",
+			"titulo" : "Taller de Scratch",
+			"imagen" : "ponentes/Rafael_Delgado.jpg",
+			"descripcion" : "Alumno 1ºDAW IES Gran Capitán",
+			"redes" : "https://twitter.com/rafadelgado89"
+		},
+		{
+			"nombre" : "Victoriano Sevillano",
+			"titulo" : "Taller de Scratch (Sesión 1 - 2ºBACH B-C)",
+			"imagen" : "ponentes/Victoriano_Sevillano.jpg",
+			"descripcion" : "Alumno 1ºDAW IES Gran Capitán",
+			"redes" : "https://twitter.com/Vsevillanoo"
+		},
+		{
+			"nombre" : "Manuel Jesús Delgado Caballero",
+			"titulo" : "Sweet Honey Alabama",
+			"imagen" : "ponentes/Manuel_Delgado.jpg",
+			"descripcion" : "Alumno 2ºASIR IES Gran Capitán",
+			"redes" : "https://twitter.com/Noloam"
+		},
+		{
+			"nombre" : "Curso 1º ASIR",
+			"titulo" : "Android: Iniciación a las ROMs cocinadas",
+			"imagen" : "ponentes/1asir.png",
+			"descripcion" : "Alumnos 1ºASIR IES Gran Capitán",
+			"redes" : "http://sysmana.iesgrancapitan.org/images/1asir.png"
+		}
+	]
+}

@@ -61,6 +61,36 @@
       <div class="col s12">
         <br>
         <a class="waves-effect waves-light btn blue" style="margin-left: 25px;" id="modifica">Modificar mis datos</a>
+        <div id="caja1" class="ui-widget">
+          <form id="form1" method="post" class="row">
+            <div class="col s6">
+              <label for="nombre1">Nombre</label> <input type="text" name="nombre1" id="nombre1" placeholder="Nombre" >
+            </div>
+            <div class="col s6">
+              <label for="apellidos1">Apellidos</label> <input type="text" name="apellidos1" id="apellidos1" placeholder="Apellidos" >
+            </div>
+            <div class="col s6">
+              <label for="empresa">Empresa</label> <input type="text" name="empresa" id="empresa" placeholder="Empresa" >
+            </div>
+            <div class="col s6">
+              <label for="patrocinio">Patrocinio</label>
+              <select name="patrocinio" id="patrocinio">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="col s6">
+              <label for="rango1">Fecha preferible desde</label> <input type="text" name="rango1" id="rango1" readonly >
+            </div>
+            <div class="col s6">
+              <label for="rango2">hasta</label> <input type="text" name="rango2" id="rango2" readonly >
+            </div>
+            <div class="input-field col s6">
+              <textarea id="Observaciones" name="Observaciones" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
+              <label for="Observaciones">Observaciones</label>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -70,11 +100,57 @@
       <div class="col s12" id="actividad">
 
       </div>
-      <div class="col s12 right">
+      <div class="col s12">
         <br>
         <a class="waves-effect waves-light btn blue" style="margin-left: 25px;" id="nueva">Añadir Actividad</a>
-      </div>    </div>
+        <div id="caja2" class="ui-widget">
+          <form id="form2" method="post" class="row">
+            <div class="col s6">
+              <label for="nombre2">Nombre</label> <input type="text" name="nombre2" id="nombre2" placeholder="Nombre" >
+            </div>
+            <div class="col s6">
+              <label for="des_breve">Descripción breve</label> <input type="text" name="des_breve" id="des_breve" placeholder="Descripción breve" >
+            </div>
+            <div class="input-field col s6">
+              <textarea id="des_extensa" name="des_extensa" class="materialize-textarea" data-length="255" maxlength="255"></textarea>
+              <label for="des_extensa">Descripción extensa</label>
+            </div>
+            <div id="url" class="col s6">
+              <label for="imagen">URL de la imagen</label> <input type="url" name="imagen" id="imagen" >
+            </div>
+            <div class="col s6">
+              <label for="ma_ponente">Material ponente</label>
+              <select multiple name="ma_ponente" id="ma_ponente">
+                <option value="proyector">Proyector</option>
+                <option value="conexion_wifi">Conexión wifi</option>
+                <option value="conexion_ethernet">Conexión ethernet</option>
+                <option value="software_necesario">Software necesario</option>
+              </select>
+            </div>
+            <div class="col s6">
+              <label for="ma_alumno">Material alumnos</label>
+              <select multiple name="ma_alumno" id="ma_alumno">
+                <option value="equipo">Equipo</option>
+                <option value="windows_linux">Windows/Linux</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="navegador">Navegador</option>
+                <option value="editor_textos">Editor de textos</option>
+              </select>
+            </div>
+            <div class="col s6">
+              <label for="asistentes">Asistentes</label>
+              <input type="number" name="asistentes" id="asistentes" min="1" >
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </main>
+  <div style="min-height: 50px;" class="light-blue darken-1">
+    <div class="container center" style="padding-top: 20px;padding-bottom: 10px;">
+      <a class="grey-text text-lighten-4 center" target="_blank" href="https://josemagonzalez.github.io/Proyectos/index.html" style="font-size: 20px;">© 2017 - Dawmana - Josema González</a>
+
+    </div>
+  </div>
 </body>
 </html>
